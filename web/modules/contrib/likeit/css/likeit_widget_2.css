@@ -1,0 +1,66 @@
+.lokeit-widget-2 {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.likeit__wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.like {
+  margin-right: 5px;
+  height: 25px;
+}
+
+.like a {
+  cursor: pointer;
+  display: inline-block;
+  height: inherit;
+}
+
+.icon-like {
+  padding: 0 1px;
+  line-height: 1;
+  fill: transparent;
+  stroke: #343434;
+  stroke-width: 15px;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  vertical-align: text-top;
+}
+
+svg[class^="icon-like"] {
+  vertical-align: text-bottom;
+  height: inherit;
+  width: 27px;
+}
+
+.likeit__count {
+  font-size: 15px;
+}
+
+.likeit-widget-2 a.liked .icon-like {
+  fill: #d9534f;
+  stroke: #d9534f;
+}
+
+.likeit-widget-2 a:active.liked .icon-like {
+  fill: #343434;
+  stroke: #343434;
+}
+
+.likeit-widget-2 a:active:not(.liked) .icon-like {
+  stroke: #d9534f;
+  fill: transparent;
+}
+
+.likeit-widget-2 a:hover .icon-like,
+.likeit-widget-2 a:hover:not(.liked) .icon-like {
+  stroke: #d9534f;
+  fill: transparent;
+}

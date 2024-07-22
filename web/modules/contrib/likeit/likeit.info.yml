@@ -1,0 +1,13 @@
+name: Like It!
+type: module
+description: Provides functionality to like the entity.
+core_version_requirement: ^9 || ^10
+package: Content
+configure: likeit.settings_form
+dependencies:
+  - extrafield_views_integration:extrafield_views_integration
+
+# Information added by Drupal.org packaging script on 2023-03-08
+version: '3.1.0'
+project: 'likeit'
+datestamp: 1678271313

@@ -1,0 +1,41 @@
+{#
+/**
+ * @file
+ * Widget 2 theme implementation for likeit extra field.
+ *
+ * Available variables:
+ * - content: A list of content items. Use 'content' to print all content, or
+ *   print a subset such as 'content.link'.
+ * - attributes: HTML attributes for the container element.
+ * - html_id: HTML id of link, used for ajax functionality.
+ * - url: Url for like/unlike.
+ * - action: Permitted user action. It can be Like/Unlike/View.
+ * - count: Likes count.
+ *
+ * @ingroup themeable
+ */
+#}
+{{ attach_library('likeit/widget_2') }}
+{%
+  set link_classes = [
+    action == 'Unlike' ? 'liked',
+  ]
+%}
+<div{{ attributes.addClass('likeit', 'likeit-widget-2') }}>
+  <div class="likeit__wrapper">
+    <div class="like"{% if html_id %} id="{{ html_id }}"{% endif %}>
+      {% if action != 'View' %}
+      <a{{ create_attribute({'class': link_classes, 'title': action|t, 'data-url': url.toString(), 'data-id': html_id})}}>
+      {% endif %}
+        <svg class="icon-like" aria-hidden="true" viewBox="-10 0 120 100">
+          <path d="M87.2 16.66a26.33 26.33 0 0 0-37.14-.1A26.34 26.34 0 0 0 12.8 53.81L50 91.16l.1-.1 37.2-37.25a26.33 26.33 0 0 0-.1-37.15z"></path>
+        </svg>
+      {% if action != 'View' %}
+      </a>
+      {% endif %}
+    </div>
+    <div class="likeit__count">
+      <span class="count">{{ count }}</span>
+    </div>
+  </div>
+</div>

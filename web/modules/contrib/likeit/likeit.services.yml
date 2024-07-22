@@ -1,0 +1,8 @@
+services:
+  likeit_csrf_token:
+    class: Drupal\likeit\Access\LikeItCsrfTokenGenerator
+    arguments: ['@private_key', '@config.factory', '@settings']
+  likeit.helper:
+    class: Drupal\likeit\LikeitHelper
+    arguments:
+       ['@current_user', '@entity_type.manager', '@likeit_csrf_token', '@renderer', '@config.factory']

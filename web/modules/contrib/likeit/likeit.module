@@ -1,0 +1,140 @@
+<?php
+
+/**
+ * @file
+ * Contains Likeit module helper functions.
+ */
+
+use Drupal\Core\Entity\Display\EntityViewDisplayInterface;
+use Drupal\Core\Entity\EntityInterface;
+use Drupal\Core\Routing\RouteMatchInterface;
+use Drupal\user\UserInterface;
+use Drupal\views\Plugin\views\PluginBase;
+use Drupal\views\ViewExecutable;
+
+/**
+ * Implements hook_help().
+ */
+function likeit_help($route_name, RouteMatchInterface $route_match) {
+  switch ($route_name) {
+    case 'help.page.likeit':
+      $output = '';
+      $output .= '<h3>' . t('About') . '</h3>';
+      $output .= '<p>' . t('Provides link for user to like the entity.') . '</p>';
+      return $output;
+  }
+}
+
+/**
+ * Implements hook_entity_extra_field_info().
+ */
+function likeit_entity_extra_field_info() {
+  $extra = [];
+
+  $config = \Drupal::config('likeit.settings');
+  $target_entities = $config->get('target_entities');
+
+  if (!empty($target_entities)) {
+    foreach ($target_entities as $key => $entity) {
+      $target_arr = explode(':', $key);
+      $entity_type = $target_arr[0];
+      $entity_bundle = $target_arr[1];
+      $extra[$entity_type][$entity_bundle]['display']['likeit'] = [
+        'label' => t('Like It!'),
+        'description' => t('Like and Unlike Link.'),
+        'weight' => 0,
+        'visible' => FALSE,
+        'render_class' => 'Drupal\likeit\LikeItExtraRender',
+      ];
+    }
+  }
+
+  return $extra;
+}
+
+/**
+ * Implements hook_entity_view().
+ */
+function likeit_entity_view(array &$build, EntityInterface $entity, EntityViewDisplayInterface $display, $view_mode) {
+  // Don't show on previews.
+  if ($entity->isNew()) {
+    return;
+  }
+  $config = \Drupal::config('likeit.settings');
+  $target_entities = $config->get('target_entities');
+
+  if (!empty($target_entities) && $display->getComponent('likeit')) {
+    $target = $entity->getEntityTypeId() . ':' . $entity->bundle();
+    if (in_array($target, $target_entities)) {
+      $build['likeit'] = \Drupal::service('likeit.helper')->getLink($entity->getEntityTypeId(), $entity->id());
+    }
+  }
+}
+
+/**
+ * Implements hook_theme().
+ */
+function likeit_theme($existing, $type, $theme, $path) {
+  return [
+    'likeit' => [
+      'variables' => [
+        'content' => [
+          'link' => NULL,
+          'view' => NULL,
+        ],
+        'html_id' => '',
+        'url' => '',
+        'action' => '',
+        'count' => '',
+      ],
+    ],
+    'likeit_widget_2' => [
+      'variables' => [
+        'content' => [
+          'link' => NULL,
+          'view' => NULL,
+        ],
+        'html_id' => '',
+        'url' => '',
+        'action' => '',
+        'count' => '',
+      ],
+    ],
+  ];
+}
+
+/**
+ * Implements hook_entity_delete().
+ */
+function likeit_entity_delete(EntityInterface $entity) {
+  $type = $entity->getEntityTypeId();
+  if ($type !== 'likeit') {
+    $id = $entity->id();
+
+    // Remove Likeit entity content.
+    \Drupal::service('likeit.helper')->removeFromEntity($type, $id);
+  }
+}
+
+/**
+ * Implements hook_user_cancel().
+ */
+function likeit_user_cancel($edit, $account, $method) {
+  \Drupal::service('likeit.helper')->removeFromUser($account);
+}
+
+/**
+ * Implements hook_user_delete().
+ */
+function likeit_user_delete(UserInterface $account) {
+  \Drupal::service('likeit.helper')->removeFromUser($account);
+}
+
+/**
+ * Implements hook_views_query_substitutions().
+ */
+function likeit_views_query_substitutions(ViewExecutable $view) {
+  return [
+    '***CURRENT_SESSION_ID***' => \Drupal::service('likeit.helper')->getCookie(),
+  ] + PluginBase::queryLanguageSubstitutions();
+}

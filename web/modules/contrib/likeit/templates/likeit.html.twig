@@ -1,0 +1,23 @@
+{#
+/**
+ * @file
+ * Default theme implementation for likeit extra field.
+ *
+ * Available variables:
+ * - content: A list of content items. Use 'content' to print all content, or
+ *   print a subset such as 'content.link'.
+ * - attributes: HTML attributes for the container element.
+ * - html_id: HTML id of link, used for ajax functionality.
+ * - url: Url for like/unlike.
+ * - action: Permitted user action. It can be Like/Unlike/View.
+ * - count: Likes count.
+ *
+ * @see template_preprocess_likeit()
+ *
+ * @ingroup themeable
+ */
+#}
+{{ attach_library('core/drupal.ajax') }}
+<article{{ attributes.addClass('likeit') }}>
+  {{ content }}
+</article>

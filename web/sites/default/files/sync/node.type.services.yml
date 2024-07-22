@@ -1,0 +1,17 @@
+uuid: d115de02-b087-4e28-aa84-7078f2adbd0e
+langcode: en
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus: {  }
+    parent: ''
+name: Services
+type: services
+description: "Use services to add provided service content\r\n"
+help: null
+new_revision: false
+preview_mode: 1
+display_submitted: false

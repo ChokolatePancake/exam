@@ -10,6 +10,7 @@ libraries:
 
 regions:
   header: Header
+  hero: Hero
   primary_menu: Primary menu
   highlighted: Highlighted
   content: Content

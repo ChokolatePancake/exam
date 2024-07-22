@@ -1,0 +1,9 @@
+widget_2:
+  css:
+    theme:
+      css/likeit_widget_2.css: {}
+  js:
+    js/likeit_widget_2.js: {}
+  dependencies:
+    - core/drupal
+    - core/jquery
