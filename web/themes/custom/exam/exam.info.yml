@@ -1,0 +1,16 @@
+name: "Exam"
+description: "Exam theme"
+type: theme
+
+core_version_requirement: ">=9.2"
+base theme: starterkit_theme
+
+libraries:
+  - exam/global
+
+regions:
+  header: Header
+  primary_menu: Primary menu
+  highlighted: Highlighted
+  content: Content
+  footer: Footer

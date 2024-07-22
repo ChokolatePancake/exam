@@ -1,0 +1,11 @@
+global:
+  css:
+    theme:
+#      "https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap": { external: true }
+      css/elements.css: {}
+    component:
+      css/header.css: {}
+      css/footer.css: {}
+      css/node.css: {}
+      css/global.css: {}
+      css/variables.css: {}
