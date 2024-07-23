@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "4cb56bc77978b8b7c4053279320a0eb4",
+    "content-hash": "39c36ea578962cd2411385fb49e9f49b",
     "packages": [
         {
             "name": "asm89/stack-cors",
@@ -1582,6 +1582,58 @@
             "support": {
                 "source": "https://git.drupalcode.org/project/entity",
                 "issues": "https://www.drupal.org/project/issues/entity"
+            }
+        },
+        {
+            "name": "drupal/image_link_formatter",
+            "version": "2.2.0",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupalcode.org/project/image_link_formatter.git",
+                "reference": "2.2.0"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/image_link_formatter-2.2.0.zip",
+                "reference": "2.2.0",
+                "shasum": "aca353c9f77caa1fc2405ef2d08159212f62e914"
+            },
+            "require": {
+                "drupal/core": "^10.3 || ^11",
+                "php": ">=8.0.0"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "drupal": {
+                    "version": "2.2.0",
+                    "datestamp": "1719354858",
+                    "security-coverage": {
+                        "status": "covered",
+                        "message": "Covered by Drupal's security advisory policy"
+                    }
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "David Suissa (DYdave)",
+                    "homepage": "https://www.drupal.org/u/dydave",
+                    "role": "Maintainer"
+                }
+            ],
+            "description": "Display images wrapped within a link provided by a field.",
+            "homepage": "https://www.drupal.org/project/image_link_formatter",
+            "keywords": [
+                "Drupal",
+                "Formatter",
+                "Responsive"
+            ],
+            "support": {
+                "source": "https://git.drupalcode.org/project/image_link_formatter",
+                "issues": "https://www.drupal.org/project/issues/image_link_formatter"
             }
         },
         {

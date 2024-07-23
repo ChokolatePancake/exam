@@ -3,7 +3,7 @@
         'name' => 'drupal/recommended-project',
         'pretty_version' => 'dev-master',
         'version' => 'dev-master',
-        'reference' => '6fdfe4570a559c86003b487d4a89a909739e96f8',
+        'reference' => '13f5fe5c1b8f29c8540132578352752a0991f700',
         'type' => 'project',
         'install_path' => __DIR__ . '/../../',
         'aliases' => array(),
@@ -361,6 +361,15 @@
             'aliases' => array(),
             'dev_requirement' => false,
         ),
+        'drupal/image_link_formatter' => array(
+            'pretty_version' => '2.2.0',
+            'version' => '2.2.0.0',
+            'reference' => '2.2.0',
+            'type' => 'drupal-module',
+            'install_path' => __DIR__ . '/../../web/modules/contrib/image_link_formatter',
+            'aliases' => array(),
+            'dev_requirement' => false,
+        ),
         'drupal/js_cookie' => array(
             'pretty_version' => '1.0.1',
             'version' => '1.0.1.0',
@@ -382,7 +391,7 @@
         'drupal/recommended-project' => array(
             'pretty_version' => 'dev-master',
             'version' => 'dev-master',
-            'reference' => '6fdfe4570a559c86003b487d4a89a909739e96f8',
+            'reference' => '13f5fe5c1b8f29c8540132578352752a0991f700',
             'type' => 'project',
             'install_path' => __DIR__ . '/../../',
             'aliases' => array(),

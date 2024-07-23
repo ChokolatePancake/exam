@@ -1,21 +1,8 @@
 <?php
-function exam_preprocess_field(&$variables) {
-  // Check if this is the right field and view mode.
-  if ($variables['element']['#field_name'] == 'field_clients_image' && $variables['element']['#view_mode'] == 'full') {
-    // Get the node object.
-    $node = $variables['element']['#object'];
 
-    // Check if the node object and field are available.
-    if ($node && $node->hasField('field_clients_site')) {
-      $external_site = $node->field_clients_site->value;
-
-      // Check if the URL exists and the field has items.
-      if ($external_site && !empty($variables['items'])) {
-        foreach ($variables['items'] as &$item) {
-          // Wrap the entire field__item div with a link.
-          $item['#markup'] = '<a href="' . $external_site . '" target="_blank">' . $item['#markup'] . '</a>';
-        }
-      }
-    }
-  }
+/**
+ * Implements hook_preprocess_HOOK().
+ */
+function exam_preprocess_image_formatter(&$variables) {
+  $a =1;
 }
