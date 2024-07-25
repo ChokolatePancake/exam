@@ -71,7 +71,7 @@ class IndexListBuilder extends ConfigEntityListBuilder {
 
     $node_types = NodeType::loadMultiple();
     $required_types = [
-      'article' => ['body', 'comment', 'field_tags', 'field_image'],
+      'article' => ['body', 'field_comment', 'field_tags', 'field_image'],
       'page' => ['body'],
     ];
 
