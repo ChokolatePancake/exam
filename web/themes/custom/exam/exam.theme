@@ -1,8 +1,12 @@
 <?php
-//
-///**
-// * Implements hook_preprocess().
-// */
-//function exam_preprocess(&$variables, $hook) {
-//  \Drupal::entityTypeManager()->getStorage('contact_form')->load('contact-message-feedback-form')->delete();
-//}
+function exam_preprocess_form(&$variables) {
+  // Check for the specific form ID.
+  if ($variables['element']['#id'] == 'your-search-views-exposed-form-search-page-block-1-id') {
+    // Change the button text.
+    foreach ($variables['element']['actions']['submit'] as &$submit) {
+      if ($submit['#type'] == 'submit') {
+        $submit['#value'] = t('');
+      }
+    }
+  }
+}
