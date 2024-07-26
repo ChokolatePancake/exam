@@ -1,0 +1,13 @@
+{
+    "name": "drupal/entity_form_mode",
+    "type": "drupal-module",
+    "description": "Automatically select of form modes for entity.",
+    "homepage": "https://www.drupal.org/project/entity_form_mode",
+    "keywords": [
+    ],
+    "minimum-stability": "dev",
+    "support": {
+        "issues": "https://www.drupal.org/project/issues/entity_form_mode",
+        "source": "https://git.drupalcode.org/project/entity_form_mode"
+    }
+}

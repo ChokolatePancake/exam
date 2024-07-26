@@ -1,0 +1,10 @@
+{
+    "name": "drupal/address_static_map",
+    "type": "drupal-module",
+    "description": "Provides Google Static Map based on entity address fields.",
+    "homepage": "http://drupal.org/project/address_static_map",
+    "license": "GPL-2.0-or-later",
+    "require": {
+        "drupal/core": "^8.8 || ^9 || ^10"
+    }
+}

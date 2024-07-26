@@ -1,0 +1,19 @@
+field.formatter.settings.address_static_map:
+  type: mapping
+  label: 'Address Static Map text length'
+  mapping:
+    zoom_level:
+      type: string
+      label: 'Zoom level'
+    map_size:
+      type: string
+      label: 'Map size'
+    additional:
+      type: text
+      label: 'Additional parameters to use in the map URL (i.e. styling a map)'
+    map_style:
+      type: string
+      label: 'Map style'
+    scale:
+      type: integer
+      label: 'Scale'

@@ -1,0 +1,5 @@
+address_static_map.settings:
+  title: 'Address Static Map settings'
+  description: 'Configure authentication keys and other settings.'
+  parent: system.admin_config_system
+  route_name: address_static_map.settings

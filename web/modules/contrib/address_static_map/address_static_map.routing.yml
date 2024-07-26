@@ -1,0 +1,7 @@
+address_static_map.settings:
+  path: '/admin/config/system/address_static_map'
+  defaults:
+    _title: 'Address Static Map'
+    _form: '\Drupal\address_static_map\Form\SettingsForm'
+  requirements:
+    _permission: 'administer site configuration'

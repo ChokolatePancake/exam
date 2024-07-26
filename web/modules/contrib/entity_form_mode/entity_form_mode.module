@@ -1,0 +1,53 @@
+<?php
+
+/**
+ * @file
+ * Contains entity_form_mode.module.
+ */
+
+use Drupal\Core\Entity\Display\EntityFormDisplayInterface;
+use Drupal\Component\Utility\Html;
+use Drupal\Core\Routing\RouteMatchInterface;
+
+/**
+ * Implements hook_help().
+ */
+function entity_form_mode_help($route_name, RouteMatchInterface $route_match) {
+  switch ($route_name) {
+    case 'help.page.entity_form_mode':
+      $text = file_get_contents(__DIR__ . '/README.md');
+      if (!\Drupal::moduleHandler()->moduleExists('markdown')) {
+        return '<pre>' . Html::escape($text) . '</pre>';
+      }
+      else {
+        // Use the Markdown filter to render the README.
+        $filter_manager = \Drupal::service('plugin.manager.filter');
+        $settings = \Drupal::configFactory()->get('markdown.settings')->getRawData();
+        $config = ['settings' => $settings];
+        $filter = $filter_manager->createInstance('markdown', $config);
+        return $filter->process($text, 'en');
+      }
+  }
+  return NULL;
+}
+
+/**
+ * Implements hook_entity_form_display_alter().
+ */
+function entity_form_mode_entity_form_display_alter(EntityFormDisplayInterface &$form_display, array $context) {
+
+  if (isset($context['entity_type']) && isset($context['bundle'])) {
+    /** @var \Drupal\Core\Entity\EntityDisplayRepository $entity_display_repo */
+    $entity_display_repo = \Drupal::service('entity_display.repository');
+    $form_mode_opts = $entity_display_repo->getFormModeOptionsByBundle($context['entity_type'], $context['bundle']);
+
+    $route_name = \Drupal::routeMatch()->getRouteName();
+
+    foreach ($form_mode_opts as $key => $string) {
+      if (($route_name == "entity.{$context['entity_type']}.$key") || (($context['entity_type'] == 'node') && ($route_name == "node.$key"))) {
+        $form_display = $entity_display_repo->getFormDisplay($context['entity_type'], $context['bundle'], $key) ?: $form_display;
+        break;
+      }
+    }
+  }
+}

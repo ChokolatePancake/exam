@@ -131,4 +131,5 @@ return array(
     'System' => $vendorDir . '/pear/pear-core-minimal/src/System.php',
     'UnhandledMatchError' => $vendorDir . '/symfony/polyfill-php80/Resources/stubs/UnhandledMatchError.php',
     'ValueError' => $vendorDir . '/symfony/polyfill-php80/Resources/stubs/ValueError.php',
+    'geoPHP' => $vendorDir . '/itamair/geophp/geoPHP.inc',
 );

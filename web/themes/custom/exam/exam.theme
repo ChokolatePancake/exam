@@ -1,41 +1,8 @@
 <?php
-
-///**
-// * Implements hook_entity_presave().
-// */
-//use \Drupal\Core\Entity\EntityInterface;
-//function exam_entity_presave(EntityInterface $entity) {
-//  if ($entity->getEntityTypeId() == 'node' && $entity->bundle() != 'basic_page') {
-//    if ($entity->hasField('weight') && $entity->hasField('field_weight')) {
-//      $draggable_weight = $entity->get('weight')->value;
-//      // Update the 'field_weight' field with the draggable weight value.
-//      $entity->set('field_weight', $draggable_weight);
-//      // Save the entity again to apply changes.
-//      $entity->save();
-//    }
-//  }
-//}
-
-//function exam_entity_(Drupal\Core\Entity\EntityInterface $entity) {
-//  if ($entity->getEntityTypeId() == 'node' && $entity->bundle() != 'basic_page') {
-//    if ($entity->hasField('weight') && $entity->hasField('field_weight')) {
-//      $draggable_weight = $entity->get('weight')->value;
-//      // Update the 'field_weight' field with the draggable weight value.
-//      $entity->set('field_weight', $draggable_weight);
-//      // Save the entity again to apply changes.
-//      $entity->save();
-//    }
-//  }
-//}
-//_preprocess_node(&$variables) {
-//  $node = $variables['node'];
 //
-//  if ($node->getEntityTypeId() == 'node' && $node->bundle() == 'basic_page') {
-//    // Assuming 'weight' is the field with draggable weights.
-//    if ($node->hasField('weight') && $node->hasField('field_weight')) {
-//      $draggable_weight = $node->get('weight')->value;
-//      // Update the 'field_weight' field with the draggable weight value.
-//      $node->set('field_weight', $draggable_weight);
-//    }
-//  }
+///**
+// * Implements hook_preprocess().
+// */
+//function exam_preprocess(&$variables, $hook) {
+//  \Drupal::entityTypeManager()->getStorage('contact_form')->load('contact-message-feedback-form')->delete();
 //}
