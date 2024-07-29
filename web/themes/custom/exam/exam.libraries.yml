@@ -15,5 +15,6 @@ global:
       css/hero.css: {}
 #
       css/about.css: {}
+      css/sections.css: {}
   js:
     js/burger.js: {}

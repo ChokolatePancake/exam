@@ -1,3 +1,50 @@
 @import "variables";
 @import "global";
 @import "media";
+
+#block-exam-views-block-about-us-block-1 {
+  @extend %container;
+  margin-top: -54px;
+  border-top: 4px solid $black;
+  border-bottom: 4px solid $mid-blue;
+  padding: 12px 0;
+  .layout__region--content {
+    display: flex;
+    justify-content: space-between;
+    text-transform: uppercase;
+  }
+  .field--name-title a {
+    font-size: 32px;
+    color: $black;
+    font-weight: 700;
+    letter-spacing: 1.6px;
+    font-family: "Mukta", sans-serif;
+  }
+  .block-field-blocknodepagebody {
+    width: calc(100% - 230px);
+    padding-left: 16px;
+    align-content: center;
+    .field--name-body {
+      color: $dark-gray;
+      font-family: "Mukta", sans-serif;
+      font-size: 20px;
+    }
+  }
+  .block-field-blocknodepagefield-link {
+    background: $blue;
+    align-content: center;
+    text-align: center;
+    margin-top: 5px;
+    height: 30px;
+    .field--name-field-link {
+      width: 100px;
+      padding: 5px 7px;
+      a {
+        color: $white;
+        font-size: 15.5px;
+        font-family: "Mukta", sans-serif;
+      }
+    }
+
+  }
+}

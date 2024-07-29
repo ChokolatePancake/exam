@@ -120,7 +120,7 @@ a {
 }
 .site-header .layout__region--content ul:not(:first-child) a {
   text-transform: uppercase;
-  color: #000;
+  color: #222;
   font-size: 14px;
 }
 .site-header .layout__region--content .menu-item {
