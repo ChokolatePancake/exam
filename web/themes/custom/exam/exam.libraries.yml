@@ -2,6 +2,7 @@ global:
   css:
     theme:
       "https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&family=Roboto:wght@400;500;700&display=swap": { external: true }
+      "https://fonts.googleapis.com/css2?family=Mukta:wght@200;300;400;500;600;700;800&family=Roboto+Slab:wght@100..900&family=Roboto:wght@400;500;700&display=swap": { external: true }
       css/elements.css: {}
     component:
       css/variables.css: {}
@@ -10,5 +11,9 @@ global:
       css/footer.css: {}
       css/node.css: {}
       css/global.css: {}
+#      This style is for banner
+      css/hero.css: {}
+#
+      css/about.css: {}
   js:
     js/burger.js: {}

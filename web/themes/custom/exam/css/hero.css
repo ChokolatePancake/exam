@@ -1,0 +1,95 @@
+/* Media variables */
+.region-hero {
+  position: relative;
+  z-index: 9;
+  top: -157px;
+}
+.region-hero #block-exam-banner {
+  overflow: hidden;
+}
+.region-hero #block-exam-banner .field--name-field-text {
+  position: absolute;
+  z-index: 1;
+  height: 100%;
+  align-content: center;
+  text-transform: uppercase;
+  max-width: 400px;
+  margin: 50px 20% 0;
+}
+.region-hero #block-exam-banner .field--name-field-text h1 {
+  font-family: "Mukta", sans-serif;
+  font-weight: 300;
+  color: #ffffff;
+  font-size: 62px;
+  margin: 0;
+}
+.region-hero #block-exam-banner .field--name-field-text h2 {
+  font-family: "Mukta", sans-serif;
+  font-weight: 300;
+  font-size: 38px;
+  margin: 0;
+}
+.region-hero #block-exam-banner .field--name-field-text p {
+  font-weight: 300;
+  font-size: 16px;
+  font-family: "Mukta", sans-serif;
+  color: #1174cc;
+  margin: 0;
+}
+.region-hero #block-exam-banner .field--name-field-image img {
+  width: 100%;
+  height: auto;
+}
+@media (max-width: 1280px) {
+  .region-hero {
+    padding-top: 130px;
+    background: #d6ddca;
+  }
+  .region-hero #block-exam-banner .field--name-field-text {
+    margin: -50px 15%;
+  }
+}
+@media (max-width: 1024px) {
+  .region-hero #block-exam-banner .field--name-field-text {
+    margin: -50px 10%;
+    max-width: 300px;
+  }
+  .region-hero #block-exam-banner .field--name-field-text h1 {
+    font-size: 48px;
+  }
+  .region-hero #block-exam-banner .field--name-field-text h2 {
+    font-size: 30px;
+  }
+  .region-hero #block-exam-banner .field--name-field-text p {
+    font-size: 14px;
+  }
+}
+@media (max-width: 768px) {
+  .region-hero #block-exam-banner .field--name-field-text p {
+    font-size: 12px;
+    text-shadow: 0.3px 0.3px 1px rgba(255, 255, 255, 0.7);
+  }
+}
+@media (max-width: 600px) {
+  .region-hero {
+    padding-top: 180px;
+  }
+  .region-hero #block-exam-banner .field--name-field-text {
+    height: 200px;
+  }
+}
+@media (max-width: 480px) {
+  .region-hero {
+    text-align: center;
+  }
+  .region-hero #block-exam-banner .field--name-field-text p {
+    font-size: 10px;
+  }
+  .region-hero #block-exam-banner .field--name-field-image img {
+    width: 600px;
+    margin-left: -200px;
+    height: auto;
+  }
+}
+
+/*# sourceMappingURL=hero.css.map */

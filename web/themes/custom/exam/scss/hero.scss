@@ -1,0 +1,104 @@
+@import "variables";
+@import "media";
+.region-hero {
+  position: relative;
+  z-index: 9;
+  top: -157px;
+  #block-exam-banner {
+    overflow: hidden;
+    .field--name-field-text {
+      position: absolute;
+      z-index: 1;
+      height: 100%;
+      align-content: center;
+      text-transform: uppercase;
+      max-width: 400px;
+      margin: 50px 20% 0;
+      h1 {
+        font-family: "Mukta", sans-serif;
+        font-weight: 300;
+        color: $white;
+        font-size: 62px;
+        margin: 0;
+      }
+      h2 {
+        font-family: "Mukta", sans-serif;
+        font-weight: 300;
+        font-size: 38px;
+        margin: 0;
+      }
+      p {
+        font-weight: 300;
+        font-size: 16px;
+        font-family: "Mukta", sans-serif;
+        color: $mid-blue;
+        margin: 0;
+      }
+    }
+    .field--name-field-image {
+      img {
+        width: 100%;
+        height: auto;
+      }
+    }
+  }
+
+  @include breakpoint(desktop) {
+    padding-top: 130px;
+    background: $light-sage;
+    #block-exam-banner .field--name-field-text {
+      margin: -50px 15%;
+    }
+  }
+  @include breakpoint(laptop) {
+    #block-exam-banner .field--name-field-text {
+      margin: -50px 10%;
+      max-width: 300px;
+      h1 {
+        font-size: 48px;
+      }
+      h2 {
+        font-size: 30px;
+      }
+      p {
+        font-size: 14px;
+      }
+    }
+  }
+
+  @include breakpoint(tablet) {
+    #block-exam-banner .field--name-field-text {
+      p {
+        font-size: 12px;
+        text-shadow: 0.3px 0.3px 1px rgba($white, 0.7);
+      }
+    }
+  }
+
+  @include breakpoint(phablet) {
+    padding-top: 180px;
+    #block-exam-banner .field--name-field-text {
+      height: 200px;
+    }
+  }
+
+  @include breakpoint(largePhone) {
+    text-align: center;
+    #block-exam-banner {
+      .field--name-field-text {
+        p {
+          font-size: 10px;
+        }
+      }
+      .field--name-field-image {
+        img {
+          width: 600px;
+          margin-left: -200px;
+          height: auto;
+        }
+      }
+    }
+  }
+}
+
+
