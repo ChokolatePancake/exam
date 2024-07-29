@@ -4,6 +4,9 @@
   background: #ffffff;
   max-width: 1250px;
 }
+.site-header .site-header__inner__container {
+  display: flex;
+}
 .site-header .region-header {
   display: flex;
 }
@@ -31,7 +34,7 @@
   font-weight: 300;
 }
 .site-header #block-exam-navigation {
-  width: 60%;
+  width: 80%;
 }
 .site-header .layout__region--content {
   display: flex;
@@ -118,7 +121,7 @@
   content: url("../images/in.png");
 }
 .site-header .block-views-blocksearch-page-block-1 {
-  width: 20%;
+  width: auto;
 }
 .site-header .block-views-blocksearch-page-block-1 form .form--inline {
   display: grid;
@@ -163,6 +166,17 @@
   opacity: 0.3;
   z-index: 9;
 }
+.site-header .region-primary-menu {
+  display: flex;
+}
+.site-header .header-nav-wrapper {
+  display: flex;
+  width: calc(100% - 240px);
+  flex-direction: row-reverse;
+}
+.site-header .header-nav {
+  width: 100%;
+}
 @media (max-width: 1280px) {
   .site-header {
     margin-top: 30px;
@@ -171,14 +185,13 @@
   .site-header .layout__region--content .menu--main {
     width: 80%;
   }
-  .site-header .layout__region--content .menu--main a {
-    font-size: 12px !important;
+  .site-header .layout__region--content .menu--main ul a {
+    font-size: 12px;
   }
   .site-header .layout__region--content .menu--main .menu-item:first-child {
     margin-left: -5px;
   }
   .site-header .layout__region--content .block-social-media-links-block {
-    width: 20%;
     margin-left: 0;
   }
   .site-header .block-views-blocksearch-page-block-1 form .form--inline {
@@ -193,6 +206,9 @@
   .site-header {
     max-width: 840px;
   }
+  .site-header .header-nav-wrapper {
+    width: calc(100% - 200px);
+  }
   .site-header #block-exam-logo {
     width: 200px;
   }
@@ -203,15 +219,17 @@
     font-size: 14px;
   }
   .site-header .layout__region--content .menu--main {
-    width: 90%;
+    width: 440px;
   }
   .site-header .layout__region--content .block-social-media-links-block {
     width: 25px;
     margin-left: 10px;
+    margin-right: 10px;
   }
   .site-header .layout__region--content .block-social-media-links-block ul {
     flex-direction: column;
     margin-top: 10px;
+    margin-bottom: -10px;
   }
   .site-header .layout__region--content .block-social-media-links-block li {
     padding: 0 4px;
@@ -223,6 +241,200 @@
   }
   .site-header .block-views-blocksearch-page-block-1 form .form--inline .form-actions::after {
     right: -5px;
+  }
+}
+@media (max-width: 860px) {
+  .site-header {
+    max-width: 700px;
+  }
+  .site-header #block-exam-logo {
+    position: relative;
+    z-index: 91;
+  }
+  .site-header .block-views-blocksearch-page-block-1 form .form--inline {
+    margin-left: 20px;
+    grid-template-columns: repeat(6, 70px);
+  }
+  .site-header .block-views-blocksearch-page-block-1 form .form--inline input {
+    height: 32px;
+    border: 1px solid #666;
+  }
+  .site-header .block-views-blocksearch-page-block-1 form .form--inline .form-type-search-api-autocomplete {
+    grid-column: 1/6;
+  }
+  .site-header .block-views-blocksearch-page-block-1 form .form--inline .form-actions {
+    grid-column: 6/7;
+  }
+  .site-header .block-views-blocksearch-page-block-1 form .form--inline .form-actions::after {
+    right: 35px;
+  }
+  .site-header #block-exam-navigation {
+    overflow: hidden;
+    height: 0;
+    width: 100%;
+    position: absolute;
+    z-index: 90;
+    padding-top: 50px;
+    top: 150px;
+    left: 0;
+    opacity: 0;
+    transition: height 0.5s ease-in-out, opacity 0.7s ease;
+    background: #ffffff;
+  }
+  .site-header #block-exam-navigation.show {
+    box-shadow: 0 7px 5px rgba(55, 54, 69, 0.5);
+    height: 420px;
+    opacity: 1;
+  }
+  .site-header .layout__region--content {
+    flex-direction: column;
+  }
+  .site-header .layout__region--content .menu--main {
+    width: 100%;
+  }
+  .site-header .layout__region--content .menu {
+    height: auto;
+    flex-direction: column;
+    text-align: center;
+  }
+  .site-header .layout__region--content .menu .menu-item {
+    margin-top: 10px;
+  }
+  .site-header .layout__region--content .menu .menu-item:first-child::before {
+    left: 40%;
+  }
+  .site-header .layout__region--content .menu .menu-item:first-child::after {
+    left: 39%;
+  }
+  .site-header .layout__region--content .menu .menu-item a {
+    font-size: 26px;
+  }
+  .site-header .layout__region--content .menu .menu-item::after {
+    bottom: -7px;
+  }
+  .site-header .layout__region--content .block-social-media-links-block ul {
+    flex-direction: row;
+  }
+  .site-header .layout__region--content .block-social-media-links-block {
+    width: auto;
+  }
+  .site-header .layout__region--content .block-social-media-links-block ul {
+    height: 50px;
+    justify-content: center;
+    margin-left: 3px;
+  }
+}
+@media (max-width: 768px) {
+  .site-header {
+    max-width: 580px;
+  }
+  .site-header .block-views-blocksearch-page-block-1 form .form--inline {
+    grid-template-columns: repeat(6, 50px);
+  }
+  .site-header .block-views-blocksearch-page-block-1 form .form--inline .form-actions::after {
+    right: 14px;
+  }
+}
+@media (max-width: 600px) {
+  .site-header {
+    max-width: 460px;
+  }
+  .site-header .header-nav-wrapper {
+    width: auto;
+  }
+  .site-header .block-views-blocksearch-page-block-1 form .form--inline {
+    margin-top: 0;
+    grid-template-columns: repeat(6, 40px);
+  }
+  .site-header .block-views-blocksearch-page-block-1 form .form--inline .form-actions::after {
+    right: 6px;
+  }
+  .site-header .header-nav-wrapper {
+    flex-direction: column-reverse;
+  }
+}
+@media (max-width: 480px) {
+  .site-header {
+    max-width: 320px;
+    margin-top: 0;
+  }
+  .site-header #block-exam-logo {
+    width: 100%;
+    height: 140px;
+  }
+  .site-header #block-exam-logo h2 a {
+    font-size: 30px;
+  }
+  .site-header #block-exam-logo h3 {
+    margin-top: 0;
+  }
+  .site-header #block-exam-logo h3 a {
+    font-size: 18px;
+  }
+  .site-header .site-header__inner__container {
+    flex-direction: column;
+  }
+  .site-header .block-views-blocksearch-page-block-1 form .form--inline {
+    margin-top: 0;
+    margin-left: 15px;
+    grid-template-columns: repeat(6, 50px);
+  }
+  .site-header .block-views-blocksearch-page-block-1 form .form--inline .form-actions::after {
+    right: 16px;
+  }
+  .site-header #block-exam-navigation {
+    padding-top: 15px;
+    top: 235px;
+  }
+}
+
+.mobile-buttons {
+  display: none;
+  position: relative;
+  z-index: 91;
+}
+@media (max-width: 860px) {
+  .mobile-buttons {
+    display: block;
+  }
+  .mobile-buttons .mobile-nav-button {
+    background: transparent;
+    margin-top: 40px;
+    border: none;
+  }
+  .mobile-buttons .mobile-nav-button__line {
+    transition: transform 0.75s ease, opacity 0.75s ease;
+    display: block;
+    width: 45px;
+    height: 3px;
+    background-color: #373645;
+    margin: 6px 0;
+  }
+  .mobile-buttons.open .mobile-nav-button__line-1 {
+    transform: translate(-10px) rotate(45deg) translate(13px);
+  }
+  .mobile-buttons.open .mobile-nav-button__line-2 {
+    opacity: 0;
+  }
+  .mobile-buttons.open .mobile-nav-button__line-3 {
+    transform: translate(-10px) rotate(-45deg) translate(15px);
+  }
+}
+@media (max-width: 600px) {
+  .mobile-buttons {
+    display: flex;
+    justify-content: right;
+  }
+  .mobile-buttons .mobile-nav-button {
+    margin-top: 0;
+  }
+}
+@media (max-width: 480px) {
+  .mobile-buttons {
+    width: 100%;
+  }
+  .mobile-buttons .mobile-nav-button {
+    margin-right: 15px;
   }
 }
 

@@ -10,3 +10,5 @@ global:
       css/footer.css: {}
       css/node.css: {}
       css/global.css: {}
+  js:
+    js/burger.js: {}
