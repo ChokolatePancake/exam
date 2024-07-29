@@ -1,0 +1,48 @@
+@import "variables";
+@import "global";
+@import "media";
+.site-footer {
+  background: $dark-blue;
+  height: 194px;
+  margin-bottom: 10px;
+  .region-footer {
+    @extend %container;
+    display: flex;
+    justify-content: space-between;
+  }
+  #block-exam-logo-2 {
+    @extend %logo;
+    width: 170px;
+    margin-top: 52px;
+  }
+  #block-exam-socialmedialinks {
+    ul {
+      li {
+        @extend %socials;
+        max-width: 18px;
+        margin-top: 87px;
+      }
+
+    }
+  }
+  @include breakpoint(largePhone) {
+    height: auto;
+    overflow: hidden;
+    margin-bottom: 0;
+    .region-footer {
+      flex-direction: column;
+      justify-content: center;
+    }
+    #block-exam-logo-2 {
+      margin: 32px auto 0;
+    }
+    #block-exam-socialmedialinks {
+      display: flex;
+      justify-content: center;
+      height: 70px;
+      ul li {
+        margin-top: 0;
+      }
+    }
+  }
+}

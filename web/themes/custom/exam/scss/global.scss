@@ -1,3 +1,89 @@
+@import "variables";
+@import "media";
 a {
   text-decoration: none;
 }
+// It makes all blocks same width and center them(also for adaptive)
+%container {
+  max-width: 1250px;
+  margin: 0 auto;
+  @include breakpoint(desktop) {
+    max-width: 1000px;
+  }
+  @include breakpoint(laptop) {
+    max-width: 840px;
+  }
+  @include breakpoint(largeTablet) {
+    max-width: 700px;
+  }
+  @include breakpoint(tablet) {
+    max-width: 580px;
+  }
+  @include breakpoint(phablet) {
+    max-width: 460px;
+  }
+  @include breakpoint(largePhone) {
+    max-width: 320px;
+  }
+}
+
+// Just styles of logo for header and footer
+%logo {
+  background: $dark-blue;
+  text-align: center;
+  height: 117px;
+  width: 240px;
+
+  h2 {
+    margin-bottom: 0;
+    margin-top: 24px;
+    a {
+      color: $blue;
+      letter-spacing: 0.2px;
+      font-weight: 400;
+    }
+  }
+  h3 {
+    margin-top: -10px;
+    a {
+      color: $white;
+      font-size: 16px;
+      font-weight: 300;
+    }
+  }
+}
+
+// Replace default socials:facebook, twitter, linkedin(put into "li" with socials)
+%socials {
+  position: relative;
+  a span {
+    opacity: 0;
+  }
+  .social-media-link-icon {
+    &--facebook {
+      &::before {
+        content: url('../images/fb.png');
+      }
+    }
+
+    &--twitter {
+      &::before {
+        content: url('../images/twit.png');
+      }
+    }
+
+    &--linkedin {
+      &::before {
+        content: url('../images/in.png');
+      }
+    }
+    /* for another social link write:
+    &--${name of social class} {
+       &::before {
+          content: url("path to icon");
+       }
+    }
+    */
+  }
+}
+

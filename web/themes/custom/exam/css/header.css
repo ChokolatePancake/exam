@@ -1,15 +1,43 @@
 /* Media variables */
+a {
+  text-decoration: none;
+}
+
 .site-header {
-  margin: 40px auto 0;
-  background: #ffffff;
   max-width: 1250px;
+  margin: 0 auto;
 }
-.site-header .site-header__inner__container {
-  display: flex;
+@media (max-width: 1280px) {
+  .site-header {
+    max-width: 1000px;
+  }
 }
-.site-header .region-header {
-  display: flex;
+@media (max-width: 1024px) {
+  .site-header {
+    max-width: 840px;
+  }
 }
+@media (max-width: 860px) {
+  .site-header {
+    max-width: 700px;
+  }
+}
+@media (max-width: 768px) {
+  .site-header {
+    max-width: 580px;
+  }
+}
+@media (max-width: 600px) {
+  .site-header {
+    max-width: 460px;
+  }
+}
+@media (max-width: 480px) {
+  .site-header {
+    max-width: 320px;
+  }
+}
+
 .site-header #block-exam-logo {
   background: #373645;
   text-align: center;
@@ -32,6 +60,43 @@
   color: #ffffff;
   font-size: 16px;
   font-weight: 300;
+}
+
+.site-header .block-social-media-links-block li {
+  position: relative;
+}
+.site-header .block-social-media-links-block li a span {
+  opacity: 0;
+}
+.site-header .block-social-media-links-block li .social-media-link-icon {
+  /* for another social link write:
+  &--${name of social class} {
+     &::before {
+        content: url("path to icon");
+     }
+  }
+  */
+}
+.site-header .block-social-media-links-block li .social-media-link-icon--facebook::before {
+  content: url("../images/fb.png");
+}
+.site-header .block-social-media-links-block li .social-media-link-icon--twitter::before {
+  content: url("../images/twit.png");
+}
+.site-header .block-social-media-links-block li .social-media-link-icon--linkedin::before {
+  content: url("../images/in.png");
+}
+
+/* Media variables */
+.site-header {
+  margin-top: 40px;
+  background: #ffffff;
+}
+.site-header .site-header__inner__container {
+  display: flex;
+}
+.site-header .region-header {
+  display: flex;
 }
 .site-header #block-exam-navigation {
   width: 80%;
@@ -96,29 +161,7 @@
 .site-header .block-social-media-links-block li {
   width: 25px;
   margin-left: -1px;
-  position: relative;
-}
-.site-header .block-social-media-links-block li:first-child {
-  margin-left: 10px !important;
-}
-.site-header .block-social-media-links-block li a {
-  opacity: 0;
-}
-.site-header .block-social-media-links-block li::before {
-  position: absolute;
-  top: 6px;
-}
-.site-header .block-social-media-links-block li:first-child {
-  margin-left: 25px;
-}
-.site-header .block-social-media-links-block li:first-child::before {
-  content: url("../images/fb.png");
-}
-.site-header .block-social-media-links-block li:nth-child(2)::before {
-  content: url("../images/twit.png");
-}
-.site-header .block-social-media-links-block li:last-child::before {
-  content: url("../images/in.png");
+  margin-top: 30px;
 }
 .site-header .block-views-blocksearch-page-block-1 {
   width: auto;
@@ -180,7 +223,6 @@
 @media (max-width: 1280px) {
   .site-header {
     margin-top: 30px;
-    max-width: 1000px;
   }
   .site-header .layout__region--content .menu--main {
     width: 80%;
@@ -192,7 +234,7 @@
     margin-left: -5px;
   }
   .site-header .layout__region--content .block-social-media-links-block {
-    margin-left: 0;
+    margin-left: 10px;
   }
   .site-header .block-views-blocksearch-page-block-1 form .form--inline {
     margin-left: 10px;
@@ -203,9 +245,6 @@
   }
 }
 @media (max-width: 1024px) {
-  .site-header {
-    max-width: 840px;
-  }
   .site-header .header-nav-wrapper {
     width: calc(100% - 200px);
   }
@@ -233,7 +272,8 @@
   }
   .site-header .layout__region--content .block-social-media-links-block li {
     padding: 0 4px;
-    margin-left: 0 !important;
+    height: 33px;
+    margin-top: 0;
   }
   .site-header .block-views-blocksearch-page-block-1 form .form--inline {
     margin-left: 0;
@@ -244,9 +284,6 @@
   }
 }
 @media (max-width: 860px) {
-  .site-header {
-    max-width: 700px;
-  }
   .site-header #block-exam-logo {
     position: relative;
     z-index: 91;
@@ -325,9 +362,6 @@
   }
 }
 @media (max-width: 768px) {
-  .site-header {
-    max-width: 580px;
-  }
   .site-header .block-views-blocksearch-page-block-1 form .form--inline {
     grid-template-columns: repeat(6, 50px);
   }
@@ -336,9 +370,6 @@
   }
 }
 @media (max-width: 600px) {
-  .site-header {
-    max-width: 460px;
-  }
   .site-header .header-nav-wrapper {
     width: auto;
   }
@@ -355,7 +386,6 @@
 }
 @media (max-width: 480px) {
   .site-header {
-    max-width: 320px;
     margin-top: 0;
   }
   .site-header #block-exam-logo {

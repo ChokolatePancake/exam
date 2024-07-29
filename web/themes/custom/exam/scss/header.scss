@@ -1,10 +1,11 @@
 @import "variables";
+@import "global";
 @import "media";
 
 .site-header {
-  margin: 40px auto 0;
+  @extend %container;
+  margin-top: 40px;
   background: $white;
-  max-width: 1250px;
   .site-header__inner__container {
     display: flex;
   }
@@ -12,28 +13,7 @@
     display: flex;
   }
   #block-exam-logo {
-    background: $dark-blue;
-    text-align: center;
-    height: 117px;
-    width: 240px;
-
-    h2 {
-      margin-bottom: 0;
-      margin-top: 24px;
-      a {
-        color: $blue;
-        letter-spacing: 0.2px;
-        font-weight: 400;
-      }
-    }
-    h3 {
-      margin-top: -10px;
-      a {
-        color: $white;
-        font-size: 16px;
-        font-weight: 300;
-      }
-    }
+    @extend %logo;
   }
   #block-exam-navigation {
     width: 80%;
@@ -108,34 +88,10 @@
     li {
       width: 25px;
       margin-left: -1px;
-      &:first-child {
-        margin-left: 10px!important;
-      }
-      a {
-      opacity: 0;
-      }
-      position: relative;
 
-      &::before {
-        position: absolute;
-        top: 6px;
-      }
-      &:first-child {
-        margin-left: 25px;
-        &::before {
-          content: url('../images/fb.png');
-        }
-      }
-      &:nth-child(2) {
-        &::before {
-          content: url('../images/twit.png');
-        }
-      }
-      &:last-child {
-        &::before {
-          content: url('../images/in.png');
-        }
-      }
+      @extend %socials;
+
+      margin-top: 30px;
     }
   }
   .block-views-blocksearch-page-block-1 {
@@ -200,7 +156,6 @@
   }
   @include breakpoint(desktop) {
     margin-top: 30px;
-    max-width: 1000px;
     .layout__region--content {
       .menu--main {
         width: 80%;
@@ -214,7 +169,7 @@
         }
       }
       .block-social-media-links-block {
-        margin-left: 0;
+        margin-left: 10px;
       }
     }
     .block-views-blocksearch-page-block-1 {
@@ -234,7 +189,6 @@
   }
 
   @include breakpoint(laptop) {
-    max-width: 840px;
     .header-nav-wrapper {
       width: calc(100% - 200px);
     }
@@ -267,7 +221,8 @@
 
         li {
           padding: 0 4px;
-          margin-left: 0 !important;
+          height: 33px;
+          margin-top: 0;
         }
       }
     }
@@ -288,7 +243,6 @@
   }
 
   @include breakpoint(largeTablet) {
-    max-width: 700px;
     #block-exam-logo {
       position: relative;
       z-index: 91;
@@ -377,7 +331,6 @@
   }
 
   @include breakpoint(tablet) {
-    max-width: 580px;
     .block-views-blocksearch-page-block-1 {
       form {
         .form--inline {
@@ -397,7 +350,6 @@
     .header-nav-wrapper {
       width: auto;
     }
-    max-width: 460px;
     .block-views-blocksearch-page-block-1 {
       form {
         .form--inline {
@@ -417,7 +369,6 @@
   }
 
   @include breakpoint(largePhone) {
-    max-width: 320px;
     margin-top: 0;
     #block-exam-logo {
       width: 100%;
