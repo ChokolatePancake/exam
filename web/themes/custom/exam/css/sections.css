@@ -1,3 +1,183 @@
+/* Media variables */
+/* Media variables */
+a {
+  text-decoration: none;
+}
 
+.content-section .view-content, .content-section h2 {
+  max-width: 1250px;
+  margin: 0 auto;
+}
+@media (max-width: 1280px) {
+  .content-section .view-content, .content-section h2 {
+    max-width: 1000px;
+  }
+}
+@media (max-width: 1024px) {
+  .content-section .view-content, .content-section h2 {
+    max-width: 850px;
+  }
+}
+@media (max-width: 860px) {
+  .content-section .view-content, .content-section h2 {
+    max-width: 700px;
+  }
+}
+@media (max-width: 768px) {
+  .content-section .view-content, .content-section h2 {
+    max-width: 580px;
+  }
+}
+@media (max-width: 600px) {
+  .content-section .view-content, .content-section h2 {
+    max-width: 460px;
+  }
+}
+@media (max-width: 480px) {
+  .content-section .view-content, .content-section h2 {
+    max-width: 320px;
+  }
+}
+
+.content-section--team .view-content .views-row .block-field-blocknodeteamfield-socials ul li {
+  position: relative;
+}
+.content-section--team .view-content .views-row .block-field-blocknodeteamfield-socials ul li a span {
+  opacity: 0;
+}
+.content-section--team .view-content .views-row .block-field-blocknodeteamfield-socials ul li .social-media-link-icon {
+  /* for another social link write:
+  &--${name of social class} {
+     &::before {
+        content: url("path to icon");
+     }
+  }
+  */
+}
+.content-section--team .view-content .views-row .block-field-blocknodeteamfield-socials ul li .social-media-link-icon--facebook::before {
+  content: url("../images/fb.png");
+}
+.content-section--team .view-content .views-row .block-field-blocknodeteamfield-socials ul li .social-media-link-icon--twitter::before {
+  content: url("../images/twit.png");
+}
+.content-section--team .view-content .views-row .block-field-blocknodeteamfield-socials ul li .social-media-link-icon--linkedin::before {
+  content: url("../images/in.png");
+}
+
+.content-section h2 {
+  text-align: center;
+  margin-top: 94px;
+  margin-bottom: 89px;
+  display: flex;
+}
+.content-section h2 a {
+  color: #222;
+  text-transform: uppercase;
+  font-size: 34px;
+}
+.content-section h2::before, .content-section h2::after {
+  content: "";
+  flex: 1;
+  height: 1px;
+  margin: 18px 20px 0;
+  background: #888;
+}
+.content-section .view-content {
+  display: flex;
+  text-transform: uppercase;
+  justify-content: space-between;
+}
+.content-section .view-content .field--name-field-link {
+  margin: 10px;
+}
+.content-section .view-content .field--name-field-link a {
+  color: #ffffff;
+  background: #444;
+  padding: 1px 10px;
+}
+
+.content-section-4 .view-content .views-row {
+  text-align: center;
+}
+.content-section-4 .view-content .views-row .block-field-blocknodeservicestitle {
+  margin-top: 33px;
+}
+.content-section-4 .view-content .views-row .field--name-title a {
+  color: #222;
+  font-size: 24px;
+}
+.content-section-4 .view-content .views-row .field--name-body {
+  font-size: 14px;
+  margin-top: 10px;
+  color: #888;
+}
+
+.content-section--services .view-content .field--name-field-link {
+  margin-top: 31px;
+}
+.content-section--services .view-content .field--name-field-link a {
+  background: #1174cc;
+}
+
+.content-section--projects h2 {
+  margin-bottom: 17px;
+  font-weight: 300;
+}
+.content-section--projects .view-content-wrapper {
+  padding-top: 68px;
+  padding-bottom: 157px;
+  background: repeating-linear-gradient(135deg, rgba(55, 54, 69, 0.2), rgba(55, 54, 69, 0.2) 2px, #ffffff 2px, #ffffff 7px);
+}
+.content-section--projects .view-content .views-row {
+  background: #ffffff;
+  padding-bottom: 7px;
+  border-bottom: 1px solid rgba(34, 34, 34, 0.7);
+}
+.content-section--projects .view-content .views-row .field--name-title a {
+  font-size: 26px;
+  font-weight: 300;
+  letter-spacing: 1.3px;
+}
+.content-section--projects .view-content .views-row .field--name-field-service-type {
+  font-size: 17px;
+  font-weight: 400;
+}
+.content-section--projects .view-content .views-row .block-layout-builder:nth-child(2) {
+  margin-top: 30px;
+}
+.content-section--projects .view-content .views-row .block-layout-builder:nth-child(3) {
+  margin-top: 6px;
+}
+.content-section--projects .view-content .views-row .block-layout-builder:nth-child(4) {
+  margin-top: 26px;
+}
+
+.content-section--team h2 {
+  margin-bottom: 27px;
+}
+.content-section--team .view-content .views-row .field--name-title {
+  display: block;
+  margin-top: 33px;
+}
+.content-section--team .view-content .views-row .field--name-title a {
+  font-size: 27px;
+}
+.content-section--team .view-content .views-row .field--name-field-role {
+  color: #CCC;
+  font-size: 14px;
+  margin-bottom: 20px;
+}
+.content-section--team .view-content .views-row .layout--onecol:last-child .layout__region {
+  display: flex;
+  max-width: 200px;
+  margin: 0 auto;
+  justify-content: space-between;
+}
+.content-section--team .view-content .views-row .block-field-blocknodeteamfield-socials ul {
+  display: flex;
+}
+.content-section--team .view-content .views-row .block-field-blocknodeteamfield-socials ul li {
+  max-width: 32px;
+}
 
 /*# sourceMappingURL=sections.css.map */

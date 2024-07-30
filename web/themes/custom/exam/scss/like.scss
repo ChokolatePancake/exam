@@ -1,0 +1,25 @@
+@import "variables";
+@import "media";
+
+.like--wrapper {
+  span {
+    display: none;
+  }
+  .fa-heart {
+    &:before {
+      content: url("../images/empty like.svg");
+    }
+
+    &:hover {
+      &:before {
+        content: url("../images/like.svg");
+      }
+    }
+  }
+  & input[type="checkbox"]:checked ~ .fa-heart {
+    &:before {
+      content: url("../images/like.svg");
+    }
+  }
+}
+

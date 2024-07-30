@@ -11,6 +11,9 @@
   .site-header__inner__container {
     display: flex;
   }
+  * {
+    font-family: "Roboto Slab", serif;
+  }
  .region-header {
     display: flex;
   }
@@ -107,8 +110,7 @@
         gap: 0;
         input {
           height: 32px;
-          border: 1px solid $dark-gray;
-
+          border: 1px solid $dark-grey;
         }
         .form-type-search-api-autocomplete {
           grid-column: 1/5;
@@ -257,7 +259,7 @@
 
           input {
             height: 32px;
-            border: 1px solid $dark-gray;
+            border: 1px solid $dark-grey;
 
           }
           .form-type-search-api-autocomplete {

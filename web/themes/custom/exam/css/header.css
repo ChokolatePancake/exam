@@ -97,6 +97,9 @@ a {
 .site-header .site-header__inner__container {
   display: flex;
 }
+.site-header * {
+  font-family: "Roboto Slab", serif;
+}
 .site-header .region-header {
   display: flex;
 }

@@ -1,0 +1,38 @@
+@import "variables";
+@import "media";
+
+.view-pager {
+  margin-top: 47px;
+  ul {
+    user-select: none;
+    max-width: 300px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    li {
+      font-family: "Roboto Slab", serif;
+      align-content: center;
+      padding: 4px 11px;
+
+
+      a {
+        color: $darker-grey;
+        font-size: 16px;
+      }
+
+      &.is-active {
+        background: $light-grey;
+        border-radius: 50%;
+      }
+      &:hover {
+        border-radius: 50%;
+        background: rgba($light-grey, 0.6);
+      }
+    }
+    .pager__item--next, .pager__item--last, .pager__item--first, .pager__item--previous {
+      a {
+        font-weight: 600;
+      }
+    }
+  }
+}

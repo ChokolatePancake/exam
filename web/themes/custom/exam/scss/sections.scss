@@ -1,0 +1,170 @@
+@import "media";
+@import "variables";
+@import "global";
+
+.content-section {
+  h2 {
+    @extend %container;
+    a {
+      color: $black;
+      text-transform: uppercase;
+      font-size: 34px;
+    }
+    text-align: center;
+    margin-top: 94px;
+    margin-bottom: 89px;
+    // Next code for horizontal lines
+    display: flex;
+    &::before,
+    &::after {
+      content: "";
+      flex: 1;
+      height: 1px;
+      margin: 18px 20px 0;
+      background: $grey;
+    }
+    //
+  }
+  .view-content {
+    display: flex;
+    @extend %container;
+    text-transform: uppercase;
+    justify-content: space-between;
+
+    // Links mostly grey, color will be overridden for services block
+    .field--name-field-link {
+      a {
+        color: $white;
+        background: $darker-grey;
+        padding: 1px 10px;
+      }
+      margin: 10px;
+    }
+  }
+}
+
+.content-section-4 {
+  .view-content {
+    .views-row {
+      text-align: center;
+      .block-field-blocknodeservicestitle {
+        margin-top: 33px;
+      }
+      .field--name-title {
+        a {
+          color: $black;
+          font-size: 24px;
+        }
+      }
+      .field--name-body {
+        font-size: 14px;
+        margin-top: 10px;
+        color: $grey;
+      }
+    }
+  }
+}
+
+.content-section--services {
+  .view-content {
+    // Overriding read more for services block
+    .field--name-field-link {
+      a {
+        background: $mid-blue;
+      }
+
+      margin-top: 31px;
+    }
+  }
+}
+
+.content-section--projects {
+  h2 {
+    margin-bottom: 17px;
+    font-weight: 300;
+  }
+  .view-content-wrapper {
+    padding-top: 68px;
+    padding-bottom: 157px;
+    background: repeating-linear-gradient(
+        135deg,
+        rgba($dark-blue, 0.2),
+        rgba($dark-blue, 0.2) 2px,
+        $white 2px,
+        $white 7px
+    );
+  }
+  .view-content .views-row {
+    background: $white;
+    padding-bottom: 7px;
+    border-bottom: 1px solid rgba($black, 0.7);
+
+
+    .field--name-title {
+      a {
+        font-size: 26px;
+        font-weight: 300;
+        letter-spacing: 1.3px;
+      }
+    }
+    .field--name-field-service-type {
+      font-size: 17px;
+      font-weight: 400;
+    }
+    .block-layout-builder {
+      &:nth-child(2) {
+        margin-top: 30px;
+      }
+      &:nth-child(3) {
+        margin-top:6px;
+      }
+      &:nth-child(4) {
+        margin-top:26px;
+      }
+    }
+  }
+}
+
+.content-section--team {
+  h2 {
+    margin-bottom: 27px;
+  }
+  .view-content .views-row {
+    .field--name-title {
+      display: block;
+      margin-top: 33px;
+
+      a {
+        font-size: 27px;
+      }
+    }
+    .field--name-field-role {
+      color: $light-grey;
+      font-size: 14px;
+      margin-bottom: 20px;
+    }
+    .layout--onecol {
+      &:last-child {
+        .layout__region {
+          display: flex;
+          max-width: 200px;
+          margin: 0 auto;
+          justify-content: space-between;
+        }
+      }
+    }
+    .block-field-blocknodeteamfield-socials {
+      ul {
+        display: flex;
+        li {
+          max-width: 32px;
+          @extend %socials;
+        }
+      }
+    }
+  }
+}
+
+.content-section-2 {
+
+}

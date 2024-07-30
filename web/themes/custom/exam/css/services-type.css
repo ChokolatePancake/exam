@@ -1,0 +1,23 @@
+.content-section--projects .view-content .views-row .service-type {
+  /* For new add
+  &-${name of taxonomy term with lowercase and "-" instead of space} {
+    .field--name-field-service-type {
+      color: ${your-color};
+    }
+  }
+  */
+}
+.content-section--projects .view-content .views-row .service-type-web-development .field--name-field-service-type {
+  color: #49c9af;
+}
+.content-section--projects .view-content .views-row .service-type-php-development .field--name-field-service-type {
+  color: #8621d5;
+}
+.content-section--projects .view-content .views-row .service-type-app-development .field--name-field-service-type {
+  color: #e9695c;
+}
+.content-section--projects .view-content .views-row .service-type-drupal-project .field--name-field-service-type {
+  color: #47b4e2;
+}
+
+/*# sourceMappingURL=services-type.css.map */

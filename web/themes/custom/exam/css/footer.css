@@ -93,6 +93,9 @@ a {
   height: 194px;
   margin-bottom: 10px;
 }
+.site-footer * {
+  font-family: "Roboto Slab", serif;
+}
 .site-footer .region-footer {
   display: flex;
   justify-content: space-between;

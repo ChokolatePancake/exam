@@ -40,6 +40,11 @@
 ]
 %}
 <div{{ attributes.addClass(classes) }}>
+  {% if view.title %}
+  <h2 class="view-title">
+      {{ view.title|raw }}
+  </h2>
+  {% endif %}
 
   {% if header %}
     <div class="view-header">
@@ -58,16 +63,11 @@
       {{ attachment_before }}
     </div>
   {% endif %}
-
+  <div class="view-content-wrapper">
   {% if rows %}
-    <div class="view-content">
-        <h2 class="view-title">
-          {{ title_prefix }}
-          {{ title }}
-          {{ title_suffix }}
-        </h2>
-      {{ rows }}
-    </div>
+      <div class="view-content">
+        {{ rows }}
+      </div>
   {% elseif empty %}
     <div class="view-empty">
       {{ empty }}
@@ -79,6 +79,8 @@
       {{ pager }}
     </div>
   {% endif %}
+  </div>
+
 
   {% if attachment_after %}
     <div class="attachment attachment-after">

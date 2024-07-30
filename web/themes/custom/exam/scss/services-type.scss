@@ -1,0 +1,35 @@
+// This class created for comfortable changing/adding css to projects depending on their service type
+@import "variables";
+.content-section--projects {
+  .view-content .views-row {
+    .service-type {
+      /* For new add
+      &-${name of taxonomy term with lowercase and "-" instead of space} {
+        .field--name-field-service-type {
+          color: ${your-color};
+        }
+      }
+      */
+      &-web-development {
+        .field--name-field-service-type {
+          color: $light-green;
+        }
+      }
+      &-php-development {
+        .field--name-field-service-type {
+          color: $purple;
+        }
+      }
+      &-app-development {
+        .field--name-field-service-type {
+          color: $red;
+        }
+      }
+      &-drupal-project {
+        .field--name-field-service-type {
+          color: $normal-blue;
+        }
+      }
+    }
+  }
+}

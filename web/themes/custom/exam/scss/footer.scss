@@ -5,6 +5,9 @@
   background: $dark-blue;
   height: 194px;
   margin-bottom: 10px;
+  * {
+    font-family: "Roboto Slab", serif;
+  }
   .region-footer {
     @extend %container;
     display: flex;

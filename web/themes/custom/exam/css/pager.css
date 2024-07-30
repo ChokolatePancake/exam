@@ -1,0 +1,33 @@
+/* Media variables */
+.view-pager {
+  margin-top: 47px;
+}
+.view-pager ul {
+  user-select: none;
+  max-width: 300px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+}
+.view-pager ul li {
+  font-family: "Roboto Slab", serif;
+  align-content: center;
+  padding: 4px 11px;
+}
+.view-pager ul li a {
+  color: #444;
+  font-size: 16px;
+}
+.view-pager ul li.is-active {
+  background: #CCC;
+  border-radius: 50%;
+}
+.view-pager ul li:hover {
+  border-radius: 50%;
+  background: rgba(204, 204, 204, 0.6);
+}
+.view-pager ul .pager__item--next a, .view-pager ul .pager__item--last a, .view-pager ul .pager__item--first a, .view-pager ul .pager__item--previous a {
+  font-weight: 600;
+}
+
+/*# sourceMappingURL=pager.css.map */

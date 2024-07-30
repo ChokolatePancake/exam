@@ -3,7 +3,7 @@
         'name' => 'drupal/recommended-project',
         'pretty_version' => 'dev-master',
         'version' => 'dev-master',
-        'reference' => '9999f0b6d9870b7f3783270348496bb41b0ab007',
+        'reference' => '6f78789e31f99522121d18320af06dce8f2bb516',
         'type' => 'project',
         'install_path' => __DIR__ . '/../../',
         'aliases' => array(),
@@ -478,6 +478,15 @@
             'aliases' => array(),
             'dev_requirement' => false,
         ),
+        'drupal/entity_class_formatter' => array(
+            'pretty_version' => '2.0.0',
+            'version' => '2.0.0.0',
+            'reference' => '2.0.0',
+            'type' => 'drupal-module',
+            'install_path' => __DIR__ . '/../../web/modules/contrib/entity_class_formatter',
+            'aliases' => array(),
+            'dev_requirement' => false,
+        ),
         'drupal/entity_clone' => array(
             'pretty_version' => '2.1.0-beta1',
             'version' => '2.1.0.0-beta1',
@@ -580,7 +589,7 @@
         'drupal/recommended-project' => array(
             'pretty_version' => 'dev-master',
             'version' => 'dev-master',
-            'reference' => '9999f0b6d9870b7f3783270348496bb41b0ab007',
+            'reference' => '6f78789e31f99522121d18320af06dce8f2bb516',
             'type' => 'project',
             'install_path' => __DIR__ . '/../../',
             'aliases' => array(),

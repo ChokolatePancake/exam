@@ -25,6 +25,7 @@
         "drupal/devel": "^5.1",
         "drupal/draggableviews": "^2.1",
         "drupal/entity_bulk_clone": "^2.0",
+        "drupal/entity_class_formatter": "^2.0",
         "drupal/entity_clone": "^2.1@beta",
         "drupal/entity_form_mode": "^2.0",
         "drupal/geocoder": "^4.24",

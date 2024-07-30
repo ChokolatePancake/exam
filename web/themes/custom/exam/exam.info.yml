@@ -8,6 +8,15 @@ base theme: starterkit_theme
 libraries:
   - exam/global
 
+libraries-override:
+  starterkit_theme/pager:
+    css:
+      component:
+        css/components/pager.css: false
+  like:
+    css:
+      css/like.css: false
+
 regions:
   header: Header
   hero: Hero

@@ -17,14 +17,12 @@
   margin: 50px 20% 0;
 }
 .region-hero #block-exam-banner .field--name-field-text h1 {
-  font-family: "Mukta", sans-serif;
   font-weight: 300;
   color: #ffffff;
   font-size: 62px;
   margin: 0;
 }
 .region-hero #block-exam-banner .field--name-field-text h2 {
-  font-family: "Mukta", sans-serif;
   font-weight: 300;
   font-size: 38px;
   margin: 0;
@@ -32,7 +30,6 @@
 .region-hero #block-exam-banner .field--name-field-text p {
   font-weight: 300;
   font-size: 16px;
-  font-family: "Mukta", sans-serif;
   color: #1174cc;
   margin: 0;
 }

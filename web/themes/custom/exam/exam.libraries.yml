@@ -16,5 +16,10 @@ global:
 #
       css/about.css: {}
       css/sections.css: {}
+#      This style for changing project's blocks depending on their service type
+      css/services-type.css: {}
+#
+      css/pager.css: {}
+      css/like.css: {}
   js:
     js/burger.js: {}
