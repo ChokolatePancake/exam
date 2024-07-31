@@ -2,10 +2,9 @@
 @import "media";
 
 .view-pager {
-  margin-top: 47px;
   ul {
     user-select: none;
-    max-width: 300px;
+    width: fit-content;
     margin: 0 auto;
     display: flex;
     justify-content: space-between;
@@ -30,8 +29,10 @@
       }
     }
     .pager__item--next, .pager__item--last, .pager__item--first, .pager__item--previous {
+      padding: 0 11px;
       a {
-        font-weight: 600;
+        font-size: 24px;
+        font-weight: 500;
       }
     }
   }

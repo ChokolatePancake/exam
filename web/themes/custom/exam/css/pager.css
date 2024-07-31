@@ -1,10 +1,7 @@
 /* Media variables */
-.view-pager {
-  margin-top: 47px;
-}
 .view-pager ul {
   user-select: none;
-  max-width: 300px;
+  width: fit-content;
   margin: 0 auto;
   display: flex;
   justify-content: space-between;
@@ -26,8 +23,12 @@
   border-radius: 50%;
   background: rgba(204, 204, 204, 0.6);
 }
+.view-pager ul .pager__item--next, .view-pager ul .pager__item--last, .view-pager ul .pager__item--first, .view-pager ul .pager__item--previous {
+  padding: 0 11px;
+}
 .view-pager ul .pager__item--next a, .view-pager ul .pager__item--last a, .view-pager ul .pager__item--first a, .view-pager ul .pager__item--previous a {
-  font-weight: 600;
+  font-size: 24px;
+  font-weight: 500;
 }
 
 /*# sourceMappingURL=pager.css.map */

@@ -2,14 +2,24 @@
 .like--wrapper span {
   display: none;
 }
-.like--wrapper .fa-heart:before {
-  content: url("../images/empty like.svg");
+.like--wrapper .fa-heart {
+  position: relative;
+  margin-top: 14px;
 }
-.like--wrapper .fa-heart:hover:before {
-  content: url("../images/like.svg");
+.like--wrapper .fa-heart::before {
+  content: "";
+  display: inline-block;
+  background: url("../images/empty like.svg") no-repeat center center;
+  background-size: contain;
+  width: 1em;
+  height: 1em;
 }
-.like--wrapper input[type=checkbox]:checked ~ .fa-heart:before {
-  content: url("../images/like.svg");
+.like--wrapper .fa-heart:hover::before {
+  background-image: url("../images/like.svg");
+  opacity: 0.5;
+}
+.like--wrapper input[type=checkbox]:checked ~ .fa-heart::before {
+  background-image: url("../images/like.svg");
 }
 
 /*# sourceMappingURL=like.css.map */

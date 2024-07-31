@@ -65,6 +65,9 @@ a {
   color: #666;
   font-size: 20px;
 }
+#block-exam-views-block-about-us-block-1 .block-field-blocknodepagebody p {
+  margin: 0;
+}
 #block-exam-views-block-about-us-block-1 .block-field-blocknodepagefield-link {
   background: #6e9bca;
   align-content: center;

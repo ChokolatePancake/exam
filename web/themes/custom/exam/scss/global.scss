@@ -87,3 +87,14 @@ a {
   }
 }
 
+// Just black-white background with diagonal lines
+%black-white-background {
+  background: repeating-linear-gradient(
+      135deg,
+      rgba($dark-blue, 0.2),
+      rgba($dark-blue, 0.2) 2px,
+      $white 2px,
+      $white 7px
+  );
+}
+
