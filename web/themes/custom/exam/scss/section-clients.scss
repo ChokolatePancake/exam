@@ -1,0 +1,15 @@
+@import "media";
+@import "variables";
+@import "global";
+
+.content-section--clients {
+  h2 {
+    margin-top: 24px;
+    margin-bottom: 45px;
+  }
+  margin-bottom: 141px;
+
+  @include breakpoint(largePhone) {
+    margin-bottom: 20px;
+  }
+}

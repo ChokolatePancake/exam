@@ -1,0 +1,100 @@
+/* Media variables */
+/* Media variables */
+a {
+  text-decoration: none;
+}
+
+.content-section--team .view-content .views-row .block-field-blocknodeteamfield-socials ul li {
+  position: relative;
+}
+.content-section--team .view-content .views-row .block-field-blocknodeteamfield-socials ul li a span {
+  opacity: 0;
+}
+.content-section--team .view-content .views-row .block-field-blocknodeteamfield-socials ul li .social-media-link-icon {
+  /* for another social link write:
+  &--${name of social class} {
+     &::before {
+        content: url("path to icon");
+     }
+  }
+  */
+}
+.content-section--team .view-content .views-row .block-field-blocknodeteamfield-socials ul li .social-media-link-icon--facebook::before {
+  content: url("../images/fb.png");
+}
+.content-section--team .view-content .views-row .block-field-blocknodeteamfield-socials ul li .social-media-link-icon--twitter::before {
+  content: url("../images/twit.png");
+}
+.content-section--team .view-content .views-row .block-field-blocknodeteamfield-socials ul li .social-media-link-icon--linkedin::before {
+  content: url("../images/in.png");
+}
+
+.content-section--team h2 {
+  margin-bottom: 27px;
+  margin-top: 46px;
+}
+.content-section--team .contextual-region {
+  position: static;
+}
+.content-section--team .field--name-field-link {
+  position: absolute;
+  width: 103px;
+  bottom: -29px;
+  left: 47%;
+  transform: translateX(-52%);
+}
+.content-section--team .layout--onecol:last-child {
+  position: absolute;
+  bottom: -130px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.content-section--team .layout--onecol:last-child .layout__region {
+  display: flex;
+  width: 200px;
+  margin: 0 auto;
+  justify-content: space-between;
+}
+.content-section--team .view-content .views-row {
+  position: relative;
+}
+.content-section--team .view-content .views-row .field--name-title {
+  display: block;
+  margin-top: 33px;
+}
+.content-section--team .view-content .views-row .field--name-title a {
+  font-size: 27px;
+}
+.content-section--team .view-content .views-row .field--name-field-role {
+  color: #CCC;
+  font-size: 14px;
+  margin-bottom: 20px;
+}
+.content-section--team .view-content .views-row .block-field-blocknodeteamfield-socials ul {
+  display: flex;
+}
+.content-section--team .view-content .views-row .block-field-blocknodeteamfield-socials ul li {
+  max-width: 32px;
+}
+@media (max-width: 1280px) {
+  .content-section--team .view-content .views-row .field--name-title {
+    margin-top: 15px;
+  }
+}
+@media (max-width: 1024px) {
+  .content-section--team .view-content .views-row .field--name-title a {
+    font-size: 24px;
+  }
+}
+@media (max-width: 860px) {
+  .content-section--team .layout--onecol:last-child .layout__region {
+    width: 147px;
+  }
+}
+@media (max-width: 768px) {
+  .content-section--team .view-content .views-row .field--name-title a {
+    font-size: 20px;
+  }
+}
+
+/*# sourceMappingURL=section-team.css.map */

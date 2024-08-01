@@ -1,9 +1,13 @@
 /* Media variables */
+.view-pager {
+  margin: 47px 0;
+}
 .view-pager ul {
   user-select: none;
   width: fit-content;
   margin: 0 auto;
   display: flex;
+  padding: 0;
   justify-content: space-between;
 }
 .view-pager ul li {
@@ -29,6 +33,12 @@
 .view-pager ul .pager__item--next a, .view-pager ul .pager__item--last a, .view-pager ul .pager__item--first a, .view-pager ul .pager__item--previous a {
   font-size: 24px;
   font-weight: 500;
+}
+@media (max-width: 480px) {
+  .view-pager .pager {
+    max-width: 320px;
+    margin: 0 auto;
+  }
 }
 
 /*# sourceMappingURL=pager.css.map */

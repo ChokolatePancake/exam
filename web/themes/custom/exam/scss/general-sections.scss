@@ -1,0 +1,148 @@
+@import "media";
+@import "variables";
+@import "global";
+
+.content-section {
+  h2 {
+    @extend %container;
+    a {
+      color: $black;
+      text-transform: uppercase;
+      font-size: 34px;
+    }
+    text-align: center;
+    margin-top: 94px;
+    margin-bottom: 89px;
+    // Next code for horizontal lines
+    display: flex;
+    &::before,
+    &::after {
+      content: "";
+      flex: 1;
+      height: 1px;
+      margin: 18px 20px 0;
+      background: $grey;
+    }
+    //
+  }
+  .view-content {
+    display: flex;
+    @extend %container;
+    text-transform: uppercase;
+    justify-content: space-between;
+
+    // Links mostly grey, color will be overridden for services block
+    .field--name-field-link {
+      a {
+        color: $white;
+        background: $darker-grey;
+        padding: 1px 10px;
+      }
+      margin: 10px;
+    }
+  }
+}
+
+.content-section-4 {
+  .view-content {
+    .views-row {
+      text-align: center;
+      .block-field-blocknodeservicestitle {
+        margin-top: 33px;
+      }
+      .field--name-title {
+        a {
+          color: $black;
+          font-size: 24px;
+        }
+      }
+      .field--name-body {
+        font-size: 14px;
+        margin-top: 10px;
+        color: $grey;
+      }
+    }
+  }
+
+  @include breakpoint(desktop) {
+    .view-content .views-row {
+      max-width: 230px;
+
+      .field--name-field-image {
+        img {
+          max-width: 230px;
+          height: auto;
+        }
+      }
+    }
+  }
+
+  @include breakpoint(laptop) {
+    .view-content .views-row {
+      max-width: 200px;
+
+      .field--name-field-image {
+        img {
+          max-width: 200px;
+        }
+      }
+      .field--name-title a {
+        font-size: 22px;
+      }
+    }
+  }
+
+  @include breakpoint(largeTablet) {
+    .view-content .views-row {
+      max-width: 160px;
+
+      .field--name-field-image {
+        img {
+          max-width: 160px;
+        }
+      }
+      .field--name-title a {
+        font-size: 18px;
+      }
+      .field--name-body {
+        font-size: 12px;
+      }
+    }
+  }
+
+  @include breakpoint(tablet) {
+    .view-content .views-row {
+      max-width: 140px;
+
+      .field--name-field-image {
+        img {
+          max-width: 140px;
+        }
+      }
+      .field--name-title a {
+        font-size: 16px;
+      }
+    }
+  }
+
+  @include breakpoint(phablet) {
+    .view-content {
+      flex-wrap: wrap;
+      .views-row {
+        margin-bottom: 120px;
+        width: 200px;
+        .field--name-field-image {
+          img {
+            max-width: 200px;
+          }
+        }
+        max-width: 100%;
+      }
+    }
+  }
+  @include breakpoint(largePhone) {
+    .view-content {
+      justify-content: center;
+    }
+  }
+}

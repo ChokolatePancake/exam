@@ -5487,6 +5487,21 @@
             "install-path": "../nikic/php-parser"
         },
         {
+            "name": "npm-asset/slick-carousel",
+            "version": "1.8.1",
+            "version_normalized": "1.8.1.0",
+            "dist": {
+                "type": "tar",
+                "url": "https://registry.npmjs.org/slick-carousel/-/slick-carousel-1.8.1.tgz"
+            },
+            "type": "npm-asset",
+            "installation-source": "dist",
+            "license": [
+                "MIT"
+            ],
+            "install-path": "../../web/libraries/slick-carousel"
+        },
+        {
             "name": "oomphinc/composer-installers-extender",
             "version": "2.0.1",
             "version_normalized": "2.0.1.0",

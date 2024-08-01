@@ -15,11 +15,18 @@ global:
       css/hero.css: {}
 #
       css/about.css: {}
-      css/sections.css: {}
+      css/general-sections.css: {}
+      css/section-services.css: {}
+      css/section-projects.css: {}
+      css/section-team.css: {}
+      css/section-news.css: {}
+      css/section-clients.css: {}
 #      This style for changing project's blocks depending on their service type
       css/services-type.css: {}
 #
       css/pager.css: {}
       css/like.css: {}
+      css/slider.css: {}
+
   js:
     js/burger.js: {}

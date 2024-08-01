@@ -2,11 +2,13 @@
 @import "media";
 
 .view-pager {
+  margin: 47px 0;
   ul {
     user-select: none;
     width: fit-content;
     margin: 0 auto;
     display: flex;
+    padding: 0;
     justify-content: space-between;
     li {
       font-family: "Roboto Slab", serif;
@@ -34,6 +36,12 @@
         font-size: 24px;
         font-weight: 500;
       }
+    }
+  }
+  @include breakpoint(largePhone) {
+    .pager {
+      max-width: 320px;
+      margin: 0 auto;
     }
   }
 }

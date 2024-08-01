@@ -21,12 +21,14 @@
 #}
 {% set timestamp = item.value %}
 
-{# Use the timestamp to generate a formatted time ago output #}
-{% set formatted_time = date_formatter.formatTimeDiffSince(timestamp) %}
-{% set date = timestamp|date("M j Y") %}
-{% set month = date|split(" ")[0] %}
-{% set day = date|split(" ")[1] %}
-{% set year = date|split(" ")[2] %}
+{# Extract the timestamp from the datetime attribute #}
+{% set timestamp = attributes.datetime|date('U') %}
+
+
+{# Format the date components #}
+{% set month = timestamp|date("M") %}
+{% set day = timestamp|date("j") %}
+{% set year = timestamp|date("Y") %}
 
 <span class="month">{{ month }}</span>
 <span class="day">{{ day }}</span>

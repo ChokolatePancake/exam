@@ -1,0 +1,20 @@
+/* Media variables */
+/* Media variables */
+a {
+  text-decoration: none;
+}
+
+.content-section--clients {
+  margin-bottom: 141px;
+}
+.content-section--clients h2 {
+  margin-top: 24px;
+  margin-bottom: 45px;
+}
+@media (max-width: 480px) {
+  .content-section--clients {
+    margin-bottom: 20px;
+  }
+}
+
+/*# sourceMappingURL=section-clients.css.map */

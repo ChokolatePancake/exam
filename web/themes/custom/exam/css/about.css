@@ -83,5 +83,30 @@ a {
   color: #ffffff;
   font-size: 15.5px;
 }
+@media (max-width: 860px) {
+  #block-exam-views-block-about-us-block-1 .block-field-blocknodepagebody .field--name-body {
+    font-size: 16px;
+  }
+}
+@media (max-width: 480px) {
+  #block-exam-views-block-about-us-block-1 {
+    margin-top: -103px;
+  }
+  #block-exam-views-block-about-us-block-1 .layout__region--content {
+    text-align: center;
+    flex-direction: column;
+  }
+  #block-exam-views-block-about-us-block-1 .block-field-blocknodepagebody {
+    width: calc(100% - 20px);
+    padding: 0 10px;
+    margin: 20px 0;
+  }
+  #block-exam-views-block-about-us-block-1 .block-field-blocknodepagefield-link {
+    margin: 0 20px;
+  }
+  #block-exam-views-block-about-us-block-1 .block-field-blocknodepagefield-link .field--name-field-link {
+    width: 100%;
+  }
+}
 
 /*# sourceMappingURL=about.css.map */

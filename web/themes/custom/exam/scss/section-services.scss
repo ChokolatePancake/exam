@@ -1,0 +1,33 @@
+@import "media";
+@import "variables";
+@import "global";
+
+.content-section--services {
+  .view-content {
+    .views-row {
+      position: relative;
+    }
+
+    // Overriding read more for services block
+    .field--name-field-link {
+      a {
+        background: $mid-blue;
+      }
+
+      margin-top: 31px;
+    }
+  }
+
+  .contextual-region {
+    position: static;
+  }
+
+  .field--name-field-link {
+    position: absolute;
+    width: 103px;
+    bottom: -56px;
+    left: 47%;
+    transform: translateX(-54%);
+  }
+
+}

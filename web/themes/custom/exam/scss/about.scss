@@ -46,6 +46,30 @@
         font-size: 15.5px;
       }
     }
+  }
 
+  @include breakpoint(largeTablet) {
+    .block-field-blocknodepagebody .field--name-body {
+      font-size: 16px;
+    }
+  }
+
+  @include breakpoint(largePhone) {
+    margin-top: -103px;
+    .layout__region--content {
+      text-align: center;
+      flex-direction: column;
+    }
+    .block-field-blocknodepagebody {
+      width: calc(100% - 20px);
+      padding: 0 10px;
+      margin: 20px 0;
+    }
+    .block-field-blocknodepagefield-link {
+      margin: 0 20px;
+      .field--name-field-link {
+        width: 100%;
+      }
+    }
   }
 }
