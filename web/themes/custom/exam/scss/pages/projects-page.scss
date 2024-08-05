@@ -5,7 +5,7 @@
 @import "page-pager";
 
 //Same styles for view with projects filtered by services
-.projects-page, .taxonomy-projects {
+.projects-page, .view-taxonomy-term:has(.node--type-projects) {
   @extend %container;
   @extend %projects-block;
   h2 {

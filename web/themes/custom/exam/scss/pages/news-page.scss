@@ -4,7 +4,7 @@
 @import "../blocks/news-block";
 @import "page-pager";
 
-.news-page, .taxonomy-news {
+.news-page, .view-taxonomy-term:has(.node--type-article) {
   @extend %container;
   @extend %page-pager;
   @extend %news-block;
