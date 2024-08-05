@@ -1,45 +1,22 @@
 @import "media";
 @import "variables";
 @import "global";
+@import "blocks/default-block";
 
 .content-section {
+  @extend %default-block;
   h2 {
     @extend %container;
-    a {
-      color: $black;
-      text-transform: uppercase;
-      font-size: 34px;
-    }
-    text-align: center;
     margin-top: 94px;
     margin-bottom: 89px;
-    // Next code for horizontal lines
-    display: flex;
-    &::before,
-    &::after {
-      content: "";
-      flex: 1;
-      height: 1px;
-      margin: 18px 20px 0;
-      background: $grey;
-    }
-    //
+    @extend %titles;
   }
   .view-content {
     display: flex;
+    flex-wrap: wrap;
     @extend %container;
     text-transform: uppercase;
     justify-content: space-between;
-
-    // Links mostly grey, color will be overridden for services block
-    .field--name-field-link {
-      a {
-        color: $white;
-        background: $darker-grey;
-        padding: 1px 10px;
-      }
-      margin: 10px;
-    }
   }
 }
 
@@ -47,6 +24,7 @@
   .view-content {
     .views-row {
       text-align: center;
+      max-width: 290px;
       .block-field-blocknodeservicestitle {
         margin-top: 33px;
       }
@@ -66,7 +44,6 @@
 
   @include breakpoint(desktop) {
     .view-content .views-row {
-      max-width: 230px;
 
       .field--name-field-image {
         img {

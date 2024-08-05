@@ -53,39 +53,57 @@ a {
   }
 }
 
-// Replace default socials:facebook, twitter, linkedin(put into "li" with socials)
+// Replace default socials:facebook, twitter, linkedin(put into block field with socials)
 %socials {
   position: relative;
   a span {
     opacity: 0;
   }
+  ul {
+    display: flex;
+    li {
+      max-width: 32px;
+      a {
+        &::before {
+          content: '';
+          background-repeat: no-repeat;
+          background-size: contain;
+          width: 25px;
+          height: 25px;
+          display: inline-block;
+        }
+      }
+    }
+  }
   .social-media-link-icon {
     &--facebook {
       &::before {
-        content: url('../images/fb.png');
+        background-image: url('../images/fb.png'), url('../../images/fb.png');
       }
     }
 
     &--twitter {
       &::before {
-        content: url('../images/twit.png');
+        background-image: url('../images/twit.png'), url('../../images/twit.png');
       }
     }
 
     &--linkedin {
       &::before {
-        content: url('../images/in.png');
+        background-image: url('../images/in.png'), url('../../images/in.png');
       }
     }
     /* for another social link write:
     &--${name of social class} {
        &::before {
-          content: url("path to icon");
+                  background-image: url('../images/{icon}.png'), url('../../images/{icon}.png');
+                  // The second one url is for pages, because there is another path to images directory
        }
     }
     */
   }
 }
+
 
 // Just black-white background with diagonal lines
 %black-white-background {
@@ -97,4 +115,55 @@ a {
       $white 7px
   );
 }
+// Next code for horizontal lines around titles
+%titles {
+  display: flex;
+  text-transform: uppercase;
+  &::before,
+  &::after {
+    content: "";
+    flex: 1;
+    height: 1px;
+    margin: 18px 20px 0;
+    background: $light-grey;
+  }
+}
 
+// Links to content
+%links {
+  // Links mostly grey, color will be overridden for services block
+  .field--name-field-link {
+    a {
+      text-transform: uppercase;
+      color: $white;
+      background: $darker-grey;
+      padding: 1px 10px;
+    }
+    margin: 10px;
+  }
+}
+
+%custom-date {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  span {
+    display: block;
+  }
+  .month {
+    font-size: 28px;
+    font-weight: 300;
+    line-height: 1;
+  }
+  .day {
+    font-size: 58px;
+    line-height: 0.7;
+    color: $mid-blue;
+    font-weight: 600;
+  }
+  .year {
+    font-size: 20px;
+    line-height: 1;
+    color: $light-grey;
+  }
+}

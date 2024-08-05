@@ -1,0 +1,70 @@
+@import "../media";
+@import "../variables";
+@import "../global";
+@import "../blocks/services-block";
+@import "page-pager";
+
+.service-page {
+  @extend %container;
+  @extend %services-block;
+
+  h2 {
+    @extend %titles;
+    margin-top: 42px;
+    margin-left: -8px;
+    letter-spacing: -0.6px;
+  }
+
+  .field--name-field-link {
+    left: 48%;
+    transform: translateX(-53%);
+  }
+
+  .view-content .views-row {
+    margin-top: 59px;
+    margin-bottom: 120px;
+
+    &:not(:nth-child(4n)) {
+      margin-right: 13.5px;
+    }
+
+    .block-field-blocknodeservicestitle {
+      margin-top: 27px;
+    }
+  }
+
+  @extend %page-pager;
+
+  @include breakpoint(desktop) {
+    .view-content .views-row {
+      &:not(:nth-child(4n)) {
+        margin-right: 26px;
+      }
+    }
+  }
+  @include breakpoint(laptop) {
+    .view-content .views-row {
+      &:not(:nth-child(4n)) {
+        margin-right: 16px;
+      }
+    }
+  }
+  @include breakpoint(largeTablet) {
+    .view-content .views-row {
+      &:not(:nth-child(4n)) {
+        margin-right: 0;
+      }
+      &:not(:nth-child(3n)) {
+        margin-right: 50px;
+      }
+    }
+  }
+
+  @include breakpoint(tablet) {
+    .view-content .views-row {
+      &:not(:nth-child(3n)) {
+        margin-right: 0;
+      }
+    }
+  }
+}

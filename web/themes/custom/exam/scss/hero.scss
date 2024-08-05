@@ -11,9 +11,9 @@
       z-index: 1;
       height: 100%;
       align-content: center;
-      text-transform: uppercase;
       max-width: 400px;
       margin: 50px 20% 0;
+      text-transform: uppercase;
       h1 {
         font-weight: 300;
         color: $white;
@@ -80,6 +80,8 @@
   }
 
   @include breakpoint(largePhone) {
+    top: -270px;
+    padding-top: 290px;
     text-align: center;
     #block-exam-banner {
       .field--name-field-text {
@@ -90,7 +92,7 @@
       .field--name-field-image {
         img {
           width: 600px;
-          margin-left: -200px;
+          margin-left: -118px;
           height: auto;
         }
       }

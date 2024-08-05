@@ -1,0 +1,36 @@
+/* Media variables */
+/* Media variables */
+a {
+  text-decoration: none;
+}
+
+.node-type-clients {
+  text-align: center;
+}
+.node-type-clients img {
+  width: 100%;
+  height: auto;
+}
+.node-type-clients .field--name-field-clients-site {
+  max-width: 400px;
+  margin: 0 auto;
+  padding: 10px 0;
+  border-radius: 10px;
+  background: #6e9bca;
+  position: relative;
+}
+.node-type-clients .field--name-field-clients-site::before {
+  position: absolute;
+  content: "Go to clients site";
+  text-transform: uppercase;
+  color: #ffffff;
+  font-size: 24px;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+.node-type-clients .field--name-field-clients-site a {
+  opacity: 0;
+}
+
+/*# sourceMappingURL=client.css.map */

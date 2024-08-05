@@ -12,9 +12,9 @@
   z-index: 1;
   height: 100%;
   align-content: center;
-  text-transform: uppercase;
   max-width: 400px;
   margin: 50px 20% 0;
+  text-transform: uppercase;
 }
 .region-hero #block-exam-banner .field--name-field-text h1 {
   font-weight: 300;
@@ -77,6 +77,8 @@
 }
 @media (max-width: 480px) {
   .region-hero {
+    top: -270px;
+    padding-top: 290px;
     text-align: center;
   }
   .region-hero #block-exam-banner .field--name-field-text p {
@@ -84,7 +86,7 @@
   }
   .region-hero #block-exam-banner .field--name-field-image img {
     width: 600px;
-    margin-left: -200px;
+    margin-left: -118px;
     height: auto;
   }
 }

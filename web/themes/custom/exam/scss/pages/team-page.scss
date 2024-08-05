@@ -1,0 +1,62 @@
+@import "../media";
+@import "../variables";
+@import "../global";
+@import "../blocks/team-block";
+@import "page-pager";
+
+.team-page {
+  @extend %container;
+  @extend %team-block;
+
+  h2 {
+    @extend %titles;
+    margin-top: 44px;
+  }
+
+  .view-content .views-row {
+    margin-bottom: 153px;
+    &:not(:nth-child(4n)) {
+      margin-right: 26px;
+    }
+    .field--name-title {
+      margin-top: 28px;
+    }
+  }
+  @extend %page-pager;
+  .view-pager {
+    margin-top: -3px;
+  }
+
+  @include breakpoint(desktop) {
+    .view-content .views-row {
+      &:not(:nth-child(4n)) {
+        margin-right: 26px;
+      }
+    }
+  }
+  @include breakpoint(laptop) {
+    .view-content .views-row {
+      &:not(:nth-child(4n)) {
+        margin-right: 16px;
+      }
+    }
+  }
+  @include breakpoint(largeTablet) {
+    .view-content .views-row {
+      &:not(:nth-child(4n)) {
+        margin-right: 0;
+      }
+      &:not(:nth-child(3n)) {
+        margin-right: 50px;
+      }
+    }
+  }
+
+  @include breakpoint(tablet) {
+    .view-content .views-row {
+      &:not(:nth-child(3n)) {
+        margin-right: 0;
+      }
+    }
+  }
+}

@@ -8,18 +8,16 @@ a {
   background: repeating-linear-gradient(135deg, rgba(55, 54, 69, 0.2), rgba(55, 54, 69, 0.2) 2px, #ffffff 2px, #ffffff 7px);
 }
 
-.content-section--projects h2 {
-  margin-bottom: 17px;
-  margin-top: 154px;
-  font-weight: 300;
+/* Media variables */
+/* Media variables */
+a {
+  text-decoration: none;
 }
+
 .content-section--projects .view-content-wrapper {
-  padding-top: 68px;
-  padding-bottom: 157px;
+  background: repeating-linear-gradient(135deg, rgba(55, 54, 69, 0.2), rgba(55, 54, 69, 0.2) 2px, #ffffff 2px, #ffffff 7px);
 }
-.content-section--projects .contextual-region {
-  position: static;
-}
+
 .content-section--projects .field--name-field-link {
   position: absolute;
   bottom: 7px;
@@ -27,14 +25,12 @@ a {
   transform: translateX(-53%);
 }
 .content-section--projects .view-content .views-row {
-  position: relative;
+  text-align: center;
   background: #ffffff;
   padding-bottom: 37px;
   border-bottom: 1px solid rgba(34, 34, 34, 0.7);
 }
 .content-section--projects .view-content .views-row .field--name-title a {
-  font-size: 26px;
-  font-weight: 300;
   letter-spacing: 1.3px;
 }
 .content-section--projects .view-content .views-row .field--name-field-service-type {
@@ -51,6 +47,52 @@ a {
   margin-top: 26px;
 }
 @media (max-width: 1280px) {
+  .content-section--projects .view-content .views-row {
+    max-width: 230px;
+  }
+  .content-section--projects .view-content .views-row .field--name-field-image img {
+    max-width: 230px;
+    height: auto;
+  }
+}
+@media (max-width: 1024px) {
+  .content-section--projects .view-content .views-row {
+    max-width: 200px;
+  }
+  .content-section--projects .view-content .views-row .field--name-field-image img {
+    max-width: 200px;
+  }
+  .content-section--projects .view-content .views-row .field--name-title a {
+    font-size: 22px;
+  }
+}
+@media (max-width: 768px) {
+  .content-section--projects .view-content {
+    justify-content: space-evenly;
+  }
+  .content-section--projects .view-content .views-row {
+    margin-bottom: 120px;
+    width: 200px;
+    max-width: 100%;
+  }
+  .content-section--projects .view-content .views-row .field--name-field-image img {
+    max-width: 200px;
+  }
+}
+
+.content-section--projects h2 {
+  margin-bottom: 17px;
+  margin-top: 161px;
+  font-weight: 300;
+}
+.content-section--projects .view-content-wrapper {
+  padding-top: 68px;
+  padding-bottom: 110px;
+}
+.content-section--projects .view-content {
+  text-align: center;
+}
+@media (max-width: 1280px) {
   .content-section--projects .view-content-wrapper {
     padding-bottom: 47px;
   }
@@ -58,24 +100,54 @@ a {
     margin-top: 10px;
   }
 }
-@media (max-width: 768px) {
+@media (max-width: 860px) {
+  .content-section--projects h2 {
+    margin-top: 83px;
+  }
+  .content-section--projects .view-content .views-row {
+    max-width: 160px;
+  }
+  .content-section--projects .view-content .views-row .field--name-field-image img {
+    max-width: 160px;
+  }
   .content-section--projects .view-content .views-row .field--name-title a {
     font-size: 18px;
+  }
+  .content-section--projects .view-content .views-row .field--name-body {
+    font-size: 12px;
+  }
+}
+@media (max-width: 768px) {
+  .content-section--projects h2 {
+    margin-top: 54px;
+  }
+  .content-section--projects .view-content .views-row {
+    margin-bottom: 50px;
+    max-width: 140px;
+  }
+  .content-section--projects .view-content .views-row .field--name-title a {
+    font-size: 18px;
+  }
+  .content-section--projects .view-content .views-row .field--name-field-image img {
+    max-width: 140px;
+  }
+  .content-section--projects .view-content .views-row .field--name-title a {
+    font-size: 16px;
   }
   .content-section--projects .view-content .views-row .field--name-field-service-type {
     font-size: 14px;
   }
 }
 @media (max-width: 600px) {
+  .content-section--projects .view-content {
+    justify-content: space-evenly;
+  }
   .content-section--projects .view-content .views-row {
     margin-bottom: 80px;
+    max-width: 200px;
   }
-  .content-section--projects h2 {
-    margin-top: 34px;
-  }
-  .content-section--projects .view-pager {
-    margin-top: -5px;
-    margin-bottom: 20px;
+  .content-section--projects .view-content .views-row .field--name-field-image img {
+    max-width: 200px;
   }
 }
 

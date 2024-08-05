@@ -1,0 +1,99 @@
+@import "../media";
+@import "../variables";
+@import "../global";
+
+%team-block {
+
+  .field--name-field-link {
+    position: absolute;
+    width: 103px;
+    bottom: -29px;
+    left: 47%;
+    transform: translateX(-52%);
+  }
+
+  .layout--onecol {
+    &:last-child {
+      position: absolute;
+      bottom: -128px;
+      left: 50%;
+      transform: translateX(-50%);
+
+
+      .layout__region {
+        display: flex;
+        width: 190px;
+        margin: 0 auto;
+        justify-content: space-between;
+      }
+    }
+  }
+
+  .view-content .views-row {
+    text-align: center;
+
+    .field--name-title {
+      display: block;
+      margin-top: 33px;
+
+      a {
+        font-size: 27px;
+      }
+    }
+
+    .field--name-field-role {
+      color: $light-grey;
+      text-transform: uppercase;
+      font-size: 14px;
+      margin-bottom: 20px;
+    }
+
+    .block-field-blocknodeteamfield-socials {
+      @extend %socials;
+    }
+  }
+
+  @include breakpoint(desktop) {
+    .view-content .views-row {
+      max-width: 230px;
+
+      .field--name-field-image {
+        img {
+          max-width: 230px;
+          height: auto;
+        }
+      }
+    }
+  }
+
+  @include breakpoint(laptop) {
+    .view-content .views-row {
+      max-width: 200px;
+
+      .field--name-field-image {
+        img {
+          max-width: 200px;
+        }
+      }
+      .field--name-title a {
+        font-size: 22px;
+      }
+    }
+  }
+
+  @include breakpoint(tablet) {
+    .view-content {
+      justify-content: space-evenly;
+      flex-wrap: wrap;
+      .views-row {
+        margin-bottom: 120px;
+        max-width: 200px;
+        .field--name-field-image {
+          img {
+            max-width: 200px;
+          }
+        }
+      }
+    }
+  }
+}

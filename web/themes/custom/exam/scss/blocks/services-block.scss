@@ -1,0 +1,87 @@
+@import "../media";
+@import "../variables";
+@import "../global";
+
+%services-block {
+  .view-content .views-row {
+    text-align: center;
+
+    .block-field-blocknodeservicestitle {
+      margin-top: 33px;
+    }
+
+    .field--name-title {
+      a {
+        font-size: 24px;
+      }
+    }
+
+    .field--name-body {
+      font-size: 14px;
+      margin-top: 10px;
+      color: $light-grey;
+    }
+
+    // Overriding read more for services block
+    .field--name-field-link {
+      a {
+        background: $blue;
+      }
+    }
+  }
+
+  .field--name-field-link {
+    position: absolute;
+    width: 103px;
+    bottom: -56px;
+    left: 47%;
+    transform: translateX(-54%);
+  }
+  .field--name-field-image {
+    max-height: 118px;
+    overflow: hidden;
+  }
+
+  @include breakpoint(desktop) {
+    .view-content .views-row {
+      max-width: 230px;
+
+      .field--name-field-image {
+        img {
+          max-width: 230px;
+          height: auto;
+        }
+      }
+    }
+  }
+
+  @include breakpoint(laptop) {
+    .view-content .views-row {
+      max-width: 200px;
+
+      .field--name-field-image {
+        img {
+          max-width: 200px;
+        }
+      }
+      .field--name-title a {
+        font-size: 22px;
+      }
+    }
+  }
+
+  @include breakpoint(tablet) {
+    .view-content {
+      justify-content: space-evenly;
+      .views-row {
+        margin-bottom: 120px;
+        max-width: 200px;
+        .field--name-field-image {
+          img {
+            max-width: 200px;
+          }
+        }
+      }
+    }
+  }
+}

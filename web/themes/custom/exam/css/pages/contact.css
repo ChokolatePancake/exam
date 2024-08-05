@@ -1,0 +1,216 @@
+/* Media variables */
+/* Media variables */
+a {
+  text-decoration: none;
+}
+
+#block-exam-contactus {
+  max-width: 1250px;
+  margin: 0 auto;
+}
+@media (max-width: 1280px) {
+  #block-exam-contactus {
+    max-width: 1000px;
+  }
+}
+@media (max-width: 1024px) {
+  #block-exam-contactus {
+    max-width: 850px;
+  }
+}
+@media (max-width: 860px) {
+  #block-exam-contactus {
+    max-width: 700px;
+  }
+}
+@media (max-width: 768px) {
+  #block-exam-contactus {
+    max-width: 580px;
+  }
+}
+@media (max-width: 600px) {
+  #block-exam-contactus {
+    max-width: 460px;
+  }
+}
+@media (max-width: 480px) {
+  #block-exam-contactus {
+    max-width: 320px;
+  }
+}
+
+#contact-message-feedback-form {
+  display: none;
+}
+
+#block-exam-contactus {
+  max-width: 975px;
+}
+#block-exam-contactus h2 {
+  text-align: center;
+  text-transform: uppercase;
+  margin-top: 48px;
+  font-size: 26px;
+  position: relative;
+  transform: scaleX(0.92);
+  margin-left: -33px;
+  letter-spacing: -0.5px;
+  margin-bottom: 48px;
+}
+#block-exam-contactus h2::after {
+  content: "";
+  position: absolute;
+  bottom: -13px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 6%;
+  height: 4px;
+  z-index: 101;
+  background: #888;
+}
+#block-exam-contactus .layout__region {
+  display: flex;
+}
+#block-exam-contactus .layout__region .block-field-blockblock-contentcontact-usfield-contact-email {
+  width: 47.5%;
+}
+#block-exam-contactus .layout__region .block-field-blockblock-contentcontact-usfield-contact-email label {
+  display: none;
+}
+#block-exam-contactus .layout__region .block-field-blockblock-contentcontact-usfield-contact-email input {
+  height: 48px;
+  margin-bottom: -2px;
+  width: 446px;
+  padding-left: 10px;
+}
+#block-exam-contactus .layout__region .block-field-blockblock-contentcontact-usfield-contact-email input::placeholder {
+  text-transform: uppercase;
+}
+#block-exam-contactus .layout__region .block-field-blockblock-contentcontact-usfield-contact-email textarea {
+  height: 198px;
+  text-transform: uppercase;
+  padding-left: 10px;
+  padding-top: 17px;
+}
+#block-exam-contactus .layout__region .block-field-blockblock-contentcontact-usfield-contact-email .button--primary {
+  height: 59px;
+  width: 192px;
+  border: none;
+  background: #de3114;
+  border-radius: 5px;
+  color: #ffffff;
+  text-transform: uppercase;
+  font-size: 20px;
+  letter-spacing: -0.3px;
+  padding-top: 6px;
+  font-weight: 500;
+}
+#block-exam-contactus .layout__region .node--type-contacts .layout__region {
+  flex-direction: column;
+}
+#block-exam-contactus .layout__region .node--type-contacts iframe {
+  position: static;
+}
+#block-exam-contactus .layout__region .view-contact-us .node__content {
+  padding: 0;
+}
+#block-exam-contactus .block-views {
+  margin-left: 20px;
+  margin-top: 15px;
+}
+#block-exam-contactus .block-views .text-information .field--name-field-country {
+  font-size: 18px;
+  text-transform: uppercase;
+  font-weight: 500;
+  margin-bottom: 2px;
+}
+#block-exam-contactus .block-views .text-information .field--name-field-address {
+  width: 300px;
+  line-height: 26px;
+}
+#block-exam-contactus .block-views .text-information .field--name-field-phone {
+  display: flex;
+}
+#block-exam-contactus .block-views .text-information .field--name-field-phone .field__item {
+  margin-top: 2px;
+}
+#block-exam-contactus .block-views .text-information .field--name-field-phone .field__item:not(:last-child):after {
+  content: ", ";
+}
+#block-exam-contactus .block-views .text-information .field--name-field-email .field__item {
+  margin-top: 7px;
+}
+#block-exam-contactus .block-views .text-information .field--name-field-email .field__item:first-child:before {
+  content: "Email: ";
+}
+#block-exam-contactus .block-views .text-information .field--name-field-email .field__item:not(:last-child):after {
+  content: ", ";
+}
+#block-exam-contactus .map .field--name-field-address {
+  margin-top: 35px;
+  width: 460px;
+  margin-left: -2px;
+  height: 250px;
+}
+@media (max-width: 1024px) {
+  #block-exam-contactus {
+    max-width: 850px;
+  }
+  #block-exam-contactus .layout__region .block-field-blockblock-contentcontact-usfield-contact-email input {
+    width: 394px;
+  }
+  #block-exam-contactus .map .field--name-field-address {
+    width: 430px;
+  }
+}
+@media (max-width: 860px) {
+  #block-exam-contactus {
+    max-width: 700px;
+  }
+  #block-exam-contactus .layout__region {
+    flex-direction: column;
+  }
+  #block-exam-contactus .layout__region .block-field-blockblock-contentcontact-usfield-contact-email {
+    width: 100%;
+  }
+  #block-exam-contactus .layout__region .block-field-blockblock-contentcontact-usfield-contact-email input {
+    width: calc(100% - 15px);
+  }
+  #block-exam-contactus .block-views {
+    margin-left: 0;
+  }
+  #block-exam-contactus .form-actions {
+    text-align: center;
+  }
+  #block-exam-contactus .map .field--name-field-address {
+    width: 100%;
+  }
+}
+@media (max-width: 768px) {
+  #block-exam-contactus {
+    max-width: 580px;
+  }
+}
+@media (max-width: 600px) {
+  #block-exam-contactus {
+    max-width: 460px;
+  }
+}
+@media (max-width: 480px) {
+  #block-exam-contactus {
+    max-width: 320px;
+  }
+  #block-exam-contactus .layout__region .block-field-blockblock-contentcontact-usfield-contact-email input {
+    width: calc(100% - 25px);
+    margin: 0 5px;
+  }
+  #block-exam-contactus .layout__region .block-field-blockblock-contentcontact-usfield-contact-email textarea {
+    width: calc(100% - 10px);
+    margin: 0 auto;
+  }
+  #block-exam-contactus .text-information {
+    padding-left: 5px;
+  }
+}
+
+/*# sourceMappingURL=contact.css.map */

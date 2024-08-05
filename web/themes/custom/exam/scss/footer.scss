@@ -18,14 +18,20 @@
     width: 170px;
     margin-top: 52px;
   }
-  #block-exam-socialmedialinks {
+  .block-social-media-links {
+    @extend %socials;
+
+    // Without next div styling appears white block in admin interface
+    .contextual {
+      display: none;
+    }
+    //
+
     ul {
       li {
-        @extend %socials;
         max-width: 18px;
-        margin-top: 87px;
+        margin-top: 73px;
       }
-
     }
   }
   @include breakpoint(largePhone) {

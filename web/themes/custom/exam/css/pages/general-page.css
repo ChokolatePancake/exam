@@ -1,0 +1,67 @@
+/* Media variables */
+/* Media variables */
+a {
+  text-decoration: none;
+}
+
+.grid-view-4-col .view-content .field--name-field-link {
+  margin: 10px;
+}
+.grid-view-4-col .view-content .field--name-field-link a {
+  text-transform: uppercase;
+  color: #ffffff;
+  background: #444;
+  padding: 1px 10px;
+}
+
+/* Media variables */
+/* Media variables */
+a {
+  text-decoration: none;
+}
+
+.grid-view-4-col .view-content .field--name-field-link {
+  margin: 10px;
+}
+.grid-view-4-col .view-content .field--name-field-link a {
+  text-transform: uppercase;
+  color: #ffffff;
+  background: #444;
+  padding: 1px 10px;
+}
+
+.grid-view-4-col .contextual-region {
+  position: static;
+}
+.grid-view-4-col .field--name-field-link {
+  margin: 10px;
+}
+.grid-view-4-col .field--name-field-link a {
+  color: #ffffff;
+  background: #444;
+  padding: 1px 10px;
+}
+.grid-view-4-col .view-content .views-row {
+  position: relative;
+  text-transform: uppercase;
+}
+.grid-view-4-col .view-content .views-row .field--name-title a {
+  color: #222;
+  font-size: 26px;
+  font-weight: 300;
+  transition: color 0.5s ease;
+}
+.grid-view-4-col .view-content .views-row .field--name-title a:hover {
+  color: #6e9bca;
+}
+
+.grid-view-4-col .view-content {
+  display: flex;
+  flex-wrap: wrap;
+}
+.grid-view-4-col .view-content .views-row {
+  max-width: 300px;
+  text-align: center;
+}
+
+/*# sourceMappingURL=general-page.css.map */

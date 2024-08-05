@@ -62,29 +62,44 @@ a {
   font-weight: 300;
 }
 
-.site-footer #block-exam-socialmedialinks ul li {
+.site-footer .block-social-media-links {
   position: relative;
 }
-.site-footer #block-exam-socialmedialinks ul li a span {
+.site-footer .block-social-media-links a span {
   opacity: 0;
 }
-.site-footer #block-exam-socialmedialinks ul li .social-media-link-icon {
+.site-footer .block-social-media-links ul {
+  display: flex;
+}
+.site-footer .block-social-media-links ul li {
+  max-width: 32px;
+}
+.site-footer .block-social-media-links ul li a::before {
+  content: "";
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 25px;
+  height: 25px;
+  display: inline-block;
+}
+.site-footer .block-social-media-links .social-media-link-icon {
   /* for another social link write:
   &--${name of social class} {
      &::before {
-        content: url("path to icon");
+                background-image: url('../images/{icon}.png'), url('../../images/{icon}.png');
+                // The second one url is for pages, because there is another path to images directory
      }
   }
   */
 }
-.site-footer #block-exam-socialmedialinks ul li .social-media-link-icon--facebook::before {
-  content: url("../images/fb.png");
+.site-footer .block-social-media-links .social-media-link-icon--facebook::before {
+  background-image: url("../images/fb.png"), url("../../images/fb.png");
 }
-.site-footer #block-exam-socialmedialinks ul li .social-media-link-icon--twitter::before {
-  content: url("../images/twit.png");
+.site-footer .block-social-media-links .social-media-link-icon--twitter::before {
+  background-image: url("../images/twit.png"), url("../../images/twit.png");
 }
-.site-footer #block-exam-socialmedialinks ul li .social-media-link-icon--linkedin::before {
-  content: url("../images/in.png");
+.site-footer .block-social-media-links .social-media-link-icon--linkedin::before {
+  background-image: url("../images/in.png"), url("../../images/in.png");
 }
 
 /* Media variables */
@@ -104,9 +119,12 @@ a {
   width: 170px;
   margin-top: 52px;
 }
-.site-footer #block-exam-socialmedialinks ul li {
+.site-footer .block-social-media-links .contextual {
+  display: none;
+}
+.site-footer .block-social-media-links ul li {
   max-width: 18px;
-  margin-top: 87px;
+  margin-top: 73px;
 }
 @media (max-width: 480px) {
   .site-footer {

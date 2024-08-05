@@ -25,10 +25,11 @@
     padding-left: 16px;
     align-content: center;
     .field--name-body {
-      color: $dark-grey;
       font-size: 20px;
     }
     p {
+      color: $grey;
+      font-weight: 300;
       margin: 0;
     }
   }

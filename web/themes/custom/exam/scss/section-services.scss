@@ -1,8 +1,10 @@
 @import "media";
 @import "variables";
 @import "global";
+@import "blocks/services-block";
 
 .content-section--services {
+  @extend %services-block;
   .view-content {
     .views-row {
       position: relative;
@@ -11,7 +13,7 @@
     // Overriding read more for services block
     .field--name-field-link {
       a {
-        background: $mid-blue;
+        background: $blue;
       }
 
       margin-top: 31px;
@@ -30,4 +32,23 @@
     transform: translateX(-54%);
   }
 
+  @include breakpoint(largeTablet) {
+    .view-content .views-row {
+      max-width: 160px;
+    }
+  }
+  @include breakpoint(tablet) {
+    .view-content {
+      justify-content: space-evenly;
+      .views-row {
+        margin-bottom: 120px;
+        max-width: 200px;
+        .field--name-field-image {
+          img {
+            max-width: 200px;
+          }
+        }
+      }
+    }
+  }
 }

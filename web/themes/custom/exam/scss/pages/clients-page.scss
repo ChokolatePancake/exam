@@ -1,0 +1,38 @@
+@import "../variables";
+@import "../media";
+@import "../global";
+
+.clients-page {
+  @extend %container;
+  h2 {
+    @extend %titles;
+    margin-top: 44px;
+  }
+  .view-content {
+    display: flex;
+    flex-wrap: wrap;
+    .views-row {
+      &:nth-child(2n) {
+        margin-left: 30px;
+      }
+      width: calc(50% - 30px);
+      .views-field-field-clients-image {
+        a, img {
+          width: 100%;
+          height: auto;
+        }
+      }
+    }
+  }
+  @include breakpoint(largePhone) {
+    .view-content {
+      flex-direction: column;
+      .views-row {
+        width: 100%;
+        &:nth-child(2n) {
+          margin-left: 0;
+        }
+      }
+    }
+  }
+}

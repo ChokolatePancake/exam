@@ -41,10 +41,12 @@
           text-transform: uppercase;
           color: $black;
           font-size: 14px;
+          font-family: "Mukta", sans-serif;
         }
       }
     }
     .menu-item {
+      text-transform: uppercase;
       position: relative;
       &::after {
         content: '';
@@ -57,7 +59,7 @@
         background: $blue;
         transition: height 0.5s ease;
       }
-      &:hover {
+      &:hover, &:has(.is-active) {
         &::after {
           height: 7px;
         }
@@ -66,7 +68,6 @@
       &:first-child {
         a {
           opacity: 0;
-
         }
 
         position: relative;
@@ -78,24 +79,19 @@
           top: -4px;
           content: url('../images/Homepage-menu.png');
         }
-
-        &:hover {
-          &::after {
-            left: 50%;
-            width: 30px;
-          }
+        &::after {
+          width: 30px;
+          left: 50%;
         }
       }
     }
   }
   .block-social-media-links-block {
     margin-left: 20px;
+    @extend %socials;
     li {
       width: 25px;
       margin-left: -1px;
-
-      @extend %socials;
-
       margin-top: 30px;
     }
   }

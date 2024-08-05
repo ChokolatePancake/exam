@@ -1,93 +1,68 @@
 @import "media";
 @import "variables";
 @import "global";
+@import "blocks/team-block";
 
 .content-section--team {
   h2 {
     margin-bottom: 27px;
-    margin-top: 46px;
-  }
-  .contextual-region {
-    position: static;
-  }
-  .field--name-field-link {
-    position: absolute;
-    width: 103px;
-    bottom: -29px;
-    left: 47%;
-    transform: translateX(-52%);
+    margin-top: 92px;
   }
 
-  .layout--onecol {
-    &:last-child {
-      position: absolute;
-      bottom: -130px;
-      left: 50%;
-      transform: translateX(-50%);
+  @extend %team-block;
 
-
-      .layout__region {
-        display: flex;
-        width: 200px;
-        margin: 0 auto;
-        justify-content: space-between;
-      }
-    }
-  }
-  .view-content .views-row {
-    position: relative;
+  @include breakpoint(desktop) {
     .field--name-title {
-      display: block;
-      margin-top: 33px;
-
-      a {
-        font-size: 27px;
-      }
+      margin-top: 15px;
     }
-    .field--name-field-role {
-      color: $light-grey;
-      font-size: 14px;
-      margin-bottom: 20px;
-    }
+  }
 
-    .block-field-blocknodeteamfield-socials {
-      ul {
-        display: flex;
-        li {
-          max-width: 32px;
-          @extend %socials;
-        }
-      }
-    }
-
-
-    @include breakpoint(desktop) {
-      .field--name-title {
-        margin-top: 15px;
-      }
-    }
-
-    @include breakpoint(laptop) {
-      .field--name-title a {
-        font-size: 24px;
-      }
+  @include breakpoint(laptop) {
+    .field--name-title a {
+      font-size: 24px;
     }
   }
 
   @include breakpoint(largeTablet) {
+    .view-content .views-row {
+      max-width: 160px;
+
+      .field--name-field-image {
+        img {
+          max-width: 160px;
+        }
+      }
+      .field--name-title a {
+        font-size: 18px;
+      }
+      .field--name-body {
+        font-size: 12px;
+      }
+    }
     .layout--onecol {
       &:last-child {
         .layout__region {
-          width: 147px;
+          width: 160px;
         }
       }
     }
   }
 
   @include breakpoint(tablet) {
-    .view-content .views-row .field--name-title a {
-      font-size: 20px;
+    .view-content {
+      justify-content: space-evenly;
+      .field--name-title a {
+        font-size: 20px;
+      }
+      .views-row {
+        margin-bottom: 120px;
+        max-width: 200px;
+        .field--name-field-image {
+          img {
+            max-width: 200px;
+          }
+        }
+      }
     }
   }
-
 }

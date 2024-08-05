@@ -1,0 +1,60 @@
+@import "../media";
+@import "../variables";
+@import "../global";
+
+.node-type-team {
+  .block-field-blocknodeteamfield-socials {
+    @extend %socials;
+  }
+  .top-team-block {
+    margin-top: 80px;
+    margin-left: 9px;
+    display: flex;
+    .field--name-title {
+      margin-top: 75px;
+      margin-left: 0;
+      margin-bottom: 10px;
+    }
+    .layout__region--first {
+      display: flex;
+      flex-wrap: wrap;
+      max-width: calc(100% - 290px);
+      .block {
+        &:first-child, &:nth-child(2) {
+          width: 100%;
+        }
+      }
+
+    }
+    .layout__region--second {
+      img {
+        margin: 0;
+      }
+    }
+    .block-field-blocknodeteamfield-socials {
+      width: 150px;
+    }
+  }
+  .content-team {
+    margin-top: -40px;
+  }
+
+  @include breakpoint(tablet) {
+    .top-team-block {
+      .layout__region--first {
+        max-width: 100%;
+      }
+
+      .layout__region--second {
+        flex: 1;
+        text-align: center;
+      }
+    }
+  }
+
+  @include breakpoint(largePhone) {
+    .field--name-body {
+      margin-top: 70px;
+    }
+  }
+}

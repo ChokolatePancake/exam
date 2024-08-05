@@ -1,0 +1,139 @@
+/* Media variables */
+/* Media variables */
+a {
+  text-decoration: none;
+}
+
+.node--view-mode-full {
+  max-width: 1250px;
+  margin: 0 auto;
+}
+@media (max-width: 1280px) {
+  .node--view-mode-full {
+    max-width: 1000px;
+  }
+}
+@media (max-width: 1024px) {
+  .node--view-mode-full {
+    max-width: 850px;
+  }
+}
+@media (max-width: 860px) {
+  .node--view-mode-full {
+    max-width: 700px;
+  }
+}
+@media (max-width: 768px) {
+  .node--view-mode-full {
+    max-width: 580px;
+  }
+}
+@media (max-width: 600px) {
+  .node--view-mode-full {
+    max-width: 460px;
+  }
+}
+@media (max-width: 480px) {
+  .node--view-mode-full {
+    max-width: 320px;
+  }
+}
+
+.node--view-mode-full {
+  margin-bottom: 120px;
+}
+.node--view-mode-full .node__content {
+  padding: 0 35px;
+}
+.node--view-mode-full .field--name-title {
+  text-transform: capitalize;
+  display: block;
+  font-weight: 600;
+  font-size: 36px;
+  margin-top: 105px;
+  margin-left: 9px;
+}
+.node--view-mode-full .block-field-blocknodeservicesfield-image, .node--view-mode-full .block-field-blocknodeprojectsfield-image {
+  float: right;
+}
+.node--view-mode-full .field--name-field-service-type {
+  text-transform: uppercase;
+  font-size: 18px;
+}
+.node--view-mode-full .field--name-field-image img {
+  margin: -16px 18px 21px;
+}
+.node--view-mode-full .field--name-body, .node--view-mode-full .field--name-field-text {
+  font-size: 38px;
+  line-height: 39px;
+  margin-top: 72px;
+  text-transform: capitalize;
+}
+.node--view-mode-full .field--name-field-images {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.node--view-mode-full .field--name-field-images .field__item {
+  padding: 10px;
+  max-width: 250px;
+  height: 250px;
+}
+.node--view-mode-full .field--name-field-images .field__item img {
+  width: 100%;
+  height: auto;
+}
+.node--view-mode-full .field--name-field-media-oembed-video {
+  position: relative;
+  margin: 10px 0;
+  padding-bottom: 56.25%;
+  padding-top: 25px;
+  height: 0;
+}
+.node--view-mode-full iframe {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+}
+@media (max-width: 768px) {
+  .node--view-mode-full .node__content {
+    padding: 0 10px;
+  }
+  .node--view-mode-full .field--name-field-image img {
+    margin-top: 50px;
+  }
+  .node--view-mode-full .field--name-field-images .field__item {
+    padding: 10px;
+    max-width: 240px;
+    height: 240px;
+  }
+}
+@media (max-width: 600px) {
+  .node--view-mode-full .field--name-body, .node--view-mode-full .field--name-field-text {
+    font-size: 24px;
+  }
+  .node--view-mode-full .field--name-field-images .field__item {
+    padding: 5px;
+    max-width: 200px;
+    height: 200px;
+  }
+  .node--view-mode-full .field--name-title {
+    margin-top: 70px;
+  }
+}
+@media (max-width: 480px) {
+  .node--view-mode-full .block:has(.field--name-field-image) {
+    float: none;
+    text-align: center;
+  }
+  .node--view-mode-full .field--name-body {
+    margin-top: 30px;
+  }
+  .node--view-mode-full .field--name-title {
+    margin-top: 50px;
+  }
+}
+
+/*# sourceMappingURL=default-node.css.map */

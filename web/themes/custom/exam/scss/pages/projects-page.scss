@@ -1,0 +1,73 @@
+@import "../media";
+@import "../variables";
+@import "../global";
+@import "../blocks/projects-block";
+@import "page-pager";
+
+//Same styles for view with projects filtered by services
+.projects-page, .taxonomy-projects {
+  @extend %container;
+  @extend %projects-block;
+  h2 {
+    @extend %titles;
+    margin-top: 44px;
+    letter-spacing: 1.6px;
+    font-size: 28px;
+  }
+
+  .view-content {
+    display: flex;
+    flex-wrap: wrap;
+    .views-row {
+      margin-top: 19px;
+      margin-bottom: 6px;
+      border: none;
+
+      .block-field-blocknodeprojectstitle {
+        margin-top: 28px;
+        margin-bottom: 8px;
+      }
+
+      .field--name-field-link {
+        bottom: 12px;
+      }
+
+      &:not(:nth-child(4n)) {
+        margin-right: 30px;
+      }
+    }
+  }
+  @extend %page-pager;
+  @include breakpoint(desktop) {
+    .view-content .views-row {
+      &:not(:nth-child(4n)) {
+        margin-right: 26px;
+      }
+    }
+  }
+  @include breakpoint(laptop) {
+    .view-content .views-row {
+      &:not(:nth-child(4n)) {
+        margin-right: 16px;
+      }
+    }
+  }
+  @include breakpoint(largeTablet) {
+    .view-content .views-row {
+      &:not(:nth-child(4n)) {
+        margin-right: 0;
+      }
+      &:not(:nth-child(3n)) {
+        margin-right: 50px;
+      }
+    }
+  }
+
+  @include breakpoint(tablet) {
+    .view-content .views-row {
+      &:not(:nth-child(3n)) {
+        margin-right: 0;
+      }
+    }
+  }
+}

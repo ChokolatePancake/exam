@@ -62,10 +62,11 @@ a {
   align-content: center;
 }
 #block-exam-views-block-about-us-block-1 .block-field-blocknodepagebody .field--name-body {
-  color: #666;
   font-size: 20px;
 }
 #block-exam-views-block-about-us-block-1 .block-field-blocknodepagebody p {
+  color: #888;
+  font-weight: 300;
   margin: 0;
 }
 #block-exam-views-block-about-us-block-1 .block-field-blocknodepagefield-link {

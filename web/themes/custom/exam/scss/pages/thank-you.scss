@@ -1,0 +1,47 @@
+@import "../variables";
+@import "../media";
+@import "../global";
+
+.basic-page-thank {
+  display: none;
+}
+
+#block-exam-thankyou {
+  @extend %container;
+  height: 500px;
+  align-content: center;
+  text-align: center;
+  .field--name-field-main-message {
+    font-size: 48px;
+    font-weight: 600;
+  }
+  .field--name-field-body p {
+    color: $grey;
+    font-size: 20px;
+    max-width: 570px;
+    margin: 20px auto;
+  }
+  .link-item {
+    margin: 0 auto;
+    width: fit-content;
+    position: relative;
+    text-align: center;
+
+    .link-url a {
+      padding: 10px 50px;
+      opacity: 0;
+    }
+    .link-title {
+      width: 100%;
+      padding: 10px 30px;
+      background: $dark-red;
+      border-radius: 5px;
+      margin-left: -30px;
+      color: $white;
+      font-weight: 500;
+      user-select: none;
+      position: absolute;
+      z-index: -1;
+    }
+  }
+}

@@ -4,38 +4,92 @@ a {
   text-decoration: none;
 }
 
-.content-section--team .view-content .views-row .block-field-blocknodeteamfield-socials ul li {
+.content-section--team .view-content .views-row .block-field-blocknodeteamfield-socials {
   position: relative;
 }
-.content-section--team .view-content .views-row .block-field-blocknodeteamfield-socials ul li a span {
+.content-section--team .view-content .views-row .block-field-blocknodeteamfield-socials a span {
   opacity: 0;
 }
-.content-section--team .view-content .views-row .block-field-blocknodeteamfield-socials ul li .social-media-link-icon {
+.content-section--team .view-content .views-row .block-field-blocknodeteamfield-socials ul {
+  display: flex;
+}
+.content-section--team .view-content .views-row .block-field-blocknodeteamfield-socials ul li {
+  max-width: 32px;
+}
+.content-section--team .view-content .views-row .block-field-blocknodeteamfield-socials ul li a::before {
+  content: "";
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 25px;
+  height: 25px;
+  display: inline-block;
+}
+.content-section--team .view-content .views-row .block-field-blocknodeteamfield-socials .social-media-link-icon {
   /* for another social link write:
   &--${name of social class} {
      &::before {
-        content: url("path to icon");
+                background-image: url('../images/{icon}.png'), url('../../images/{icon}.png');
+                // The second one url is for pages, because there is another path to images directory
      }
   }
   */
 }
-.content-section--team .view-content .views-row .block-field-blocknodeteamfield-socials ul li .social-media-link-icon--facebook::before {
-  content: url("../images/fb.png");
+.content-section--team .view-content .views-row .block-field-blocknodeteamfield-socials .social-media-link-icon--facebook::before {
+  background-image: url("../images/fb.png"), url("../../images/fb.png");
 }
-.content-section--team .view-content .views-row .block-field-blocknodeteamfield-socials ul li .social-media-link-icon--twitter::before {
-  content: url("../images/twit.png");
+.content-section--team .view-content .views-row .block-field-blocknodeteamfield-socials .social-media-link-icon--twitter::before {
+  background-image: url("../images/twit.png"), url("../../images/twit.png");
 }
-.content-section--team .view-content .views-row .block-field-blocknodeteamfield-socials ul li .social-media-link-icon--linkedin::before {
-  content: url("../images/in.png");
+.content-section--team .view-content .views-row .block-field-blocknodeteamfield-socials .social-media-link-icon--linkedin::before {
+  background-image: url("../images/in.png"), url("../../images/in.png");
 }
 
-.content-section--team h2 {
-  margin-bottom: 27px;
-  margin-top: 46px;
+/* Media variables */
+/* Media variables */
+a {
+  text-decoration: none;
 }
-.content-section--team .contextual-region {
-  position: static;
+
+.content-section--team .view-content .views-row .block-field-blocknodeteamfield-socials {
+  position: relative;
 }
+.content-section--team .view-content .views-row .block-field-blocknodeteamfield-socials a span {
+  opacity: 0;
+}
+.content-section--team .view-content .views-row .block-field-blocknodeteamfield-socials ul {
+  display: flex;
+}
+.content-section--team .view-content .views-row .block-field-blocknodeteamfield-socials ul li {
+  max-width: 32px;
+}
+.content-section--team .view-content .views-row .block-field-blocknodeteamfield-socials ul li a::before {
+  content: "";
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 25px;
+  height: 25px;
+  display: inline-block;
+}
+.content-section--team .view-content .views-row .block-field-blocknodeteamfield-socials .social-media-link-icon {
+  /* for another social link write:
+  &--${name of social class} {
+     &::before {
+                background-image: url('../images/{icon}.png'), url('../../images/{icon}.png');
+                // The second one url is for pages, because there is another path to images directory
+     }
+  }
+  */
+}
+.content-section--team .view-content .views-row .block-field-blocknodeteamfield-socials .social-media-link-icon--facebook::before {
+  background-image: url("../images/fb.png"), url("../../images/fb.png");
+}
+.content-section--team .view-content .views-row .block-field-blocknodeteamfield-socials .social-media-link-icon--twitter::before {
+  background-image: url("../images/twit.png"), url("../../images/twit.png");
+}
+.content-section--team .view-content .views-row .block-field-blocknodeteamfield-socials .social-media-link-icon--linkedin::before {
+  background-image: url("../images/in.png"), url("../../images/in.png");
+}
+
 .content-section--team .field--name-field-link {
   position: absolute;
   width: 103px;
@@ -45,18 +99,18 @@ a {
 }
 .content-section--team .layout--onecol:last-child {
   position: absolute;
-  bottom: -130px;
+  bottom: -128px;
   left: 50%;
   transform: translateX(-50%);
 }
 .content-section--team .layout--onecol:last-child .layout__region {
   display: flex;
-  width: 200px;
+  width: 190px;
   margin: 0 auto;
   justify-content: space-between;
 }
 .content-section--team .view-content .views-row {
-  position: relative;
+  text-align: center;
 }
 .content-section--team .view-content .views-row .field--name-title {
   display: block;
@@ -67,33 +121,88 @@ a {
 }
 .content-section--team .view-content .views-row .field--name-field-role {
   color: #CCC;
+  text-transform: uppercase;
   font-size: 14px;
   margin-bottom: 20px;
 }
-.content-section--team .view-content .views-row .block-field-blocknodeteamfield-socials ul {
-  display: flex;
+@media (max-width: 1280px) {
+  .content-section--team .view-content .views-row {
+    max-width: 230px;
+  }
+  .content-section--team .view-content .views-row .field--name-field-image img {
+    max-width: 230px;
+    height: auto;
+  }
 }
-.content-section--team .view-content .views-row .block-field-blocknodeteamfield-socials ul li {
-  max-width: 32px;
+@media (max-width: 1024px) {
+  .content-section--team .view-content .views-row {
+    max-width: 200px;
+  }
+  .content-section--team .view-content .views-row .field--name-field-image img {
+    max-width: 200px;
+  }
+  .content-section--team .view-content .views-row .field--name-title a {
+    font-size: 22px;
+  }
+}
+@media (max-width: 768px) {
+  .content-section--team .view-content {
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+  }
+  .content-section--team .view-content .views-row {
+    margin-bottom: 120px;
+    max-width: 200px;
+  }
+  .content-section--team .view-content .views-row .field--name-field-image img {
+    max-width: 200px;
+  }
+}
+
+.content-section--team h2 {
+  margin-bottom: 27px;
+  margin-top: 92px;
 }
 @media (max-width: 1280px) {
-  .content-section--team .view-content .views-row .field--name-title {
+  .content-section--team .field--name-title {
     margin-top: 15px;
   }
 }
 @media (max-width: 1024px) {
-  .content-section--team .view-content .views-row .field--name-title a {
+  .content-section--team .field--name-title a {
     font-size: 24px;
   }
 }
 @media (max-width: 860px) {
+  .content-section--team .view-content .views-row {
+    max-width: 160px;
+  }
+  .content-section--team .view-content .views-row .field--name-field-image img {
+    max-width: 160px;
+  }
+  .content-section--team .view-content .views-row .field--name-title a {
+    font-size: 18px;
+  }
+  .content-section--team .view-content .views-row .field--name-body {
+    font-size: 12px;
+  }
   .content-section--team .layout--onecol:last-child .layout__region {
-    width: 147px;
+    width: 160px;
   }
 }
 @media (max-width: 768px) {
-  .content-section--team .view-content .views-row .field--name-title a {
+  .content-section--team .view-content {
+    justify-content: space-evenly;
+  }
+  .content-section--team .view-content .field--name-title a {
     font-size: 20px;
+  }
+  .content-section--team .view-content .views-row {
+    margin-bottom: 120px;
+    max-width: 200px;
+  }
+  .content-section--team .view-content .views-row .field--name-field-image img {
+    max-width: 200px;
   }
 }
 

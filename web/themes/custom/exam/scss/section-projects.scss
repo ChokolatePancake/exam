@@ -1,57 +1,24 @@
 @import "media";
 @import "variables";
 @import "global";
+@import "blocks/projects-block";
 
 .content-section--projects {
   h2 {
     margin-bottom: 17px;
-    margin-top: 154px;
+    margin-top: 161px;
     font-weight: 300;
   }
   .view-content-wrapper {
     padding-top: 68px;
-    padding-bottom: 157px;
+    padding-bottom: 110px;
     @extend %black-white-background;
   }
-  .contextual-region {
-    position: static;
-  }
-  .field--name-field-link {
-    position: absolute;
-    bottom: 7px;
-    left: 47%;
-    transform: translateX(-53%);
-  }
 
+  @extend %projects-block;
 
-  .view-content .views-row {
-    position: relative;
-    background: $white;
-    padding-bottom: 37px;
-    border-bottom: 1px solid rgba($black, 0.7);
-
-    .field--name-title {
-      a {
-        font-size: 26px;
-        font-weight: 300;
-        letter-spacing: 1.3px;
-      }
-    }
-    .field--name-field-service-type {
-      font-size: 17px;
-      font-weight: 400;
-    }
-    .block-layout-builder {
-      &:nth-child(2) {
-        margin-top: 30px;
-      }
-      &:nth-child(3) {
-        margin-top:6px;
-      }
-      &:nth-child(4) {
-        margin-top:26px;
-      }
-    }
+  .view-content {
+    text-align: center;
   }
 
   @include breakpoint(desktop) {
@@ -64,11 +31,44 @@
       }
     }
   }
-
-  @include breakpoint(tablet) {
+  @include breakpoint(largeTablet) {
+    h2 {
+      margin-top: 83px;
+    }
     .view-content .views-row {
+      max-width: 160px;
+
+      .field--name-field-image {
+        img {
+          max-width: 160px;
+        }
+      }
       .field--name-title a {
         font-size: 18px;
+      }
+      .field--name-body {
+        font-size: 12px;
+      }
+    }
+  }
+
+  @include breakpoint(tablet) {
+    h2 {
+      margin-top: 54px;
+    }
+    .view-content .views-row {
+      margin-bottom: 50px;
+      max-width: 140px;
+      .field--name-title a {
+        font-size: 18px;
+      }
+      .field--name-field-image {
+        img {
+          max-width: 140px;
+        }
+      }
+      .field--name-title a {
+        font-size: 16px;
       }
       .field--name-field-service-type {
         font-size: 14px;
@@ -76,15 +76,17 @@
     }
   }
   @include breakpoint(phablet) {
-    .view-content .views-row {
-      margin-bottom: 80px;
-    }
-    h2 {
-      margin-top: 34px;
-    }
-    .view-pager {
-      margin-top: -5px;
-      margin-bottom: 20px;
+    .view-content {
+      justify-content: space-evenly;
+      .views-row {
+        margin-bottom: 80px;
+        max-width: 200px;
+        .field--name-field-image {
+          img {
+            max-width: 200px;
+          }
+        }
+      }
     }
   }
 }

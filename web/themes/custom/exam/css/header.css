@@ -62,29 +62,44 @@ a {
   font-weight: 300;
 }
 
-.site-header .block-social-media-links-block li {
+.site-header .block-social-media-links-block {
   position: relative;
 }
-.site-header .block-social-media-links-block li a span {
+.site-header .block-social-media-links-block a span {
   opacity: 0;
 }
-.site-header .block-social-media-links-block li .social-media-link-icon {
+.site-header .block-social-media-links-block ul {
+  display: flex;
+}
+.site-header .block-social-media-links-block ul li {
+  max-width: 32px;
+}
+.site-header .block-social-media-links-block ul li a::before {
+  content: "";
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 25px;
+  height: 25px;
+  display: inline-block;
+}
+.site-header .block-social-media-links-block .social-media-link-icon {
   /* for another social link write:
   &--${name of social class} {
      &::before {
-        content: url("path to icon");
+                background-image: url('../images/{icon}.png'), url('../../images/{icon}.png');
+                // The second one url is for pages, because there is another path to images directory
      }
   }
   */
 }
-.site-header .block-social-media-links-block li .social-media-link-icon--facebook::before {
-  content: url("../images/fb.png");
+.site-header .block-social-media-links-block .social-media-link-icon--facebook::before {
+  background-image: url("../images/fb.png"), url("../../images/fb.png");
 }
-.site-header .block-social-media-links-block li .social-media-link-icon--twitter::before {
-  content: url("../images/twit.png");
+.site-header .block-social-media-links-block .social-media-link-icon--twitter::before {
+  background-image: url("../images/twit.png"), url("../../images/twit.png");
 }
-.site-header .block-social-media-links-block li .social-media-link-icon--linkedin::before {
-  content: url("../images/in.png");
+.site-header .block-social-media-links-block .social-media-link-icon--linkedin::before {
+  background-image: url("../images/in.png"), url("../../images/in.png");
 }
 
 /* Media variables */
@@ -125,8 +140,10 @@ a {
   text-transform: uppercase;
   color: #222;
   font-size: 14px;
+  font-family: "Mukta", sans-serif;
 }
 .site-header .layout__region--content .menu-item {
+  text-transform: uppercase;
   position: relative;
 }
 .site-header .layout__region--content .menu-item::after {
@@ -140,7 +157,7 @@ a {
   background: #6e9bca;
   transition: height 0.5s ease;
 }
-.site-header .layout__region--content .menu-item:hover::after {
+.site-header .layout__region--content .menu-item:hover::after, .site-header .layout__region--content .menu-item:has(.is-active)::after {
   height: 7px;
 }
 .site-header .layout__region--content .menu-item:first-child {
@@ -156,9 +173,9 @@ a {
   top: -4px;
   content: url("../images/Homepage-menu.png");
 }
-.site-header .layout__region--content .menu-item:first-child:hover::after {
-  left: 50%;
+.site-header .layout__region--content .menu-item:first-child::after {
   width: 30px;
+  left: 50%;
 }
 .site-header .block-social-media-links-block {
   margin-left: 20px;

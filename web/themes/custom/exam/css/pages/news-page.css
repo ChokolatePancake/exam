@@ -1,0 +1,581 @@
+/* Media variables */
+/* Media variables */
+a {
+  text-decoration: none;
+}
+
+.news-page, .taxonomy-news, .news-page .views-exposed-form, .taxonomy-news .views-exposed-form {
+  max-width: 1250px;
+  margin: 0 auto;
+}
+@media (max-width: 1280px) {
+  .news-page, .taxonomy-news, .news-page .views-exposed-form, .taxonomy-news .views-exposed-form {
+    max-width: 1000px;
+  }
+}
+@media (max-width: 1024px) {
+  .news-page, .taxonomy-news, .news-page .views-exposed-form, .taxonomy-news .views-exposed-form {
+    max-width: 850px;
+  }
+}
+@media (max-width: 860px) {
+  .news-page, .taxonomy-news, .news-page .views-exposed-form, .taxonomy-news .views-exposed-form {
+    max-width: 700px;
+  }
+}
+@media (max-width: 768px) {
+  .news-page, .taxonomy-news, .news-page .views-exposed-form, .taxonomy-news .views-exposed-form {
+    max-width: 580px;
+  }
+}
+@media (max-width: 600px) {
+  .news-page, .taxonomy-news, .news-page .views-exposed-form, .taxonomy-news .views-exposed-form {
+    max-width: 460px;
+  }
+}
+@media (max-width: 480px) {
+  .news-page, .taxonomy-news, .news-page .views-exposed-form, .taxonomy-news .views-exposed-form {
+    max-width: 320px;
+  }
+}
+
+.news-page h2, .taxonomy-news h2 {
+  display: flex;
+  text-transform: uppercase;
+}
+.news-page h2::before, .taxonomy-news h2::before, .news-page h2::after, .taxonomy-news h2::after {
+  content: "";
+  flex: 1;
+  height: 1px;
+  margin: 18px 20px 0;
+  background: #CCC;
+}
+
+.news-page .block-field-blocknodearticlecreated .field--name-created, .taxonomy-news .block-field-blocknodearticlecreated .field--name-created {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+.news-page .block-field-blocknodearticlecreated .field--name-created span, .taxonomy-news .block-field-blocknodearticlecreated .field--name-created span {
+  display: block;
+}
+.news-page .block-field-blocknodearticlecreated .field--name-created .month, .taxonomy-news .block-field-blocknodearticlecreated .field--name-created .month {
+  font-size: 28px;
+  font-weight: 300;
+  line-height: 1;
+}
+.news-page .block-field-blocknodearticlecreated .field--name-created .day, .taxonomy-news .block-field-blocknodearticlecreated .field--name-created .day {
+  font-size: 58px;
+  line-height: 0.7;
+  color: #1174cc;
+  font-weight: 600;
+}
+.news-page .block-field-blocknodearticlecreated .field--name-created .year, .taxonomy-news .block-field-blocknodearticlecreated .field--name-created .year {
+  font-size: 20px;
+  line-height: 1;
+  color: #CCC;
+}
+
+/* Media variables */
+/* Media variables */
+a {
+  text-decoration: none;
+}
+
+.news-page, .taxonomy-news, .news-page .views-exposed-form, .taxonomy-news .views-exposed-form {
+  max-width: 1250px;
+  margin: 0 auto;
+}
+@media (max-width: 1280px) {
+  .news-page, .taxonomy-news, .news-page .views-exposed-form, .taxonomy-news .views-exposed-form {
+    max-width: 1000px;
+  }
+}
+@media (max-width: 1024px) {
+  .news-page, .taxonomy-news, .news-page .views-exposed-form, .taxonomy-news .views-exposed-form {
+    max-width: 850px;
+  }
+}
+@media (max-width: 860px) {
+  .news-page, .taxonomy-news, .news-page .views-exposed-form, .taxonomy-news .views-exposed-form {
+    max-width: 700px;
+  }
+}
+@media (max-width: 768px) {
+  .news-page, .taxonomy-news, .news-page .views-exposed-form, .taxonomy-news .views-exposed-form {
+    max-width: 580px;
+  }
+}
+@media (max-width: 600px) {
+  .news-page, .taxonomy-news, .news-page .views-exposed-form, .taxonomy-news .views-exposed-form {
+    max-width: 460px;
+  }
+}
+@media (max-width: 480px) {
+  .news-page, .taxonomy-news, .news-page .views-exposed-form, .taxonomy-news .views-exposed-form {
+    max-width: 320px;
+  }
+}
+
+.news-page h2, .taxonomy-news h2 {
+  display: flex;
+  text-transform: uppercase;
+}
+.news-page h2::before, .taxonomy-news h2::before, .news-page h2::after, .taxonomy-news h2::after {
+  content: "";
+  flex: 1;
+  height: 1px;
+  margin: 18px 20px 0;
+  background: #CCC;
+}
+
+.news-page .block-field-blocknodearticlecreated .field--name-created, .taxonomy-news .block-field-blocknodearticlecreated .field--name-created {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+.news-page .block-field-blocknodearticlecreated .field--name-created span, .taxonomy-news .block-field-blocknodearticlecreated .field--name-created span {
+  display: block;
+}
+.news-page .block-field-blocknodearticlecreated .field--name-created .month, .taxonomy-news .block-field-blocknodearticlecreated .field--name-created .month {
+  font-size: 28px;
+  font-weight: 300;
+  line-height: 1;
+}
+.news-page .block-field-blocknodearticlecreated .field--name-created .day, .taxonomy-news .block-field-blocknodearticlecreated .field--name-created .day {
+  font-size: 58px;
+  line-height: 0.7;
+  color: #1174cc;
+  font-weight: 600;
+}
+.news-page .block-field-blocknodearticlecreated .field--name-created .year, .taxonomy-news .block-field-blocknodearticlecreated .field--name-created .year {
+  font-size: 20px;
+  line-height: 1;
+  color: #CCC;
+}
+
+.news-page, .taxonomy-news {
+  text-transform: uppercase;
+}
+.news-page .view-filters, .taxonomy-news .view-filters {
+  padding-top: 13px;
+  background-position: -1px 0;
+}
+.news-page .node--view-mode-teaser, .taxonomy-news .node--view-mode-teaser {
+  height: inherit;
+}
+.news-page .node__content, .taxonomy-news .node__content {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  height: inherit;
+}
+.news-page .node__content .field--name-field-link, .taxonomy-news .node__content .field--name-field-link {
+  position: absolute;
+  bottom: 17px;
+  right: 10px;
+}
+.news-page .form--inline, .taxonomy-news .form--inline {
+  display: flex;
+  width: 420px;
+  background: #f3f3f3;
+  margin-left: -5px;
+}
+.news-page .form-item, .taxonomy-news .form-item {
+  position: relative;
+  margin: 5px 3px;
+}
+.news-page .form-item input, .taxonomy-news .form-item input {
+  border: 1px solid #CCC;
+  border-radius: 5px;
+  height: 32px;
+  width: 326px;
+  padding-left: 13px;
+}
+.news-page .form-item input::placeholder, .taxonomy-news .form-item input::placeholder {
+  color: #CCC;
+}
+.news-page .form-actions, .taxonomy-news .form-actions {
+  margin: 4px 0;
+}
+.news-page .form-actions input, .taxonomy-news .form-actions input {
+  width: 66px;
+  cursor: pointer;
+  height: 37px;
+  color: #ffffff;
+  background: #47b4e2;
+  border-radius: 5px;
+  border: none;
+}
+.news-page .layout--onecol, .taxonomy-news .layout--onecol {
+  margin-top: 7px;
+  margin-left: 92px;
+  padding-left: 17px;
+  height: 100%;
+}
+.news-page .layout--onecol .field--name-title a, .taxonomy-news .layout--onecol .field--name-title a {
+  letter-spacing: 0.65px;
+  font-size: 28px;
+}
+.news-page .layout--onecol .field--name-body, .taxonomy-news .layout--onecol .field--name-body {
+  font-size: 14px;
+  margin-top: 11px;
+  padding-right: 10px;
+  letter-spacing: -0.1px;
+  margin-left: -2px;
+  font-weight: 300;
+}
+.news-page .views-row, .taxonomy-news .views-row {
+  border-radius: 10px;
+  background: #ffffff;
+  height: 290px;
+  max-width: 610px;
+}
+.news-page .layout__region--first, .taxonomy-news .layout__region--first {
+  max-width: 90px;
+  position: relative;
+  padding-top: 13px;
+}
+.news-page .layout__region--first::after, .taxonomy-news .layout__region--first::after {
+  content: "";
+  position: absolute;
+  right: 0;
+  top: 20%;
+  height: 75%;
+  width: 1px;
+  background-color: #CCC;
+}
+.news-page .layout__region--first::before, .taxonomy-news .layout__region--first::before {
+  content: "";
+  position: absolute;
+  right: 0;
+  top: 107%;
+  height: 160%;
+  width: 1px;
+  background-color: #CCC;
+}
+.news-page .layout__region--second, .taxonomy-news .layout__region--second {
+  padding: 18px 0 0 18px;
+  display: flex;
+}
+.news-page .layout__region--second .block-field-blocknodearticleuid, .taxonomy-news .layout__region--second .block-field-blocknodearticleuid {
+  width: fit-content;
+}
+.news-page .layout__region--second .layout--onecol, .taxonomy-news .layout__region--second .layout--onecol {
+  margin: 0;
+  padding: 0;
+}
+.news-page .layout__region--second .layout--onecol::after, .taxonomy-news .layout__region--second .layout--onecol::after {
+  content: none;
+}
+.news-page .layout__region--second .profile .layout__region, .taxonomy-news .layout__region--second .profile .layout__region {
+  display: flex;
+  width: fit-content;
+}
+.news-page .layout__region--second .profile .layout__region .field--name-name, .taxonomy-news .layout__region--second .profile .layout__region .field--name-name {
+  margin-top: -2px;
+  display: flex;
+  font-size: 13px;
+  width: auto;
+}
+.news-page .layout__region--second .profile .layout__region .field--name-name::before, .taxonomy-news .layout__region--second .profile .layout__region .field--name-name::before {
+  content: "WRITER";
+  padding: 0 5px 0 9px;
+  color: #CCC;
+}
+.news-page .layout__region--second .profile .layout__region .field--name-name::after, .taxonomy-news .layout__region--second .profile .layout__region .field--name-name::after {
+  margin-left: 5px;
+  content: "/";
+}
+.news-page .layout__region--second .field--name-field-t, .taxonomy-news .layout__region--second .field--name-field-t {
+  margin-top: -5px;
+  margin-left: 5px;
+}
+.news-page .layout__region--second .field--name-field-t a, .taxonomy-news .layout__region--second .field--name-field-t a {
+  font-size: 13px;
+  color: #6e9bca;
+}
+.news-page .layout__region--second .block-field-blocknodearticlecreated, .taxonomy-news .layout__region--second .block-field-blocknodearticlecreated {
+  flex: 1;
+}
+.news-page .layout__region--second .block-field-blocknodearticlecreated .field--name-created, .taxonomy-news .layout__region--second .block-field-blocknodearticlecreated .field--name-created {
+  margin-top: -2px;
+  margin-right: -20px;
+}
+.news-page .layout__region--second .block-field-blocknodearticlecreated .field--name-created time, .taxonomy-news .layout__region--second .block-field-blocknodearticlecreated .field--name-created time {
+  color: #CCC;
+  font-size: 13px;
+  text-align: right;
+}
+@media (max-width: 1280px) {
+  .news-page .views-row, .taxonomy-news .views-row {
+    max-width: 490px;
+    height: 340px;
+  }
+  .news-page .layout--onecol::after, .taxonomy-news .layout--onecol::after {
+    height: 145%;
+  }
+  .news-page .layout__region--second .block-field-blocknodearticlecreated .field--name-created, .taxonomy-news .layout__region--second .block-field-blocknodearticlecreated .field--name-created {
+    margin-right: -6px;
+  }
+}
+@media (max-width: 1024px) {
+  .news-page .layout__region--first, .taxonomy-news .layout__region--first {
+    max-width: 80px;
+  }
+  .news-page .views-row, .taxonomy-news .views-row {
+    max-width: 410px;
+    height: 360px;
+  }
+  .news-page .layout--onecol, .taxonomy-news .layout--onecol {
+    margin-left: 82px;
+    margin-top: 12px;
+  }
+  .news-page .layout--onecol .field--name-title a, .taxonomy-news .layout--onecol .field--name-title a {
+    font-size: 20px;
+  }
+  .news-page .layout__region--second, .taxonomy-news .layout__region--second {
+    position: relative;
+  }
+  .news-page .layout__region--second .block-field-blocknodearticlecreated .field--name-created, .taxonomy-news .layout__region--second .block-field-blocknodearticlecreated .field--name-created {
+    margin-right: 4px;
+  }
+  .news-page .layout__region--second .field--name-field-t, .taxonomy-news .layout__region--second .field--name-field-t {
+    position: absolute;
+    bottom: 0;
+  }
+  .news-page .layout__region--second .profile .layout__region, .taxonomy-news .layout__region--second .profile .layout__region {
+    flex-direction: column;
+  }
+  .news-page .layout__region--second .profile .layout__region .field--name-name, .taxonomy-news .layout__region--second .profile .layout__region .field--name-name {
+    margin-top: 5px;
+  }
+  .news-page .layout__region--second .profile .layout__region .field--name-name::before, .taxonomy-news .layout__region--second .profile .layout__region .field--name-name::before {
+    padding-left: 0;
+  }
+}
+@media (max-width: 860px) {
+  .news-page h2, .taxonomy-news h2 {
+    margin-top: 200px;
+  }
+  .news-page .view-content, .taxonomy-news .view-content {
+    flex-direction: column;
+  }
+  .news-page .views-row, .taxonomy-news .views-row {
+    margin-bottom: 20px;
+    max-width: 700px;
+    height: 350px;
+  }
+  .news-page .layout__region--first::before, .taxonomy-news .layout__region--first::before {
+    height: 111%;
+  }
+}
+@media (max-width: 768px) {
+  .news-page .layout--twocol-section, .taxonomy-news .layout--twocol-section {
+    flex-wrap: nowrap;
+  }
+  .news-page .layout__region--second .block-field-blocknodearticlecreated .field--name-created, .taxonomy-news .layout__region--second .block-field-blocknodearticlecreated .field--name-created {
+    margin-right: 10px;
+  }
+}
+@media (max-width: 600px) {
+  .news-page h2, .taxonomy-news h2 {
+    margin-top: 130px;
+  }
+}
+@media (max-width: 480px) {
+  .news-page h2, .taxonomy-news h2 {
+    margin-top: 50px;
+  }
+  .news-page .form--inline, .taxonomy-news .form--inline {
+    margin: 0 auto;
+    width: 300px;
+    flex-wrap: wrap;
+  }
+  .news-page .form-item input, .taxonomy-news .form-item input {
+    width: 277px;
+  }
+  .news-page .form-actions input, .taxonomy-news .form-actions input {
+    margin-left: 3px;
+  }
+  .news-page .layout--onecol .field--name-body, .taxonomy-news .layout--onecol .field--name-body {
+    font-size: 12px;
+  }
+  .news-page .views-row, .taxonomy-news .views-row {
+    max-width: 300px;
+    margin: 0 auto 20px;
+    height: 400px;
+  }
+  .news-page .layout__region--first::before, .taxonomy-news .layout__region--first::before {
+    height: 180%;
+  }
+}
+
+/* Media variables */
+/* Media variables */
+a {
+  text-decoration: none;
+}
+
+.news-page, .taxonomy-news, .news-page .views-exposed-form, .taxonomy-news .views-exposed-form {
+  max-width: 1250px;
+  margin: 0 auto;
+}
+@media (max-width: 1280px) {
+  .news-page, .taxonomy-news, .news-page .views-exposed-form, .taxonomy-news .views-exposed-form {
+    max-width: 1000px;
+  }
+}
+@media (max-width: 1024px) {
+  .news-page, .taxonomy-news, .news-page .views-exposed-form, .taxonomy-news .views-exposed-form {
+    max-width: 850px;
+  }
+}
+@media (max-width: 860px) {
+  .news-page, .taxonomy-news, .news-page .views-exposed-form, .taxonomy-news .views-exposed-form {
+    max-width: 700px;
+  }
+}
+@media (max-width: 768px) {
+  .news-page, .taxonomy-news, .news-page .views-exposed-form, .taxonomy-news .views-exposed-form {
+    max-width: 580px;
+  }
+}
+@media (max-width: 600px) {
+  .news-page, .taxonomy-news, .news-page .views-exposed-form, .taxonomy-news .views-exposed-form {
+    max-width: 460px;
+  }
+}
+@media (max-width: 480px) {
+  .news-page, .taxonomy-news, .news-page .views-exposed-form, .taxonomy-news .views-exposed-form {
+    max-width: 320px;
+  }
+}
+
+.news-page h2, .taxonomy-news h2 {
+  display: flex;
+  text-transform: uppercase;
+}
+.news-page h2::before, .taxonomy-news h2::before, .news-page h2::after, .taxonomy-news h2::after {
+  content: "";
+  flex: 1;
+  height: 1px;
+  margin: 18px 20px 0;
+  background: #CCC;
+}
+
+.news-page .block-field-blocknodearticlecreated .field--name-created, .taxonomy-news .block-field-blocknodearticlecreated .field--name-created {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+.news-page .block-field-blocknodearticlecreated .field--name-created span, .taxonomy-news .block-field-blocknodearticlecreated .field--name-created span {
+  display: block;
+}
+.news-page .block-field-blocknodearticlecreated .field--name-created .month, .taxonomy-news .block-field-blocknodearticlecreated .field--name-created .month {
+  font-size: 28px;
+  font-weight: 300;
+  line-height: 1;
+}
+.news-page .block-field-blocknodearticlecreated .field--name-created .day, .taxonomy-news .block-field-blocknodearticlecreated .field--name-created .day {
+  font-size: 58px;
+  line-height: 0.7;
+  color: #1174cc;
+  font-weight: 600;
+}
+.news-page .block-field-blocknodearticlecreated .field--name-created .year, .taxonomy-news .block-field-blocknodearticlecreated .field--name-created .year {
+  font-size: 20px;
+  line-height: 1;
+  color: #CCC;
+}
+
+.news-page .view-pager, .taxonomy-news .view-pager {
+  margin: 18px 0 73px;
+}
+.news-page .view-pager ul li, .taxonomy-news .view-pager ul li {
+  padding: 10px 22px;
+  margin: 0 5px;
+}
+.news-page .view-pager ul li a, .taxonomy-news .view-pager ul li a {
+  font-size: 26px;
+}
+.news-page .view-pager ul li .pager__item--next, .taxonomy-news .view-pager ul li .pager__item--next, .news-page .view-pager ul li .pager__item--last, .taxonomy-news .view-pager ul li .pager__item--last, .news-page .view-pager ul li .pager__item--first, .taxonomy-news .view-pager ul li .pager__item--first, .news-page .view-pager ul li .pager__item--previous, .taxonomy-news .view-pager ul li .pager__item--previous {
+  padding: 0 22px;
+}
+.news-page .view-pager ul li .pager__item--next a, .taxonomy-news .view-pager ul li .pager__item--next a, .news-page .view-pager ul li .pager__item--last a, .taxonomy-news .view-pager ul li .pager__item--last a, .news-page .view-pager ul li .pager__item--first a, .taxonomy-news .view-pager ul li .pager__item--first a, .news-page .view-pager ul li .pager__item--previous a, .taxonomy-news .view-pager ul li .pager__item--previous a {
+  font-size: 36px;
+}
+@media (max-width: 600px) {
+  .news-page .view-pager ul li, .taxonomy-news .view-pager ul li {
+    padding: 10px 18px;
+  }
+  .news-page .view-pager ul li a, .taxonomy-news .view-pager ul li a {
+    font-size: 20px;
+  }
+  .news-page .view-pager ul li .pager__item--next a, .taxonomy-news .view-pager ul li .pager__item--next a, .news-page .view-pager ul li .pager__item--last a, .taxonomy-news .view-pager ul li .pager__item--last a, .news-page .view-pager ul li .pager__item--first a, .taxonomy-news .view-pager ul li .pager__item--first a, .news-page .view-pager ul li .pager__item--previous a, .taxonomy-news .view-pager ul li .pager__item--previous a {
+    font-size: 28px;
+  }
+}
+@media (max-width: 600px) {
+  .news-page .view-pager ul li, .taxonomy-news .view-pager ul li {
+    padding: 8px 14px;
+    margin: 0 2px;
+  }
+  .news-page .view-pager ul li a, .taxonomy-news .view-pager ul li a {
+    font-size: 15px;
+  }
+}
+
+.news-page h2, .taxonomy-news h2 {
+  margin-top: 44px;
+  margin-left: -8px;
+  letter-spacing: -0.6px;
+  margin-bottom: -3px;
+}
+.news-page .form--inline, .taxonomy-news .form--inline {
+  margin-left: 0;
+  margin-bottom: 100px;
+}
+.news-page .view-content, .taxonomy-news .view-content {
+  display: flex;
+  flex-wrap: wrap;
+}
+.news-page .view-content .field--name-field-link, .taxonomy-news .view-content .field--name-field-link {
+  bottom: 30px;
+  right: 31px;
+}
+.news-page .view-content .field--name-field-link a, .taxonomy-news .view-content .field--name-field-link a {
+  color: #ffffff;
+  background: #444;
+  padding: 1px 8px;
+}
+.news-page .view-content .views-row, .taxonomy-news .view-content .views-row {
+  margin-bottom: 34px;
+}
+.news-page .view-content .views-row:nth-child(2n), .taxonomy-news .view-content .views-row:nth-child(2n) {
+  margin-left: 30px;
+}
+.news-page .view-pager, .taxonomy-news .view-pager {
+  margin-bottom: 41px;
+}
+@media (max-width: 1280px) {
+  .news-page .view-content .views-row:nth-child(2n), .taxonomy-news .view-content .views-row:nth-child(2n) {
+    margin-left: 20px;
+  }
+}
+@media (max-width: 480px) {
+  .news-page .form--inline, .taxonomy-news .form--inline {
+    margin-left: 9px;
+    margin-bottom: 50px;
+  }
+  .news-page .view-content .field--name-field-link, .taxonomy-news .view-content .field--name-field-link {
+    bottom: 50px;
+    right: 5px;
+  }
+}
+
+.taxonomy-news h2 {
+  margin-bottom: 70px;
+}
+
+/*# sourceMappingURL=news-page.css.map */

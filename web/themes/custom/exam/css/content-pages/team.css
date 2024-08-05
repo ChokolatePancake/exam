@@ -1,0 +1,89 @@
+/* Media variables */
+/* Media variables */
+a {
+  text-decoration: none;
+}
+
+.node-type-team .block-field-blocknodeteamfield-socials {
+  position: relative;
+}
+.node-type-team .block-field-blocknodeteamfield-socials a span {
+  opacity: 0;
+}
+.node-type-team .block-field-blocknodeteamfield-socials ul {
+  display: flex;
+}
+.node-type-team .block-field-blocknodeteamfield-socials ul li {
+  max-width: 32px;
+}
+.node-type-team .block-field-blocknodeteamfield-socials ul li a::before {
+  content: "";
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 25px;
+  height: 25px;
+  display: inline-block;
+}
+.node-type-team .block-field-blocknodeteamfield-socials .social-media-link-icon {
+  /* for another social link write:
+  &--${name of social class} {
+     &::before {
+                background-image: url('../images/{icon}.png'), url('../../images/{icon}.png');
+                // The second one url is for pages, because there is another path to images directory
+     }
+  }
+  */
+}
+.node-type-team .block-field-blocknodeteamfield-socials .social-media-link-icon--facebook::before {
+  background-image: url("../images/fb.png"), url("../../images/fb.png");
+}
+.node-type-team .block-field-blocknodeteamfield-socials .social-media-link-icon--twitter::before {
+  background-image: url("../images/twit.png"), url("../../images/twit.png");
+}
+.node-type-team .block-field-blocknodeteamfield-socials .social-media-link-icon--linkedin::before {
+  background-image: url("../images/in.png"), url("../../images/in.png");
+}
+
+.node-type-team .top-team-block {
+  margin-top: 80px;
+  margin-left: 9px;
+  display: flex;
+}
+.node-type-team .top-team-block .field--name-title {
+  margin-top: 75px;
+  margin-left: 0;
+  margin-bottom: 10px;
+}
+.node-type-team .top-team-block .layout__region--first {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: calc(100% - 290px);
+}
+.node-type-team .top-team-block .layout__region--first .block:first-child, .node-type-team .top-team-block .layout__region--first .block:nth-child(2) {
+  width: 100%;
+}
+.node-type-team .top-team-block .layout__region--second img {
+  margin: 0;
+}
+.node-type-team .top-team-block .block-field-blocknodeteamfield-socials {
+  width: 150px;
+}
+.node-type-team .content-team {
+  margin-top: -40px;
+}
+@media (max-width: 768px) {
+  .node-type-team .top-team-block .layout__region--first {
+    max-width: 100%;
+  }
+  .node-type-team .top-team-block .layout__region--second {
+    flex: 1;
+    text-align: center;
+  }
+}
+@media (max-width: 480px) {
+  .node-type-team .field--name-body {
+    margin-top: 70px;
+  }
+}
+
+/*# sourceMappingURL=team.css.map */

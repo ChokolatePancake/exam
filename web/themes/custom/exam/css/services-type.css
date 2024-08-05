@@ -1,5 +1,5 @@
-.content-section--projects .view-content .views-row .service-type {
-  /* For new add
+.view-content .views-row .service-type, .region-content .service-type {
+  /* For new add(for single node page dont forget to add ".field--name-field-service-type a{"
   &-${name of taxonomy term with lowercase and "-" instead of space} {
     .field--name-field-service-type {
       color: ${your-color};
@@ -7,16 +7,16 @@
   }
   */
 }
-.content-section--projects .view-content .views-row .service-type-web-development .field--name-field-service-type {
+.view-content .views-row .service-type-web-development .field--name-field-service-type, .view-content .views-row .service-type-web-development .field--name-field-service-type a, .region-content .service-type-web-development .field--name-field-service-type, .region-content .service-type-web-development .field--name-field-service-type a {
   color: #49c9af;
 }
-.content-section--projects .view-content .views-row .service-type-php-development .field--name-field-service-type {
+.view-content .views-row .service-type-php-development .field--name-field-service-type, .view-content .views-row .service-type-php-development .field--name-field-service-type a, .region-content .service-type-php-development .field--name-field-service-type, .region-content .service-type-php-development .field--name-field-service-type a {
   color: #8621d5;
 }
-.content-section--projects .view-content .views-row .service-type-app-development .field--name-field-service-type {
+.view-content .views-row .service-type-app-development .field--name-field-service-type, .view-content .views-row .service-type-app-development .field--name-field-service-type a, .region-content .service-type-app-development .field--name-field-service-type, .region-content .service-type-app-development .field--name-field-service-type a {
   color: #e9695c;
 }
-.content-section--projects .view-content .views-row .service-type-drupal-project .field--name-field-service-type {
+.view-content .views-row .service-type-drupal-project .field--name-field-service-type, .view-content .views-row .service-type-drupal-project .field--name-field-service-type a, .region-content .service-type-drupal-project .field--name-field-service-type, .region-content .service-type-drupal-project .field--name-field-service-type a {
   color: #47b4e2;
 }
 

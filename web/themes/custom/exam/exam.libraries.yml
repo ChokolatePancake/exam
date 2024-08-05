@@ -27,6 +27,35 @@ global:
       css/pager.css: {}
       css/like.css: {}
       css/slider.css: {}
+#      There are blocks for views(teasers)
+      css/blocks/default-block.css: {}
+      css/blocks/services-block.css: {}
+      css/blocks/projects-block.css: {}
+      css/blocks/team-block.css: {}
+      css/blocks/news-block.css: {}
+#
+#      There are pages of views
+      css/pages/general-page.css: {}
+      css/pages/page-pager.css: {}
+      css/pages/contact.css: {}
+      css/pages/about-page.css: {}
+      css/pages/services-page.css: {}
+      css/pages/projects-page.css: {}
+      css/pages/team-page.css: {}
+      css/pages/news-page.css: {}
+      css/pages/clients-page.css: {}
+      css/pages/taxonomy-term.css: {}
+      css/pages/thank-you.css: {}
+#
+#      There are pages of content
+      css/content-pages/default-node.css: {}
+      css/content-pages/client.css: {}
+      css/content-pages/news.css: {}
+      css/content-pages/service.css: {}
+      css/content-pages/project.css: {}
+      css/content-pages/team.css: {}
 
   js:
     js/burger.js: {}
+    js/phone-validation.js: {}
+

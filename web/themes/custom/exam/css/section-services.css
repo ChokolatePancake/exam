@@ -4,6 +4,73 @@ a {
   text-decoration: none;
 }
 
+/* Media variables */
+/* Media variables */
+a {
+  text-decoration: none;
+}
+
+.content-section--services .view-content .views-row {
+  text-align: center;
+}
+.content-section--services .view-content .views-row .block-field-blocknodeservicestitle {
+  margin-top: 33px;
+}
+.content-section--services .view-content .views-row .field--name-title a {
+  font-size: 24px;
+}
+.content-section--services .view-content .views-row .field--name-body {
+  font-size: 14px;
+  margin-top: 10px;
+  color: #CCC;
+}
+.content-section--services .view-content .views-row .field--name-field-link a {
+  background: #6e9bca;
+}
+.content-section--services .field--name-field-link {
+  position: absolute;
+  width: 103px;
+  bottom: -56px;
+  left: 47%;
+  transform: translateX(-54%);
+}
+.content-section--services .field--name-field-image {
+  max-height: 118px;
+  overflow: hidden;
+}
+@media (max-width: 1280px) {
+  .content-section--services .view-content .views-row {
+    max-width: 230px;
+  }
+  .content-section--services .view-content .views-row .field--name-field-image img {
+    max-width: 230px;
+    height: auto;
+  }
+}
+@media (max-width: 1024px) {
+  .content-section--services .view-content .views-row {
+    max-width: 200px;
+  }
+  .content-section--services .view-content .views-row .field--name-field-image img {
+    max-width: 200px;
+  }
+  .content-section--services .view-content .views-row .field--name-title a {
+    font-size: 22px;
+  }
+}
+@media (max-width: 768px) {
+  .content-section--services .view-content {
+    justify-content: space-evenly;
+  }
+  .content-section--services .view-content .views-row {
+    margin-bottom: 120px;
+    max-width: 200px;
+  }
+  .content-section--services .view-content .views-row .field--name-field-image img {
+    max-width: 200px;
+  }
+}
+
 .content-section--services .view-content .views-row {
   position: relative;
 }
@@ -11,7 +78,7 @@ a {
   margin-top: 31px;
 }
 .content-section--services .view-content .field--name-field-link a {
-  background: #1174cc;
+  background: #6e9bca;
 }
 .content-section--services .contextual-region {
   position: static;
@@ -22,6 +89,23 @@ a {
   bottom: -56px;
   left: 47%;
   transform: translateX(-54%);
+}
+@media (max-width: 860px) {
+  .content-section--services .view-content .views-row {
+    max-width: 160px;
+  }
+}
+@media (max-width: 768px) {
+  .content-section--services .view-content {
+    justify-content: space-evenly;
+  }
+  .content-section--services .view-content .views-row {
+    margin-bottom: 120px;
+    max-width: 200px;
+  }
+  .content-section--services .view-content .views-row .field--name-field-image img {
+    max-width: 200px;
+  }
 }
 
 /*# sourceMappingURL=section-services.css.map */

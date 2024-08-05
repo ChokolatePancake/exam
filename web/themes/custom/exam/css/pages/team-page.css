@@ -1,0 +1,425 @@
+/* Media variables */
+/* Media variables */
+a {
+  text-decoration: none;
+}
+
+.team-page {
+  max-width: 1250px;
+  margin: 0 auto;
+}
+@media (max-width: 1280px) {
+  .team-page {
+    max-width: 1000px;
+  }
+}
+@media (max-width: 1024px) {
+  .team-page {
+    max-width: 850px;
+  }
+}
+@media (max-width: 860px) {
+  .team-page {
+    max-width: 700px;
+  }
+}
+@media (max-width: 768px) {
+  .team-page {
+    max-width: 580px;
+  }
+}
+@media (max-width: 600px) {
+  .team-page {
+    max-width: 460px;
+  }
+}
+@media (max-width: 480px) {
+  .team-page {
+    max-width: 320px;
+  }
+}
+
+.team-page .view-content .views-row .block-field-blocknodeteamfield-socials {
+  position: relative;
+}
+.team-page .view-content .views-row .block-field-blocknodeteamfield-socials a span {
+  opacity: 0;
+}
+.team-page .view-content .views-row .block-field-blocknodeteamfield-socials ul {
+  display: flex;
+}
+.team-page .view-content .views-row .block-field-blocknodeteamfield-socials ul li {
+  max-width: 32px;
+}
+.team-page .view-content .views-row .block-field-blocknodeteamfield-socials ul li a::before {
+  content: "";
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 25px;
+  height: 25px;
+  display: inline-block;
+}
+.team-page .view-content .views-row .block-field-blocknodeteamfield-socials .social-media-link-icon {
+  /* for another social link write:
+  &--${name of social class} {
+     &::before {
+                background-image: url('../images/{icon}.png'), url('../../images/{icon}.png');
+                // The second one url is for pages, because there is another path to images directory
+     }
+  }
+  */
+}
+.team-page .view-content .views-row .block-field-blocknodeteamfield-socials .social-media-link-icon--facebook::before {
+  background-image: url("../images/fb.png"), url("../../images/fb.png");
+}
+.team-page .view-content .views-row .block-field-blocknodeteamfield-socials .social-media-link-icon--twitter::before {
+  background-image: url("../images/twit.png"), url("../../images/twit.png");
+}
+.team-page .view-content .views-row .block-field-blocknodeteamfield-socials .social-media-link-icon--linkedin::before {
+  background-image: url("../images/in.png"), url("../../images/in.png");
+}
+
+.team-page h2 {
+  display: flex;
+  text-transform: uppercase;
+}
+.team-page h2::before, .team-page h2::after {
+  content: "";
+  flex: 1;
+  height: 1px;
+  margin: 18px 20px 0;
+  background: #CCC;
+}
+
+/* Media variables */
+/* Media variables */
+a {
+  text-decoration: none;
+}
+
+.team-page {
+  max-width: 1250px;
+  margin: 0 auto;
+}
+@media (max-width: 1280px) {
+  .team-page {
+    max-width: 1000px;
+  }
+}
+@media (max-width: 1024px) {
+  .team-page {
+    max-width: 850px;
+  }
+}
+@media (max-width: 860px) {
+  .team-page {
+    max-width: 700px;
+  }
+}
+@media (max-width: 768px) {
+  .team-page {
+    max-width: 580px;
+  }
+}
+@media (max-width: 600px) {
+  .team-page {
+    max-width: 460px;
+  }
+}
+@media (max-width: 480px) {
+  .team-page {
+    max-width: 320px;
+  }
+}
+
+.team-page .view-content .views-row .block-field-blocknodeteamfield-socials {
+  position: relative;
+}
+.team-page .view-content .views-row .block-field-blocknodeteamfield-socials a span {
+  opacity: 0;
+}
+.team-page .view-content .views-row .block-field-blocknodeteamfield-socials ul {
+  display: flex;
+}
+.team-page .view-content .views-row .block-field-blocknodeteamfield-socials ul li {
+  max-width: 32px;
+}
+.team-page .view-content .views-row .block-field-blocknodeteamfield-socials ul li a::before {
+  content: "";
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 25px;
+  height: 25px;
+  display: inline-block;
+}
+.team-page .view-content .views-row .block-field-blocknodeteamfield-socials .social-media-link-icon {
+  /* for another social link write:
+  &--${name of social class} {
+     &::before {
+                background-image: url('../images/{icon}.png'), url('../../images/{icon}.png');
+                // The second one url is for pages, because there is another path to images directory
+     }
+  }
+  */
+}
+.team-page .view-content .views-row .block-field-blocknodeteamfield-socials .social-media-link-icon--facebook::before {
+  background-image: url("../images/fb.png"), url("../../images/fb.png");
+}
+.team-page .view-content .views-row .block-field-blocknodeteamfield-socials .social-media-link-icon--twitter::before {
+  background-image: url("../images/twit.png"), url("../../images/twit.png");
+}
+.team-page .view-content .views-row .block-field-blocknodeteamfield-socials .social-media-link-icon--linkedin::before {
+  background-image: url("../images/in.png"), url("../../images/in.png");
+}
+
+.team-page h2 {
+  display: flex;
+  text-transform: uppercase;
+}
+.team-page h2::before, .team-page h2::after {
+  content: "";
+  flex: 1;
+  height: 1px;
+  margin: 18px 20px 0;
+  background: #CCC;
+}
+
+.team-page .field--name-field-link {
+  position: absolute;
+  width: 103px;
+  bottom: -29px;
+  left: 47%;
+  transform: translateX(-52%);
+}
+.team-page .layout--onecol:last-child {
+  position: absolute;
+  bottom: -128px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.team-page .layout--onecol:last-child .layout__region {
+  display: flex;
+  width: 190px;
+  margin: 0 auto;
+  justify-content: space-between;
+}
+.team-page .view-content .views-row {
+  text-align: center;
+}
+.team-page .view-content .views-row .field--name-title {
+  display: block;
+  margin-top: 33px;
+}
+.team-page .view-content .views-row .field--name-title a {
+  font-size: 27px;
+}
+.team-page .view-content .views-row .field--name-field-role {
+  color: #CCC;
+  text-transform: uppercase;
+  font-size: 14px;
+  margin-bottom: 20px;
+}
+@media (max-width: 1280px) {
+  .team-page .view-content .views-row {
+    max-width: 230px;
+  }
+  .team-page .view-content .views-row .field--name-field-image img {
+    max-width: 230px;
+    height: auto;
+  }
+}
+@media (max-width: 1024px) {
+  .team-page .view-content .views-row {
+    max-width: 200px;
+  }
+  .team-page .view-content .views-row .field--name-field-image img {
+    max-width: 200px;
+  }
+  .team-page .view-content .views-row .field--name-title a {
+    font-size: 22px;
+  }
+}
+@media (max-width: 768px) {
+  .team-page .view-content {
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+  }
+  .team-page .view-content .views-row {
+    margin-bottom: 120px;
+    max-width: 200px;
+  }
+  .team-page .view-content .views-row .field--name-field-image img {
+    max-width: 200px;
+  }
+}
+
+/* Media variables */
+/* Media variables */
+a {
+  text-decoration: none;
+}
+
+.team-page {
+  max-width: 1250px;
+  margin: 0 auto;
+}
+@media (max-width: 1280px) {
+  .team-page {
+    max-width: 1000px;
+  }
+}
+@media (max-width: 1024px) {
+  .team-page {
+    max-width: 850px;
+  }
+}
+@media (max-width: 860px) {
+  .team-page {
+    max-width: 700px;
+  }
+}
+@media (max-width: 768px) {
+  .team-page {
+    max-width: 580px;
+  }
+}
+@media (max-width: 600px) {
+  .team-page {
+    max-width: 460px;
+  }
+}
+@media (max-width: 480px) {
+  .team-page {
+    max-width: 320px;
+  }
+}
+
+.team-page .view-content .views-row .block-field-blocknodeteamfield-socials {
+  position: relative;
+}
+.team-page .view-content .views-row .block-field-blocknodeteamfield-socials a span {
+  opacity: 0;
+}
+.team-page .view-content .views-row .block-field-blocknodeteamfield-socials ul {
+  display: flex;
+}
+.team-page .view-content .views-row .block-field-blocknodeteamfield-socials ul li {
+  max-width: 32px;
+}
+.team-page .view-content .views-row .block-field-blocknodeteamfield-socials ul li a::before {
+  content: "";
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 25px;
+  height: 25px;
+  display: inline-block;
+}
+.team-page .view-content .views-row .block-field-blocknodeteamfield-socials .social-media-link-icon {
+  /* for another social link write:
+  &--${name of social class} {
+     &::before {
+                background-image: url('../images/{icon}.png'), url('../../images/{icon}.png');
+                // The second one url is for pages, because there is another path to images directory
+     }
+  }
+  */
+}
+.team-page .view-content .views-row .block-field-blocknodeteamfield-socials .social-media-link-icon--facebook::before {
+  background-image: url("../images/fb.png"), url("../../images/fb.png");
+}
+.team-page .view-content .views-row .block-field-blocknodeteamfield-socials .social-media-link-icon--twitter::before {
+  background-image: url("../images/twit.png"), url("../../images/twit.png");
+}
+.team-page .view-content .views-row .block-field-blocknodeteamfield-socials .social-media-link-icon--linkedin::before {
+  background-image: url("../images/in.png"), url("../../images/in.png");
+}
+
+.team-page h2 {
+  display: flex;
+  text-transform: uppercase;
+}
+.team-page h2::before, .team-page h2::after {
+  content: "";
+  flex: 1;
+  height: 1px;
+  margin: 18px 20px 0;
+  background: #CCC;
+}
+
+.team-page .view-pager {
+  margin: 18px 0 73px;
+}
+.team-page .view-pager ul li {
+  padding: 10px 22px;
+  margin: 0 5px;
+}
+.team-page .view-pager ul li a {
+  font-size: 26px;
+}
+.team-page .view-pager ul li .pager__item--next, .team-page .view-pager ul li .pager__item--last, .team-page .view-pager ul li .pager__item--first, .team-page .view-pager ul li .pager__item--previous {
+  padding: 0 22px;
+}
+.team-page .view-pager ul li .pager__item--next a, .team-page .view-pager ul li .pager__item--last a, .team-page .view-pager ul li .pager__item--first a, .team-page .view-pager ul li .pager__item--previous a {
+  font-size: 36px;
+}
+@media (max-width: 600px) {
+  .team-page .view-pager ul li {
+    padding: 10px 18px;
+  }
+  .team-page .view-pager ul li a {
+    font-size: 20px;
+  }
+  .team-page .view-pager ul li .pager__item--next a, .team-page .view-pager ul li .pager__item--last a, .team-page .view-pager ul li .pager__item--first a, .team-page .view-pager ul li .pager__item--previous a {
+    font-size: 28px;
+  }
+}
+@media (max-width: 600px) {
+  .team-page .view-pager ul li {
+    padding: 8px 14px;
+    margin: 0 2px;
+  }
+  .team-page .view-pager ul li a {
+    font-size: 15px;
+  }
+}
+
+.team-page h2 {
+  margin-top: 44px;
+}
+.team-page .view-content .views-row {
+  margin-bottom: 153px;
+}
+.team-page .view-content .views-row:not(:nth-child(4n)) {
+  margin-right: 26px;
+}
+.team-page .view-content .views-row .field--name-title {
+  margin-top: 28px;
+}
+.team-page .view-pager {
+  margin-top: -3px;
+}
+@media (max-width: 1280px) {
+  .team-page .view-content .views-row:not(:nth-child(4n)) {
+    margin-right: 26px;
+  }
+}
+@media (max-width: 1024px) {
+  .team-page .view-content .views-row:not(:nth-child(4n)) {
+    margin-right: 16px;
+  }
+}
+@media (max-width: 860px) {
+  .team-page .view-content .views-row:not(:nth-child(4n)) {
+    margin-right: 0;
+  }
+  .team-page .view-content .views-row:not(:nth-child(3n)) {
+    margin-right: 50px;
+  }
+}
+@media (max-width: 768px) {
+  .team-page .view-content .views-row:not(:nth-child(3n)) {
+    margin-right: 0;
+  }
+}
+
+/*# sourceMappingURL=team-page.css.map */

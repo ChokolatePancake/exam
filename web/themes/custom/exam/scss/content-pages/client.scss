@@ -1,0 +1,32 @@
+@import "../media";
+@import "../variables";
+@import "../global";
+
+.node-type-clients {
+  text-align: center;
+  img {
+    width: 100%;
+    height: auto;
+  }
+  .field--name-field-clients-site {
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 10px 0;
+    border-radius: 10px;
+    background: $blue;
+    position: relative;
+    &::before {
+      position: absolute;
+      content: "Go to clients site";
+      text-transform: uppercase;
+      color:$white;
+      font-size: 24px;
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%, -50%);
+    }
+    a {
+      opacity: 0;
+    }
+  }
+}

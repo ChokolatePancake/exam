@@ -1,12 +1,32 @@
 /* Media variables */
-.like--wrapper span {
-  display: none;
+.block-extra-field-blocknodeteamflag-like {
+  max-width: 20px;
+  max-height: 20px;
+  margin-top: 20px;
+  overflow: hidden;
 }
-.like--wrapper .fa-heart {
+.block-extra-field-blocknodeteamflag-like .flag-like:hover {
   position: relative;
-  margin-top: 14px;
 }
-.like--wrapper .fa-heart::before {
+.block-extra-field-blocknodeteamflag-like .flag-like:hover a {
+  opacity: 0;
+}
+.block-extra-field-blocknodeteamflag-like .flag-like:hover::before {
+  content: "";
+  display: inline-block;
+  position: absolute;
+  top: 0;
+  background: url("../images/like.svg") no-repeat center center;
+  background-size: contain;
+  opacity: 0.6;
+  width: 1em;
+  height: 1em;
+}
+.block-extra-field-blocknodeteamflag-like .action-flag a {
+  opacity: 0;
+}
+.block-extra-field-blocknodeteamflag-like .action-flag::before {
+  position: absolute;
   content: "";
   display: inline-block;
   background: url("../images/empty like.svg") no-repeat center center;
@@ -14,12 +34,17 @@
   width: 1em;
   height: 1em;
 }
-.like--wrapper .fa-heart:hover::before {
-  background-image: url("../images/like.svg");
-  opacity: 0.5;
+.block-extra-field-blocknodeteamflag-like .action-unflag a {
+  opacity: 0;
 }
-.like--wrapper input[type=checkbox]:checked ~ .fa-heart::before {
-  background-image: url("../images/like.svg");
+.block-extra-field-blocknodeteamflag-like .action-unflag::before {
+  content: "";
+  position: absolute;
+  display: inline-block;
+  background: url("../images/like.svg") no-repeat center center;
+  background-size: contain;
+  width: 1em;
+  height: 1em;
 }
 
 /*# sourceMappingURL=like.css.map */

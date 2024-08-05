@@ -1,0 +1,18 @@
+@import "../media";
+@import "../variables";
+@import "../global";
+@import "../blocks/default-block";
+
+.grid-view-4-col {
+  @extend %default-block;
+  .view-content {
+    display: flex;
+    flex-wrap: wrap;
+    .views-row {
+      max-width: 300px;
+      text-align: center;
+    }
+
+    @extend %links;
+  }
+}

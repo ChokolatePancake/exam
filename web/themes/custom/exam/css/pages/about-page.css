@@ -1,0 +1,78 @@
+/* Media variables */
+/* Media variables */
+a {
+  text-decoration: none;
+}
+
+.basic-page-about {
+  max-width: 1250px;
+  margin: 0 auto;
+}
+@media (max-width: 1280px) {
+  .basic-page-about {
+    max-width: 1000px;
+  }
+}
+@media (max-width: 1024px) {
+  .basic-page-about {
+    max-width: 850px;
+  }
+}
+@media (max-width: 860px) {
+  .basic-page-about {
+    max-width: 700px;
+  }
+}
+@media (max-width: 768px) {
+  .basic-page-about {
+    max-width: 580px;
+  }
+}
+@media (max-width: 600px) {
+  .basic-page-about {
+    max-width: 460px;
+  }
+}
+@media (max-width: 480px) {
+  .basic-page-about {
+    max-width: 320px;
+  }
+}
+
+.basic-page-about .block-field-blocknodepagetitle .field--name-title {
+  display: flex;
+  text-transform: uppercase;
+}
+.basic-page-about .block-field-blocknodepagetitle .field--name-title::before, .basic-page-about .block-field-blocknodepagetitle .field--name-title::after {
+  content: "";
+  flex: 1;
+  height: 1px;
+  margin: 18px 20px 0;
+  background: #CCC;
+}
+
+.basic-page-about .block-field-blocknodepagetitle {
+  text-align: center;
+  margin: 56px auto 27px;
+}
+.basic-page-about .block-field-blocknodepagetitle .field--name-title {
+  font-weight: 700;
+  font-size: 32px;
+}
+.basic-page-about .field--name-body p {
+  font-size: 28px;
+  padding: 0 10px;
+  margin: 20px 0;
+}
+@media (max-width: 860px) {
+  .basic-page-about .field--name-body p {
+    font-size: 20px;
+  }
+}
+@media (max-width: 600px) {
+  .basic-page-about .field--name-body p {
+    font-size: 16px;
+  }
+}
+
+/*# sourceMappingURL=about-page.css.map */

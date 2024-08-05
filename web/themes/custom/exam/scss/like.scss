@@ -1,30 +1,87 @@
 @import "variables";
 @import "media";
 
-.like--wrapper {
-  span {
-    display: none;
-  }
-  .fa-heart {
+.block-extra-field-blocknodeteamflag-like {
+  max-width: 20px;
+  max-height: 20px;
+  margin-top: 20px;
+  overflow: hidden;
+  .flag-like:hover {
     position: relative;
-    margin-top: 14px;
+    a {
+      opacity: 0;
+    }
+
     &::before {
       content: "";
       display: inline-block;
-      background: url("../images/empty like.svg") no-repeat center center;
+      position: absolute;
+      top: 0;
+      background: url("../images/like.svg") no-repeat center center;
       background-size: contain;
+      opacity: 0.6;
       width: 1em;
       height: 1em;
     }
+  }
+  .action {
+    &-flag {
+      a {
+        opacity: 0;
+      }
 
-    &:hover::before {
-      background-image: url("../images/like.svg");
-      opacity: 0.5;
+      &::before {
+        position: absolute;
+        content: "";
+        display: inline-block;
+        background: url("../images/empty like.svg") no-repeat center center;
+        background-size: contain;
+        width: 1em;
+        height: 1em;
+      }
+    }
+    &-unflag {
+      a {
+        opacity: 0;
+      }
+
+      &::before {
+        content: "";
+        position: absolute;
+        display: inline-block;
+        background: url("../images/like.svg") no-repeat center center;
+        background-size: contain;
+        width: 1em;
+        height: 1em;
+      }
     }
   }
-
-  & input[type="checkbox"]:checked ~ .fa-heart::before {
-    background-image: url("../images/like.svg");
-  }
 }
+
+//.like--wrapper {
+//  span {
+//    display: none;
+//  }
+//  .fa-heart {
+//    position: relative;
+//    margin-top: 14px;
+//    &::before {
+//      content: "";
+//      display: inline-block;
+//      background: url("../images/empty like.svg") no-repeat center center;
+//      background-size: contain;
+//      width: 1em;
+//      height: 1em;
+//    }
+//
+//    &:hover::before {
+//      background-image: url("../images/like.svg");
+//      opacity: 0.5;
+//    }
+//  }
+//
+//  & input[type="checkbox"]:checked ~ .fa-heart::before {
+//    background-image: url("../images/like.svg");
+//  }
+//}
 

@@ -1,0 +1,204 @@
+@import "../variables";
+@import "../media";
+@import "../global";
+
+#contact-message-feedback-form {
+  display: none;
+}
+
+#block-exam-contactus {
+  @extend %container;
+  max-width: 975px;
+  h2 {
+    text-align: center;
+    text-transform: uppercase;
+    margin-top: 48px;
+    font-size: 26px;
+    position: relative;
+    transform: scaleX(0.92);
+    margin-left: -33px;
+    letter-spacing: -0.5px;
+    margin-bottom: 48px;
+    &::after {
+      content: "";
+      position: absolute;
+      bottom: -13px;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 6%;
+      height: 4px;
+      z-index: 101;
+      background: $grey;
+    }
+  }
+
+  .layout__region {
+    display: flex;
+    .block-field-blockblock-contentcontact-usfield-contact-email {
+      width: 47.5%;
+      label {
+        display: none;
+      }
+      input {
+        &::placeholder {
+          text-transform: uppercase;
+        }
+        height: 48px;
+        margin-bottom: -2px;
+        width: 446px;
+        padding-left: 10px;
+      }
+      textarea {
+        height: 198px;
+        text-transform: uppercase;
+        padding-left: 10px;
+        padding-top: 17px;
+      }
+      .button--primary {
+        height: 59px;
+        width: 192px;
+        border: none;
+        background: $dark-red;
+        border-radius: 5px;
+        color: $white;
+        text-transform: uppercase;
+        font-size: 20px;
+        letter-spacing: -0.3px;
+        padding-top: 6px;
+        font-weight: 500;
+      }
+    }
+    .node--type-contacts {
+      .layout__region {
+        flex-direction: column;
+      }
+      iframe {
+        position: static;
+      }
+    }
+    .view-contact-us {
+      .node__content {
+        padding: 0;
+      }
+    }
+  }
+
+  .block-views {
+    margin-left: 20px;
+    margin-top: 15px;
+
+    .text-information {
+      .field--name-field-country {
+        font-size: 18px;
+        text-transform: uppercase;
+        font-weight: 500;
+        margin-bottom: 2px;
+      }
+
+      .field--name-field-address {
+        width: 300px;
+        line-height: 26px;
+      }
+
+      .field--name-field-phone {
+        display: flex;
+
+        .field__item {
+          margin-top: 2px;
+
+          &:not(:last-child) {
+            &:after {
+              content: ", ";
+            }
+          }
+        }
+      }
+
+      .field--name-field-email {
+        .field__item {
+          margin-top: 7px;
+
+          &:first-child {
+            &:before {
+              content: "Email: ";
+            }
+          }
+
+          &:not(:last-child) {
+            &:after {
+              content: ", ";
+            }
+          }
+        }
+      }
+    }
+  }
+  .map {
+    .field--name-field-address {
+      margin-top: 35px;
+      width: 460px;
+      margin-left: -2px;
+      height: 250px;
+    }
+  }
+
+  @include breakpoint(laptop) {
+    max-width: 850px;
+    .layout__region .block-field-blockblock-contentcontact-usfield-contact-email input {
+      width: 394px;
+    }
+    .map {
+      .field--name-field-address {
+        width: 430px;
+      }
+    }
+  }
+
+  @include breakpoint(largeTablet) {
+    max-width: 700px;
+    .layout__region {
+      flex-direction: column;
+      .block-field-blockblock-contentcontact-usfield-contact-email {
+        width: 100%;
+        input {
+          width: calc(100% - 15px);
+        }
+      }
+    }
+    .block-views {
+      margin-left: 0;
+    }
+    .form-actions {
+      text-align: center;
+    }
+
+    .map {
+      .field--name-field-address {
+        width: 100%;
+      }
+    }
+  }
+
+  @include breakpoint(tablet) {
+    max-width: 580px;
+  }
+  @include breakpoint(phablet) {
+    max-width: 460px;
+  }
+  @include breakpoint(largePhone) {
+    max-width: 320px;
+    .layout__region .block-field-blockblock-contentcontact-usfield-contact-email {
+      input {
+        width: calc(100% - 25px);
+        margin: 0 5px;
+      }
+      textarea {
+        width: calc(100% - 10px);
+        margin: 0 auto;
+      }
+    }
+    .text-information {
+      padding-left: 5px;
+    }
+  }
+}
