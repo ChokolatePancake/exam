@@ -1,0 +1,28 @@
+uuid: 6ae62210-58d8-474e-9484-29114ffa1b43
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.images.field_images
+    - image.style.500x500
+    - paragraphs.paragraphs_type.images
+  module:
+    - media
+id: paragraph.images.default
+targetEntityType: paragraph
+bundle: images
+mode: default
+content:
+  field_images:
+    type: media_thumbnail
+    label: hidden
+    settings:
+      image_link: media
+      image_style: 500x500
+      image_loading:
+        attribute: lazy
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden:
+  search_api_excerpt: true

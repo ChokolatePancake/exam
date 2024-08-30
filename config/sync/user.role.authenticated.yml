@@ -1,0 +1,38 @@
+uuid: 32c8121e-99d7-4506-9390-652d0bcdc47f
+langcode: en
+status: true
+dependencies:
+  config:
+    - filter.format.basic_html
+  module:
+    - comment
+    - contact
+    - contextual
+    - field_ui
+    - file
+    - filter
+    - flag
+    - media
+    - shortcut
+    - system
+_core:
+  default_config_hash: cFrlqjtkTfvY3RGccjJkPf1SGIfJ942IrxTLWAO4mgA
+id: authenticated
+label: 'Authenticated user'
+weight: 1
+is_admin: false
+permissions:
+  - 'access comments'
+  - 'access content'
+  - 'access contextual links'
+  - 'access shortcuts'
+  - 'access site-wide contact form'
+  - 'access user profiles'
+  - 'administer user display'
+  - 'delete own files'
+  - 'flag like'
+  - 'post comments'
+  - 'skip comment approval'
+  - 'unflag like'
+  - 'use text format basic_html'
+  - 'view media'

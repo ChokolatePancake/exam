@@ -1,0 +1,206 @@
+uuid: d33ff1f3-13b9-47b1-abe4-627ff730e7a0
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.contacts.body
+    - field.field.node.contacts.field_address
+    - field.field.node.contacts.field_country
+    - field.field.node.contacts.field_email
+    - field.field.node.contacts.field_phone
+    - node.type.contacts
+  module:
+    - address
+    - layout_builder
+    - layout_discovery
+    - simple_gmap
+    - telephone
+    - user
+third_party_settings:
+  layout_builder:
+    enabled: true
+    allow_custom: false
+    sections:
+      -
+        layout_id: layout_onecol
+        layout_settings:
+          label: ''
+          context_mapping: {  }
+          custom_id: ''
+          custom_classes: text-information
+          custom_class_choose: {  }
+          custom_styles: ''
+          custom_data_attributes: ''
+          regions:
+            content:
+              region_id: ''
+              region_class_choose: {  }
+              region_classes: ''
+              region_styles: ''
+              region_data: ''
+        components:
+          ba7be501-0243-438f-ae74-efa76e49580c:
+            uuid: ba7be501-0243-438f-ae74-efa76e49580c
+            region: content
+            configuration:
+              id: 'field_block:node:contacts:field_phone'
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              formatter:
+                type: telephone_link
+                label: hidden
+                settings:
+                  title: ''
+                third_party_settings: {  }
+            weight: 6
+            additional: {  }
+          4dbee7ae-ac1d-496a-8f2c-3aa47c4f1b58:
+            uuid: 4dbee7ae-ac1d-496a-8f2c-3aa47c4f1b58
+            region: content
+            configuration:
+              id: 'field_block:node:contacts:field_email'
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              formatter:
+                type: email_mailto
+                label: hidden
+                settings: {  }
+                third_party_settings: {  }
+            weight: 7
+            additional: {  }
+          49d87cf2-5eef-4052-8589-e95575439f7c:
+            uuid: 49d87cf2-5eef-4052-8589-e95575439f7c
+            region: content
+            configuration:
+              id: 'field_block:node:contacts:field_address'
+              label: Address
+              label_display: '0'
+              provider: layout_builder
+              context_mapping:
+                entity: layout_builder.entity
+                view_mode: view_mode
+              formatter:
+                type: string
+                label: hidden
+                settings:
+                  link_to_entity: false
+                third_party_settings: {  }
+            weight: 5
+            additional: {  }
+          e458fb12-adcb-46a2-8894-c3c7cf2bbb72:
+            uuid: e458fb12-adcb-46a2-8894-c3c7cf2bbb72
+            region: content
+            configuration:
+              id: 'field_block:node:contacts:field_country'
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              formatter:
+                type: address_country_default
+                label: hidden
+                settings: {  }
+                third_party_settings: {  }
+            weight: 4
+            additional: {  }
+        third_party_settings: {  }
+      -
+        layout_id: layout_onecol
+        layout_settings:
+          label: ''
+          context_mapping: {  }
+          custom_id: ''
+          custom_classes: map
+          custom_class_choose: {  }
+          custom_styles: ''
+          custom_data_attributes: ''
+          regions:
+            content:
+              region_id: ''
+              region_class_choose: {  }
+              region_classes: ''
+              region_styles: ''
+              region_data: ''
+        components:
+          a9ba696f-8e1a-4002-8964-0b85bd6309c6:
+            uuid: a9ba696f-8e1a-4002-8964-0b85bd6309c6
+            region: content
+            configuration:
+              id: 'field_block:node:contacts:field_address'
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              formatter:
+                type: simple_gmap
+                label: hidden
+                settings:
+                  include_map: true
+                  include_static_map: false
+                  include_link: false
+                  include_text: false
+                  iframe_height: '300'
+                  iframe_width: '600'
+                  iframe_title: ''
+                  static_scale: 1
+                  zoom_level: 14
+                  link_text: 'View larger map'
+                  map_type: m
+                  langcode: en
+                  apikey: ''
+                third_party_settings: {  }
+            weight: 0
+            additional: {  }
+        third_party_settings: {  }
+id: node.contacts.default
+targetEntityType: node
+bundle: contacts
+mode: default
+content:
+  field_address:
+    type: simple_gmap
+    label: hidden
+    settings:
+      include_map: true
+      include_static_map: false
+      include_link: false
+      include_text: false
+      iframe_height: '300'
+      iframe_width: '600'
+      iframe_title: ''
+      static_scale: 1
+      zoom_level: 14
+      link_text: 'View larger map'
+      map_type: m
+      langcode: en
+      apikey: ''
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  field_country:
+    type: address_country_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 0
+    region: content
+  field_email:
+    type: email_mailto
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 3
+    region: content
+  field_phone:
+    type: telephone_link
+    label: hidden
+    settings:
+      title: ''
+    third_party_settings: {  }
+    weight: 2
+    region: content
+hidden:
+  body: true
+  likes: true
+  links: true
+  search_api_excerpt: true

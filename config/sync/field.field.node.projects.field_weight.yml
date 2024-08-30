@@ -1,0 +1,22 @@
+uuid: cc3f60bb-b53d-4788-8f8c-9050892ca709
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_weight
+    - node.type.projects
+  module:
+    - weight
+id: node.projects.field_weight
+field_name: field_weight
+entity_type: node
+bundle: projects
+label: Weight
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  range: '20'
+field_type: weight

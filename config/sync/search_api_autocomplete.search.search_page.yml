@@ -1,0 +1,44 @@
+uuid: 111fce26-0ce0-42f2-b969-bfdfa568d74b
+langcode: en
+status: true
+dependencies:
+  config:
+    - search_api.index.index_all
+    - views.view.search_page
+  module:
+    - views
+    - search_api_autocomplete
+id: search_page
+label: 'Search page'
+index_id: index_all
+suggester_settings:
+  live_results:
+    fields:
+      - title
+    highlight:
+      enabled: false
+      field: ''
+    suggest_keys: false
+    view_modes:
+      'entity:node':
+        article: ''
+        projects: ''
+        services: ''
+        team: ''
+suggester_weights:
+  live_results: 0
+suggester_limits:
+  live_results: 6
+search_settings:
+  'views:search_page':
+    displays:
+      default: true
+      selected:
+        - default
+options:
+  limit: 10
+  min_length: 1
+  show_count: false
+  delay: null
+  submit_button_selector: ':submit'
+  autosubmit: true

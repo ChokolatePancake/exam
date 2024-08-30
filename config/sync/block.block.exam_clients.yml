@@ -1,0 +1,30 @@
+uuid: 40b57b26-cdb0-4397-86d8-b5692ac00801
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:clients:32733151-5b62-433b-8d05-ecd2da5009f5'
+  module:
+    - block_content
+    - system
+  theme:
+    - exam
+id: exam_clients
+theme: exam
+region: content
+weight: -6
+provider: null
+plugin: 'block_content:32733151-5b62-433b-8d05-ecd2da5009f5'
+settings:
+  id: 'block_content:32733151-5b62-433b-8d05-ecd2da5009f5'
+  label: Clients
+  label_display: '0'
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: '<front>'

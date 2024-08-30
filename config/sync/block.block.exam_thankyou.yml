@@ -1,0 +1,30 @@
+uuid: 79e00931-8988-4647-8657-12e1dd5c0ffa
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:thank_you_block:91fb6834-7b3e-4096-98bf-74c1ecb3b1d8'
+  module:
+    - block_content
+    - system
+  theme:
+    - exam
+id: exam_thankyou
+theme: exam
+region: content
+weight: 0
+provider: null
+plugin: 'block_content:91fb6834-7b3e-4096-98bf-74c1ecb3b1d8'
+settings:
+  id: 'block_content:91fb6834-7b3e-4096-98bf-74c1ecb3b1d8'
+  label: 'Thank you'
+  label_display: '0'
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: /thank-you

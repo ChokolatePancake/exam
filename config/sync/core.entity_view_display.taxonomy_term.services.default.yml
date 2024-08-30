@@ -1,0 +1,27 @@
+uuid: 8c5dfbe7-0489-4902-853d-51a652af580d
+langcode: en
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.services
+  module:
+    - layout_builder
+    - text
+third_party_settings:
+  layout_builder:
+    enabled: false
+    allow_custom: false
+id: taxonomy_term.services.default
+targetEntityType: taxonomy_term
+bundle: services
+mode: default
+content:
+  description:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden:
+  search_api_excerpt: true

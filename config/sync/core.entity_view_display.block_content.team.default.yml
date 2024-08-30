@@ -1,0 +1,43 @@
+uuid: bb4b7aff-ef06-4c74-b91c-bf27e9001667
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.team
+    - views.view.team
+  module:
+    - layout_builder
+    - layout_discovery
+    - views
+third_party_settings:
+  layout_builder:
+    enabled: true
+    allow_custom: false
+    sections:
+      -
+        layout_id: layout_onecol
+        layout_settings:
+          label: ''
+          context_mapping: {  }
+        components:
+          7aaea589-df40-4f1f-8365-ef78a7453219:
+            uuid: 7aaea589-df40-4f1f-8365-ef78a7453219
+            region: content
+            configuration:
+              id: 'views_block:team-block_1'
+              label: ''
+              label_display: '0'
+              provider: views
+              context_mapping: {  }
+              views_label: ''
+              items_per_page: none
+            weight: 0
+            additional: {  }
+        third_party_settings: {  }
+id: block_content.team.default
+targetEntityType: block_content
+bundle: team
+mode: default
+content: {  }
+hidden:
+  search_api_excerpt: true

@@ -1,0 +1,30 @@
+uuid: d080ae4a-19ab-48f9-92af-73fe7c5f54b1
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:projects:1757d5bc-21b0-48b4-9b3b-81e592421c63'
+  module:
+    - block_content
+    - system
+  theme:
+    - exam
+id: exam_projects
+theme: exam
+region: content
+weight: -9
+provider: null
+plugin: 'block_content:1757d5bc-21b0-48b4-9b3b-81e592421c63'
+settings:
+  id: 'block_content:1757d5bc-21b0-48b4-9b3b-81e592421c63'
+  label: Projects
+  label_display: '0'
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: '<front>'

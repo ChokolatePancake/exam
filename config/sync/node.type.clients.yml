@@ -1,0 +1,17 @@
+uuid: a489f278-35f4-480d-952a-c9ee1dfbd562
+langcode: en
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus: {  }
+    parent: ''
+name: Clients
+type: clients
+description: "Use clients for client's logos and urls"
+help: null
+new_revision: false
+preview_mode: 1
+display_submitted: false

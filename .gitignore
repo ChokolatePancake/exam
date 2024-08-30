@@ -1,3 +1,7 @@
 .ddev
 .idea
 /vendor/
+/web/libraries/
+/web/modules/contrib/
+/web/sites/default/files/
+/web/sites/default/settings.php

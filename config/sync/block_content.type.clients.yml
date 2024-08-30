@@ -1,0 +1,8 @@
+uuid: 80a814d2-24ef-41fa-87f0-9fd67afe60dd
+langcode: en
+status: true
+dependencies: {  }
+id: clients
+label: Clients
+revision: false
+description: 'Block for clients view'

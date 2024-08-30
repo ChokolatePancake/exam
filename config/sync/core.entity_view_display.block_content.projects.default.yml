@@ -1,0 +1,43 @@
+uuid: d78d846b-f827-47c5-83eb-e36a32b7ebe5
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.projects
+    - views.view.projects
+  module:
+    - layout_builder
+    - layout_discovery
+    - views
+third_party_settings:
+  layout_builder:
+    enabled: true
+    allow_custom: false
+    sections:
+      -
+        layout_id: layout_onecol
+        layout_settings:
+          label: ''
+          context_mapping: {  }
+        components:
+          f8d8180e-d44b-493f-a666-515fbc269bff:
+            uuid: f8d8180e-d44b-493f-a666-515fbc269bff
+            region: content
+            configuration:
+              id: 'views_block:projects-block_1'
+              label: ''
+              label_display: '0'
+              provider: views
+              context_mapping: {  }
+              views_label: ''
+              items_per_page: none
+            weight: 0
+            additional: {  }
+        third_party_settings: {  }
+id: block_content.projects.default
+targetEntityType: block_content
+bundle: projects
+mode: default
+content: {  }
+hidden:
+  search_api_excerpt: true

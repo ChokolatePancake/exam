@@ -1,0 +1,30 @@
+uuid: 438e2260-59cc-4def-b29b-2311f2be6b4e
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:team:ad07ffdc-793d-49db-a62f-a7d5cb2e7c46'
+  module:
+    - block_content
+    - system
+  theme:
+    - exam
+id: exam_team
+theme: exam
+region: content
+weight: -8
+provider: null
+plugin: 'block_content:ad07ffdc-793d-49db-a62f-a7d5cb2e7c46'
+settings:
+  id: 'block_content:ad07ffdc-793d-49db-a62f-a7d5cb2e7c46'
+  label: Team
+  label_display: '0'
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: '<front>'

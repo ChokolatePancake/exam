@@ -1,0 +1,24 @@
+uuid: 4ee12ccd-c6f2-4460-94d2-389917da252d
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.banner
+    - field.storage.block_content.field_text
+    - filter.format.full_html
+  module:
+    - text
+id: block_content.banner.field_text
+field_name: field_text
+entity_type: block_content
+bundle: banner
+label: Text
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  allowed_formats:
+    - full_html
+field_type: text_long

@@ -1,0 +1,19 @@
+uuid: 05e2ecd9-1c07-408f-aa7f-8c70eb37e4c9
+langcode: en
+status: true
+dependencies:
+  config:
+    - contact.form.feedback
+    - core.entity_form_mode.contact_message.edit_form
+id: contact_message.feedback.edit_form
+targetEntityType: contact_message
+bundle: feedback
+mode: edit_form
+content: {  }
+hidden:
+  copy: true
+  mail: true
+  message: true
+  name: true
+  preview: true
+  subject: true

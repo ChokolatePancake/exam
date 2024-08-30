@@ -1,0 +1,52 @@
+uuid: c0c6a199-d9fa-4cc6-8f1a-a739ac184024
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.thank_you_block
+    - field.field.block_content.thank_you_block.field_body
+    - field.field.block_content.thank_you_block.field_go_to
+    - field.field.block_content.thank_you_block.field_main_message
+  module:
+    - link
+    - text
+id: block_content.thank_you_block.default
+targetEntityType: block_content
+bundle: thank_you_block
+mode: default
+content:
+  field_body:
+    type: text_textarea_with_summary
+    weight: 27
+    region: content
+    settings:
+      rows: 9
+      summary_rows: 3
+      placeholder: ''
+      show_summary: false
+    third_party_settings: {  }
+  field_go_to:
+    type: link_default
+    weight: 26
+    region: content
+    settings:
+      placeholder_url: ''
+      placeholder_title: ''
+    third_party_settings: {  }
+  field_main_message:
+    type: string_textfield
+    weight: 28
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  info:
+    type: string_textfield
+    weight: -5
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+hidden: {  }

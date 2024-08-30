@@ -1,0 +1,19 @@
+uuid: 2c3ed93c-3b78-4bbc-a26b-80df0ea675d3
+langcode: en
+status: true
+dependencies:
+  module:
+    - link
+    - node
+id: node.field_clients_site
+field_name: field_clients_site
+entity_type: node
+type: link
+settings: {  }
+module: link
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

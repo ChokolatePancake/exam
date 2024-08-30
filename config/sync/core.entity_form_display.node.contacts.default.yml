@@ -1,0 +1,64 @@
+uuid: c809fb39-72a0-4c53-bff1-f006a7351903
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.contacts.body
+    - field.field.node.contacts.field_address
+    - field.field.node.contacts.field_country
+    - field.field.node.contacts.field_email
+    - field.field.node.contacts.field_phone
+    - node.type.contacts
+  module:
+    - address
+    - telephone
+id: node.contacts.default
+targetEntityType: node
+bundle: contacts
+mode: default
+content:
+  field_address:
+    type: string_textfield
+    weight: 2
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_country:
+    type: address_country_default
+    weight: 1
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_email:
+    type: email_default
+    weight: 4
+    region: content
+    settings:
+      placeholder: ''
+      size: 60
+    third_party_settings: {  }
+  field_phone:
+    type: telephone_default
+    weight: 3
+    region: content
+    settings:
+      placeholder: ''
+    third_party_settings: {  }
+  title:
+    type: string_textfield
+    weight: 0
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+hidden:
+  body: true
+  created: true
+  path: true
+  promote: true
+  status: true
+  sticky: true
+  uid: true

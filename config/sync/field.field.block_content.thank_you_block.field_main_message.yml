@@ -1,0 +1,19 @@
+uuid: 2d959a80-b6e8-452e-a929-42c2feb5812c
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.thank_you_block
+    - field.storage.block_content.field_main_message
+id: block_content.thank_you_block.field_main_message
+field_name: field_main_message
+entity_type: block_content
+bundle: thank_you_block
+label: 'Main message'
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

@@ -1,0 +1,8 @@
+uuid: 7a4507ed-a313-4fc0-aa31-1bb90a78a512
+langcode: en
+status: true
+dependencies: {  }
+id: navigation
+label: Navigation
+revision: false
+description: 'Block for navigation and social links'

@@ -1,0 +1,8 @@
+uuid: 806a26c7-45b4-417d-92ef-d50b3fd7aa53
+langcode: en
+status: true
+dependencies: {  }
+id: team
+label: Team
+revision: false
+description: 'Block for our team view'

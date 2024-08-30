@@ -1,0 +1,210 @@
+uuid: 7dd88580-9ce0-425d-a6fb-7c5cef4c9067
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.team.body
+    - field.field.node.team.field_image
+    - field.field.node.team.field_link
+    - field.field.node.team.field_paragraphs
+    - field.field.node.team.field_role
+    - field.field.node.team.field_socials
+    - field.field.node.team.field_weight
+    - node.type.team
+  module:
+    - layout_builder
+    - layout_discovery
+    - social_media_links_field
+    - user
+third_party_settings:
+  layout_builder:
+    enabled: true
+    allow_custom: false
+    sections:
+      -
+        layout_id: layout_onecol
+        layout_settings:
+          label: ''
+        components:
+          d04b67ac-ebc2-4f04-ae1a-66e4086b0809:
+            uuid: d04b67ac-ebc2-4f04-ae1a-66e4086b0809
+            region: content
+            configuration:
+              id: 'field_block:node:team:field_image'
+              label: Image
+              label_display: '0'
+              provider: layout_builder
+              context_mapping:
+                entity: layout_builder.entity
+                view_mode: view_mode
+              formatter:
+                type: media_thumbnail
+                label: hidden
+                settings:
+                  image_link: content
+                  image_style: large
+                  image_loading:
+                    attribute: lazy
+                third_party_settings: {  }
+            weight: 0
+            additional: {  }
+          344b4170-588b-4176-97d4-b4ac931cc51a:
+            uuid: 344b4170-588b-4176-97d4-b4ac931cc51a
+            region: content
+            configuration:
+              id: 'field_block:node:team:field_role'
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              formatter:
+                type: string
+                label: hidden
+                settings:
+                  link_to_entity: false
+                third_party_settings: {  }
+            weight: 2
+            additional: {  }
+          6361ca2f-c690-41f7-8cdd-14a0c9161d4d:
+            uuid: 6361ca2f-c690-41f7-8cdd-14a0c9161d4d
+            region: content
+            configuration:
+              id: 'field_block:node:team:title'
+              label: Title
+              label_display: '0'
+              provider: layout_builder
+              context_mapping:
+                entity: layout_builder.entity
+                view_mode: view_mode
+              formatter:
+                type: string
+                label: hidden
+                settings:
+                  link_to_entity: true
+                third_party_settings: {  }
+            weight: 1
+            additional: {  }
+          af38d3c1-608c-47d8-8b55-882ff5a84204:
+            uuid: af38d3c1-608c-47d8-8b55-882ff5a84204
+            region: content
+            configuration:
+              id: 'field_block:node:team:field_link'
+              label: Link
+              label_display: '0'
+              provider: layout_builder
+              context_mapping:
+                entity: layout_builder.entity
+                view_mode: view_mode
+              formatter:
+                type: string
+                label: hidden
+                settings:
+                  link_to_entity: true
+                third_party_settings: {  }
+            weight: 4
+            additional: {  }
+        third_party_settings: {  }
+      -
+        layout_id: layout_onecol
+        layout_settings:
+          label: 'Socials and like'
+          context_mapping: {  }
+        components:
+          2f173ea9-bd90-4fbb-93d6-61f2e07909c3:
+            uuid: 2f173ea9-bd90-4fbb-93d6-61f2e07909c3
+            region: content
+            configuration:
+              id: 'field_block:node:team:field_socials'
+              label: Socials
+              label_display: '0'
+              provider: layout_builder
+              context_mapping:
+                entity: layout_builder.entity
+                view_mode: view_mode
+              formatter:
+                type: social_media_links_field_default
+                label: hidden
+                settings:
+                  appearance:
+                    orientation: h
+                    show_name: 0
+                  link_attributes:
+                    target: '<none>'
+                    rel: '<none>'
+                third_party_settings: {  }
+            weight: 0
+            additional: {  }
+          430d232b-68c7-4103-9b6d-4f779e39431b:
+            uuid: 430d232b-68c7-4103-9b6d-4f779e39431b
+            region: content
+            configuration:
+              id: 'extra_field_block:node:team:flag_like'
+              label: 'Flag: <em class="placeholder">Like</em>'
+              label_display: '0'
+              provider: layout_builder
+              context_mapping:
+                entity: layout_builder.entity
+              formatter:
+                settings: {  }
+                third_party_settings: {  }
+            weight: 1
+            additional: {  }
+        third_party_settings: {  }
+id: node.team.teaser
+targetEntityType: node
+bundle: team
+mode: teaser
+content:
+  field_image:
+    type: entity_reference_label
+    label: hidden
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 0
+    region: content
+  field_link:
+    type: string
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 4
+    region: content
+  field_role:
+    type: string
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  field_socials:
+    type: social_media_links_field_default
+    label: hidden
+    settings:
+      appearance: {  }
+      link_attributes: {  }
+    third_party_settings: {  }
+    weight: 2
+    region: content
+  flag_like:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 10
+    region: content
+  likes:
+    type: like_default
+    label: hidden
+    settings:
+      default_state: Like
+      liked_state: 'You liked this.'
+    third_party_settings: {  }
+    weight: 3
+    region: content
+hidden:
+  body: true
+  field_paragraphs: true
+  field_weight: true
+  links: true
+  search_api_excerpt: true

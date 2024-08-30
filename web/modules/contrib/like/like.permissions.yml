@@ -1,4 +1,0 @@
-administer like configuration:
-  title: 'Administer like configuration'
-  description: 'Access to the Like! configurations'
-  restrict access: true

@@ -1,0 +1,43 @@
+uuid: d498e8b0-11b3-4515-a71e-4ea7d56cd406
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.news
+    - views.view.search_news
+  module:
+    - layout_builder
+    - layout_discovery
+    - views
+third_party_settings:
+  layout_builder:
+    enabled: true
+    allow_custom: false
+    sections:
+      -
+        layout_id: layout_onecol
+        layout_settings:
+          label: ''
+          context_mapping: {  }
+        components:
+          38877aab-f53b-41a1-9448-cbbe1993ec8f:
+            uuid: 38877aab-f53b-41a1-9448-cbbe1993ec8f
+            region: content
+            configuration:
+              id: 'views_block:search_news-block_1'
+              label: ''
+              label_display: '0'
+              provider: views
+              context_mapping: {  }
+              views_label: ''
+              items_per_page: none
+            weight: 0
+            additional: {  }
+        third_party_settings: {  }
+id: block_content.news.default
+targetEntityType: block_content
+bundle: news
+mode: default
+content: {  }
+hidden:
+  search_api_excerpt: true

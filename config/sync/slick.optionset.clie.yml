@@ -1,0 +1,216 @@
+uuid: 6e2d30a9-8654-4019-81a5-80a6d3da6d0e
+langcode: en
+status: true
+dependencies: {  }
+id: clie
+name: clie
+weight: 0
+label: Clients
+group: ''
+skin: ''
+breakpoints: 4
+optimized: false
+options:
+  options__active_tab: edit-options-responsives
+  settings:
+    mobileFirst: false
+    asNavFor: ''
+    accessibility: true
+    adaptiveHeight: false
+    autoplay: true
+    pauseOnHover: true
+    pauseOnDotsHover: true
+    pauseOnFocus: true
+    autoplaySpeed: 3000
+    arrows: true
+    prevArrow: ⋖
+    nextArrow: ⋗
+    downArrow: false
+    downArrowTarget: ''
+    downArrowOffset: 0
+    centerMode: false
+    centerPadding: 50px
+    dots: false
+    dotsClass: slick-dots
+    appendDots: $(element)
+    draggable: true
+    fade: false
+    focusOnSelect: false
+    infinite: true
+    initialSlide: 0
+    lazyLoad: ondemand
+    mouseWheel: false
+    randomize: false
+    respondTo: window
+    rtl: false
+    rows: 0
+    slidesPerRow: 1
+    slide: ''
+    slidesToShow: 6
+    slidesToScroll: 0
+    speed: 500
+    swipe: true
+    swipeToSlide: true
+    edgeFriction: 0.35
+    touchMove: true
+    touchThreshold: 5
+    useCSS: true
+    cssEase: ease
+    cssEaseBezier: ''
+    cssEaseOverride: ''
+    useTransform: true
+    easing: linear
+    variableWidth: false
+    vertical: false
+    verticalSwiping: false
+    waitForAnimate: true
+  responsives:
+    responsive:
+      -
+        breakpoint: 1281
+        unslick: false
+        settings:
+          adaptiveHeight: false
+          autoplay: true
+          pauseOnHover: true
+          pauseOnDotsHover: false
+          pauseOnFocus: true
+          autoplaySpeed: 3000
+          arrows: true
+          centerMode: false
+          centerPadding: 50px
+          dots: false
+          draggable: true
+          fade: false
+          focusOnSelect: false
+          infinite: true
+          initialSlide: 0
+          respondTo: window
+          rows: 0
+          slidesPerRow: 1
+          slidesToShow: 4
+          slidesToScroll: 1
+          speed: 500
+          swipe: true
+          swipeToSlide: true
+          edgeFriction: 0.35
+          touchMove: true
+          touchThreshold: 5
+          cssEase: ease
+          cssEaseBezier: ''
+          cssEaseOverride: ''
+          variableWidth: false
+          vertical: false
+          verticalSwiping: false
+          waitForAnimate: false
+      -
+        breakpoint: 861
+        unslick: false
+        settings:
+          adaptiveHeight: false
+          autoplay: true
+          pauseOnHover: true
+          pauseOnDotsHover: false
+          pauseOnFocus: true
+          autoplaySpeed: 3000
+          arrows: true
+          centerMode: false
+          centerPadding: 50px
+          dots: false
+          draggable: true
+          fade: false
+          focusOnSelect: false
+          infinite: true
+          initialSlide: 0
+          respondTo: window
+          rows: 0
+          slidesPerRow: 1
+          slidesToShow: 3
+          slidesToScroll: 1
+          speed: 500
+          swipe: true
+          swipeToSlide: true
+          edgeFriction: 0.35
+          touchMove: true
+          touchThreshold: 5
+          cssEase: ease
+          cssEaseBezier: ''
+          cssEaseOverride: ''
+          variableWidth: false
+          vertical: false
+          verticalSwiping: false
+          waitForAnimate: false
+      -
+        breakpoint: 769
+        unslick: false
+        settings:
+          adaptiveHeight: false
+          autoplay: true
+          pauseOnHover: true
+          pauseOnDotsHover: false
+          pauseOnFocus: true
+          autoplaySpeed: 3000
+          arrows: true
+          centerMode: false
+          centerPadding: 50px
+          dots: false
+          draggable: true
+          fade: false
+          focusOnSelect: false
+          infinite: true
+          initialSlide: 0
+          respondTo: window
+          rows: 0
+          slidesPerRow: 1
+          slidesToShow: 2
+          slidesToScroll: 1
+          speed: 500
+          swipe: true
+          swipeToSlide: true
+          edgeFriction: 0.35
+          touchMove: true
+          touchThreshold: 5
+          cssEase: ease
+          cssEaseBezier: ''
+          cssEaseOverride: ''
+          variableWidth: false
+          vertical: false
+          verticalSwiping: false
+          waitForAnimate: false
+      -
+        breakpoint: 481
+        unslick: false
+        settings:
+          adaptiveHeight: false
+          autoplay: true
+          pauseOnHover: true
+          pauseOnDotsHover: false
+          pauseOnFocus: true
+          autoplaySpeed: 3000
+          arrows: true
+          centerMode: false
+          centerPadding: 50px
+          dots: false
+          draggable: true
+          fade: false
+          focusOnSelect: false
+          infinite: true
+          initialSlide: 0
+          respondTo: window
+          rows: 0
+          slidesPerRow: 1
+          slidesToShow: 1
+          slidesToScroll: 1
+          speed: 500
+          swipe: true
+          swipeToSlide: true
+          edgeFriction: 0.35
+          touchMove: true
+          touchThreshold: 5
+          cssEase: ease
+          cssEaseBezier: ''
+          cssEaseOverride: ''
+          variableWidth: false
+          vertical: false
+          verticalSwiping: false
+          waitForAnimate: false

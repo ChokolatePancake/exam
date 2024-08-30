@@ -1,0 +1,20 @@
+uuid: cca850d8-04c2-4928-8124-85bf87f17e34
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.services
+id: block_content.services.default
+targetEntityType: block_content
+bundle: services
+mode: default
+content:
+  info:
+    type: string_textfield
+    weight: -5
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+hidden: {  }

@@ -1,0 +1,103 @@
+uuid: 8b926711-95c4-4dde-a5eb-75ce2eed4565
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.page.body
+    - field.field.node.page.field_link
+    - node.type.page
+  module:
+    - layout_builder
+    - layout_discovery
+    - text
+    - user
+third_party_settings:
+  layout_builder:
+    enabled: true
+    allow_custom: false
+    sections:
+      -
+        layout_id: layout_onecol
+        layout_settings:
+          label: ''
+        components:
+          a348b74b-d5c1-477b-94b3-91f605ce191e:
+            uuid: a348b74b-d5c1-477b-94b3-91f605ce191e
+            region: content
+            configuration:
+              id: 'field_block:node:page:title'
+              label: Title
+              label_display: '0'
+              provider: layout_builder
+              context_mapping:
+                entity: layout_builder.entity
+                view_mode: view_mode
+              formatter:
+                type: string
+                label: hidden
+                settings:
+                  link_to_entity: false
+                third_party_settings: {  }
+            weight: 1
+            additional: {  }
+          3ededc1a-d630-44ca-8c20-1d3664c85b43:
+            uuid: 3ededc1a-d630-44ca-8c20-1d3664c85b43
+            region: content
+            configuration:
+              id: 'field_block:node:page:body'
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              formatter:
+                type: text_default
+                label: hidden
+                settings: {  }
+                third_party_settings: {  }
+            weight: 3
+            additional: {  }
+          6afc04ab-d4e7-48a5-a473-5e447141ef1a:
+            uuid: 6afc04ab-d4e7-48a5-a473-5e447141ef1a
+            region: content
+            configuration:
+              id: 'field_block:node:page:title'
+              label: Title
+              label_display: '0'
+              provider: layout_builder
+              context_mapping:
+                entity: layout_builder.entity
+                view_mode: view_mode
+              formatter:
+                type: entity_class_formatter
+                label: hidden
+                settings:
+                  prefix: 'basic page '
+                  suffix: ''
+                  attr: ''
+                  field: ''
+                third_party_settings: {  }
+            weight: 4
+            additional: {  }
+        third_party_settings: {  }
+_core:
+  default_config_hash: M_Y8L5tfmhx7DR143E05YyZSpvgil6VFvqcfBWykalg
+id: node.page.default
+targetEntityType: node
+bundle: page
+mode: default
+content:
+  body:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 101
+    region: content
+hidden:
+  field_link: true
+  likes: true
+  search_api_excerpt: true

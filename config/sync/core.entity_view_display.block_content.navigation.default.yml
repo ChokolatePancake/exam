@@ -1,0 +1,200 @@
+uuid: a5c1d76e-3861-4da8-a08d-e191a29f09bf
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.navigation
+    - system.menu.main
+  module:
+    - layout_builder
+    - layout_discovery
+    - social_media_links
+    - system
+third_party_settings:
+  layout_builder:
+    enabled: true
+    allow_custom: false
+    sections:
+      -
+        layout_id: layout_onecol
+        layout_settings:
+          label: ''
+          context_mapping: {  }
+        components:
+          02ad1959-1313-47fb-9113-24f28ed176ec:
+            uuid: 02ad1959-1313-47fb-9113-24f28ed176ec
+            region: content
+            configuration:
+              id: 'system_menu_block:main'
+              label: 'Main navigation'
+              label_display: '0'
+              provider: system
+              context_mapping: {  }
+              level: 1
+              depth: 0
+              expand_all_items: false
+            weight: 0
+            additional: {  }
+          cc5fd370-6c0b-4486-accb-5384f1e8eded:
+            uuid: cc5fd370-6c0b-4486-accb-5384f1e8eded
+            region: content
+            configuration:
+              id: social_media_links_block
+              label: 'Social Media Links'
+              label_display: '0'
+              provider: social_media_links
+              context_mapping: {  }
+              platforms:
+                facebook:
+                  value: oxitschool
+                  description: ''
+                  weight: '-43'
+                twitter:
+                  value: oxitofficial
+                  description: ''
+                  weight: '-42'
+                linkedin:
+                  value: company/oxit
+                  description: ''
+                  weight: '-41'
+                mastodon:
+                  value: ''
+                  description: ''
+                  weight: '-40'
+                whatsapp:
+                  value: ''
+                  description: ''
+                  weight: '-39'
+                flickr:
+                  value: ''
+                  description: ''
+                  weight: '-38'
+                email:
+                  value: ''
+                  description: ''
+                  weight: '-37'
+                meetup:
+                  value: ''
+                  description: ''
+                  weight: '-36'
+                contact:
+                  value: ''
+                  description: ''
+                  weight: '-35'
+                googleplay:
+                  value: ''
+                  description: ''
+                  weight: '-34'
+                patreon:
+                  value: ''
+                  description: ''
+                  weight: '-33'
+                pinterest:
+                  value: ''
+                  description: ''
+                  weight: '-32'
+                vimeo:
+                  value: ''
+                  description: ''
+                  weight: '-31'
+                tiktok:
+                  value: ''
+                  description: ''
+                  weight: '-30'
+                slideshare:
+                  value: ''
+                  description: ''
+                  weight: '-29'
+                gitlab:
+                  value: ''
+                  description: ''
+                  weight: '-28'
+                googleplus:
+                  value: ''
+                  description: ''
+                  weight: '-27'
+                amazon:
+                  value: ''
+                  description: ''
+                  weight: '-26'
+                bitbucket:
+                  value: ''
+                  description: ''
+                  weight: '-25'
+                rss:
+                  value: ''
+                  description: ''
+                  weight: '-24'
+                vkontakte:
+                  value: ''
+                  description: ''
+                  weight: '-23'
+                glassdoor:
+                  value: ''
+                  description: ''
+                  weight: '-22'
+                github:
+                  value: ''
+                  description: ''
+                  weight: '-21'
+                instagram:
+                  value: ''
+                  description: ''
+                  weight: '-20'
+                telegram:
+                  value: ''
+                  description: ''
+                  weight: '-19'
+                youtube:
+                  value: ''
+                  description: ''
+                  weight: '-18'
+                goodreads:
+                  value: ''
+                  description: ''
+                  weight: '-17'
+                behance:
+                  value: ''
+                  description: ''
+                  weight: '-16'
+                youtube_channel:
+                  value: ''
+                  description: ''
+                  weight: '-15'
+                xing:
+                  value: ''
+                  description: ''
+                  weight: '-14'
+                tumblr:
+                  value: ''
+                  description: ''
+                  weight: '-13'
+                website:
+                  value: ''
+                  description: ''
+                  weight: '-12'
+                drupal:
+                  value: ''
+                  description: ''
+                  weight: '-11'
+              appearance:
+                orientation: h
+                show_name: 0
+                suggestion: ''
+              link_attributes:
+                target: '<none>'
+                rel: '<none>'
+              iconset:
+                style: 'fontawesome:2x'
+                installed_iconsets:
+                  fontawesome:
+                    examples: ''
+            weight: 1
+            additional: {  }
+        third_party_settings: {  }
+id: block_content.navigation.default
+targetEntityType: block_content
+bundle: navigation
+mode: default
+content: {  }
+hidden: {  }

@@ -1,0 +1,43 @@
+uuid: 351df792-ed5a-4a8f-a832-0ad3c64df74c
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.clients
+    - views.view.cli
+  module:
+    - layout_builder
+    - layout_discovery
+    - views
+third_party_settings:
+  layout_builder:
+    enabled: true
+    allow_custom: false
+    sections:
+      -
+        layout_id: layout_onecol
+        layout_settings:
+          label: ''
+          context_mapping: {  }
+        components:
+          ba5716b5-3dde-4831-ab03-4850c0e7470d:
+            uuid: ba5716b5-3dde-4831-ab03-4850c0e7470d
+            region: content
+            configuration:
+              id: 'views_block:cli-block_1'
+              label: ''
+              label_display: '0'
+              provider: views
+              context_mapping: {  }
+              views_label: ''
+              items_per_page: none
+            weight: 0
+            additional: {  }
+        third_party_settings: {  }
+id: block_content.clients.default
+targetEntityType: block_content
+bundle: clients
+mode: default
+content: {  }
+hidden:
+  search_api_excerpt: true

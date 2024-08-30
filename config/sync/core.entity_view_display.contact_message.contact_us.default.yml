@@ -1,0 +1,122 @@
+uuid: af0d1edb-bf84-4c00-a825-24c08ee5a85b
+langcode: en
+status: true
+dependencies:
+  config:
+    - contact.form.contact_us
+    - field.field.contact_message.contact_us.field_email_id
+    - field.field.contact_message.contact_us.field_full_name
+    - field.field.contact_message.contact_us.field_mobile_number
+  module:
+    - layout_builder
+    - telephone
+third_party_settings:
+  layout_builder:
+    enabled: true
+    allow_custom: false
+    sections:
+      -
+        layout_id: layout_onecol
+        layout_settings:
+          label: ''
+        components:
+          2b07f4c9-6a79-4ada-9b71-3cfac9e4a5e1:
+            uuid: 2b07f4c9-6a79-4ada-9b71-3cfac9e4a5e1
+            region: content
+            configuration:
+              id: 'field_block:contact_message:contact_us:message'
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              formatter:
+                type: basic_string
+                label: hidden
+                settings: {  }
+                third_party_settings: {  }
+            weight: 0
+            additional: {  }
+          23076527-6f3c-4cd8-a5df-d03536e5504e:
+            uuid: 23076527-6f3c-4cd8-a5df-d03536e5504e
+            region: content
+            configuration:
+              id: 'field_block:contact_message:contact_us:field_mobile_number'
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              formatter:
+                type: telephone_link
+                label: hidden
+                settings:
+                  title: ''
+                third_party_settings: {  }
+            weight: 1
+            additional: {  }
+          9372f83b-1be5-4e4a-8efd-f384ef2c5e5b:
+            uuid: 9372f83b-1be5-4e4a-8efd-f384ef2c5e5b
+            region: content
+            configuration:
+              id: 'field_block:contact_message:contact_us:field_email_id'
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              formatter:
+                type: basic_string
+                label: above
+                settings: {  }
+                third_party_settings: {  }
+            weight: 2
+            additional: {  }
+          335bb988-f056-4c34-b240-63724151adb1:
+            uuid: 335bb988-f056-4c34-b240-63724151adb1
+            region: content
+            configuration:
+              id: 'field_block:contact_message:contact_us:field_full_name'
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              formatter:
+                type: string
+                label: above
+                settings:
+                  link_to_entity: false
+                third_party_settings: {  }
+            weight: 3
+            additional: {  }
+        third_party_settings: {  }
+id: contact_message.contact_us.default
+targetEntityType: contact_message
+bundle: contact_us
+mode: default
+content:
+  field_email_id:
+    type: basic_string
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 2
+    region: content
+  field_full_name:
+    type: string
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 3
+    region: content
+  field_mobile_number:
+    type: telephone_link
+    label: hidden
+    settings:
+      title: ''
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  message:
+    type: basic_string
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden:
+  search_api_excerpt: true

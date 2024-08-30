@@ -1,0 +1,119 @@
+uuid: f66e653c-f373-40b2-9a29-add0c53f4179
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.thank_you_block
+    - field.field.block_content.thank_you_block.field_body
+    - field.field.block_content.thank_you_block.field_go_to
+    - field.field.block_content.thank_you_block.field_main_message
+  module:
+    - layout_builder
+    - layout_discovery
+    - link
+    - text
+third_party_settings:
+  layout_builder:
+    enabled: true
+    allow_custom: false
+    sections:
+      -
+        layout_id: layout_onecol
+        layout_settings:
+          label: ''
+        components:
+          8daf329a-23e6-4092-a928-fcc93e6dd399:
+            uuid: 8daf329a-23e6-4092-a928-fcc93e6dd399
+            region: content
+            configuration:
+              id: 'field_block:block_content:thank_you_block:field_body'
+              label: Body
+              label_display: '0'
+              provider: layout_builder
+              context_mapping:
+                entity: layout_builder.entity
+                view_mode: view_mode
+              formatter:
+                type: text_default
+                label: hidden
+                settings: {  }
+                third_party_settings: {  }
+            weight: 2
+            additional: {  }
+          40c5dd24-152b-4ac1-a8f8-06fe334139b3:
+            uuid: 40c5dd24-152b-4ac1-a8f8-06fe334139b3
+            region: content
+            configuration:
+              id: 'field_block:block_content:thank_you_block:field_go_to'
+              label: 'Go to'
+              label_display: '0'
+              provider: layout_builder
+              context_mapping:
+                entity: layout_builder.entity
+                view_mode: view_mode
+              formatter:
+                type: link_separate
+                label: hidden
+                settings:
+                  trim_length: 80
+                  url_only: false
+                  url_plain: false
+                  rel: '0'
+                  target: '0'
+                third_party_settings: {  }
+            weight: 3
+            additional: {  }
+          50f44dd7-33f1-4939-8114-1b8381ff937a:
+            uuid: 50f44dd7-33f1-4939-8114-1b8381ff937a
+            region: content
+            configuration:
+              id: 'field_block:block_content:thank_you_block:field_main_message'
+              label: 'Main message'
+              label_display: '0'
+              provider: layout_builder
+              context_mapping:
+                entity: layout_builder.entity
+                view_mode: view_mode
+              formatter:
+                type: string
+                label: hidden
+                settings:
+                  link_to_entity: false
+                third_party_settings: {  }
+            weight: 1
+            additional: {  }
+        third_party_settings: {  }
+id: block_content.thank_you_block.default
+targetEntityType: block_content
+bundle: thank_you_block
+mode: default
+content:
+  field_body:
+    type: text_default
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  field_go_to:
+    type: link
+    label: above
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+    weight: 0
+    region: content
+  field_main_message:
+    type: string
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 2
+    region: content
+hidden:
+  search_api_excerpt: true

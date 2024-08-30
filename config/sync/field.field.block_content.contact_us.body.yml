@@ -1,0 +1,24 @@
+uuid: 783aa5bb-d444-4686-ac02-babc8d182b5b
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.contact_us
+    - field.storage.block_content.body
+  module:
+    - text
+id: block_content.contact_us.body
+field_name: body
+entity_type: block_content
+bundle: contact_us
+label: Body
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: false
+  required_summary: false
+  allowed_formats: {  }
+field_type: text_with_summary

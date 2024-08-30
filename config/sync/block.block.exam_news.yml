@@ -1,0 +1,30 @@
+uuid: 9b4da58a-a7d6-4933-9fd4-46d8b37f170f
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:news:f07d3c7b-e552-4a11-9e46-495d60f86dc2'
+  module:
+    - block_content
+    - system
+  theme:
+    - exam
+id: exam_news
+theme: exam
+region: content
+weight: -7
+provider: null
+plugin: 'block_content:f07d3c7b-e552-4a11-9e46-495d60f86dc2'
+settings:
+  id: 'block_content:f07d3c7b-e552-4a11-9e46-495d60f86dc2'
+  label: News
+  label_display: '0'
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: '<front>'

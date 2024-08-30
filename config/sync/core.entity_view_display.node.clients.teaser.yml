@@ -1,0 +1,27 @@
+uuid: e4697bae-5cb0-4fc1-a857-b124f67d7da6
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.clients.field_clients_image
+    - field.field.node.clients.field_clients_site
+    - field.field.node.clients.field_weight
+    - node.type.clients
+  module:
+    - user
+id: node.clients.teaser
+targetEntityType: node
+bundle: clients
+mode: teaser
+content:
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  field_clients_image: true
+  field_clients_site: true
+  field_weight: true
+  likes: true

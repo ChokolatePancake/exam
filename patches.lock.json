@@ -1,0 +1,17 @@
+{
+    "_hash": "85d6713b73969ae6ffc3ea31bf2bd296e76c692d72c6de8f0e2df81e1179c3cb",
+    "patches": {
+        "drupal/core": [
+            {
+                "package": "drupal/core",
+                "description": "Add Views EntityReference filter to support better UX for exposed filters",
+                "url": "https://www.drupal.org/files/issues/2024-07-10/3347343-213.patch",
+                "sha256": "9dc1bb29b5199c32115047862e8c2fe321abb2d582904e48be6de2e23d2aa212",
+                "depth": 2,
+                "extra": {
+                    "provenance": "root"
+                }
+            }
+        ]
+    }
+}

@@ -1,0 +1,19 @@
+uuid: 7fd78844-68cd-4b2d-a4f0-c76e454ba71d
+langcode: en
+status: true
+dependencies:
+  config:
+    - contact.form.contact_us
+    - field.storage.contact_message.field_full_name
+id: contact_message.contact_us.field_full_name
+field_name: field_full_name
+entity_type: contact_message
+bundle: contact_us
+label: 'Full name'
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

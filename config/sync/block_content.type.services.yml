@@ -1,0 +1,8 @@
+uuid: c95672a2-0268-4afd-b43d-db8e8b218764
+langcode: en
+status: true
+dependencies: {  }
+id: services
+label: Services
+revision: false
+description: 'Block for services view'

@@ -1,0 +1,17 @@
+uuid: 51c11538-2920-47f5-adab-2bce44630416
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+_core:
+  default_config_hash: 97tvtzGOa8_flb22CzSjgtm_YkiGMHvEBO-6q2K9V_U
+id: node_search
+label: Content
+path: '[node:title]'
+weight: -10
+plugin: node_search
+configuration:
+  rankings:
+    recent: 1
+    relevance: 2

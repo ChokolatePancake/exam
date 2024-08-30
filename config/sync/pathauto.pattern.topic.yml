@@ -1,0 +1,22 @@
+uuid: 75fd1657-9eed-4508-baba-b485715c225e
+langcode: en
+status: true
+dependencies:
+  module:
+    - taxonomy
+id: topic
+label: Topic
+type: 'canonical_entities:taxonomy_term'
+pattern: '/news/topic/[term:name]'
+selection_criteria:
+  1c03c423-7a00-4581-bd04-5829ba73a978:
+    id: 'entity_bundle:taxonomy_term'
+    negate: false
+    uuid: 1c03c423-7a00-4581-bd04-5829ba73a978
+    context_mapping:
+      taxonomy_term: taxonomy_term
+    bundles:
+      topic: topic
+selection_logic: and
+weight: -5
+relationships: {  }

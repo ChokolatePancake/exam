@@ -1,0 +1,20 @@
+uuid: d3702a9d-7791-4b68-8381-8cb86eb51a3b
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.team
+id: block_content.team.default
+targetEntityType: block_content
+bundle: team
+mode: default
+content:
+  info:
+    type: string_textfield
+    weight: -5
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+hidden: {  }

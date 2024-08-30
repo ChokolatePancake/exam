@@ -1,0 +1,12 @@
+uuid: c0fa3bc0-c2c5-415a-a473-84ce597480b2
+langcode: en
+status: true
+dependencies: {  }
+id: contact_us
+label: 'Contact Us'
+recipients:
+  - admin@example.com
+reply: ''
+weight: 0
+message: ''
+redirect: /thank-you

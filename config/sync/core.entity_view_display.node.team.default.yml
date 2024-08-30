@@ -1,0 +1,273 @@
+uuid: a0b6cca1-552c-45e7-9d38-ea31296df0ed
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.team.body
+    - field.field.node.team.field_image
+    - field.field.node.team.field_link
+    - field.field.node.team.field_paragraphs
+    - field.field.node.team.field_role
+    - field.field.node.team.field_socials
+    - field.field.node.team.field_weight
+    - node.type.team
+  module:
+    - entity_reference_revisions
+    - layout_builder
+    - layout_discovery
+    - social_media_links_field
+    - text
+    - user
+third_party_settings:
+  layout_builder:
+    enabled: true
+    allow_custom: false
+    sections:
+      -
+        layout_id: layout_twocol_section
+        layout_settings:
+          label: ''
+          context_mapping: {  }
+          column_widths: 75-25
+          custom_id: ''
+          custom_classes: top-team-block
+          custom_class_choose: {  }
+          custom_styles: ''
+          custom_data_attributes: ''
+          regions:
+            first:
+              region_id: ''
+              region_class_choose: {  }
+              region_classes: ''
+              region_styles: ''
+              region_data: ''
+            second:
+              region_id: ''
+              region_class_choose: {  }
+              region_classes: ''
+              region_styles: ''
+              region_data: ''
+        components:
+          bb572fee-b512-4e63-84df-076a8ce53088:
+            uuid: bb572fee-b512-4e63-84df-076a8ce53088
+            region: first
+            configuration:
+              id: 'field_block:node:team:title'
+              label: Title
+              label_display: '0'
+              provider: layout_builder
+              context_mapping:
+                entity: layout_builder.entity
+                view_mode: view_mode
+              formatter:
+                type: string
+                label: hidden
+                settings:
+                  link_to_entity: false
+                third_party_settings: {  }
+            weight: 0
+            additional: {  }
+          22ab0119-53f3-4b4d-b545-e9821d528f56:
+            uuid: 22ab0119-53f3-4b4d-b545-e9821d528f56
+            region: first
+            configuration:
+              id: 'field_block:node:team:field_role'
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              formatter:
+                type: string
+                label: hidden
+                settings:
+                  link_to_entity: false
+                third_party_settings: {  }
+            weight: 1
+            additional: {  }
+          ce985105-ea54-46b2-9249-1d3c785ee2fb:
+            uuid: ce985105-ea54-46b2-9249-1d3c785ee2fb
+            region: first
+            configuration:
+              id: 'field_block:node:team:field_socials'
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              formatter:
+                type: social_media_links_field_default
+                label: hidden
+                settings:
+                  appearance: {  }
+                  link_attributes: {  }
+                third_party_settings: {  }
+            weight: 2
+            additional: {  }
+          5b3aed13-cf70-46ac-b170-12318d6f2814:
+            uuid: 5b3aed13-cf70-46ac-b170-12318d6f2814
+            region: first
+            configuration:
+              id: 'extra_field_block:node:team:flag_like'
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+            weight: 3
+            additional: {  }
+          a218b92a-4ca4-417a-9a59-e203281aefe5:
+            uuid: a218b92a-4ca4-417a-9a59-e203281aefe5
+            region: second
+            configuration:
+              id: 'field_block:node:team:field_image'
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              formatter:
+                type: entity_reference_entity_view
+                label: hidden
+                settings:
+                  view_mode: default
+                  link: false
+                third_party_settings: {  }
+            weight: 0
+            additional: {  }
+        third_party_settings: {  }
+      -
+        layout_id: layout_onecol
+        layout_settings:
+          label: ''
+          context_mapping: {  }
+          custom_id: ''
+          custom_classes: content-team
+          custom_class_choose: {  }
+          custom_styles: ''
+          custom_data_attributes: ''
+          regions:
+            content:
+              region_id: ''
+              region_class_choose: {  }
+              region_classes: ''
+              region_styles: ''
+              region_data: ''
+        components:
+          e43b7e77-c4a3-4ec9-8e61-b57dcbb037e8:
+            uuid: e43b7e77-c4a3-4ec9-8e61-b57dcbb037e8
+            region: content
+            configuration:
+              id: 'field_block:node:team:field_paragraphs'
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              formatter:
+                type: entity_reference_revisions_entity_view
+                label: hidden
+                settings:
+                  view_mode: default
+                  link: ''
+                third_party_settings: {  }
+            weight: 10
+            additional: {  }
+          8acbe061-c5c1-4c0f-af82-185c8db2e38e:
+            uuid: 8acbe061-c5c1-4c0f-af82-185c8db2e38e
+            region: content
+            configuration:
+              id: 'field_block:node:team:body'
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              formatter:
+                type: text_default
+                label: hidden
+                settings: {  }
+                third_party_settings: {  }
+            weight: 9
+            additional: {  }
+          bc95ca9f-cf28-4516-9c27-33428c685b14:
+            uuid: bc95ca9f-cf28-4516-9c27-33428c685b14
+            region: content
+            configuration:
+              id: 'field_block:node:team:type'
+              label: 'Content type'
+              label_display: '0'
+              provider: layout_builder
+              context_mapping:
+                entity: layout_builder.entity
+                view_mode: view_mode
+              formatter:
+                type: entity_class_formatter
+                label: hidden
+                settings:
+                  prefix: node-type-
+                  suffix: ''
+                  attr: ''
+                  field: ''
+                third_party_settings: {  }
+            weight: 11
+            additional: {  }
+        third_party_settings: {  }
+id: node.team.default
+targetEntityType: node
+bundle: team
+mode: default
+content:
+  body:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 5
+    region: content
+  field_image:
+    type: entity_reference_entity_view
+    label: hidden
+    settings:
+      view_mode: default
+      link: false
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  field_paragraphs:
+    type: entity_reference_revisions_entity_view
+    label: hidden
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    weight: 6
+    region: content
+  field_role:
+    type: string
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 2
+    region: content
+  field_socials:
+    type: social_media_links_field_default
+    label: hidden
+    settings:
+      appearance: {  }
+      link_attributes: {  }
+    third_party_settings: {  }
+    weight: 3
+    region: content
+  flag_like:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 10
+    region: content
+  likes:
+    type: number_integer
+    label: above
+    settings:
+      thousand_separator: ''
+      prefix_suffix: true
+    third_party_settings: {  }
+    weight: 11
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden:
+  field_link: true
+  field_weight: true
+  search_api_excerpt: true

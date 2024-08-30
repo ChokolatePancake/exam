@@ -1,0 +1,8 @@
+uuid: 15a30e48-ed25-402b-ae0c-7221164dbd8c
+langcode: en
+status: true
+dependencies: {  }
+id: thank_you_block
+label: 'Thank you block'
+revision: false
+description: 'This block was created for thank you message after submitting form'

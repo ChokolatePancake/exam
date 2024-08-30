@@ -1,0 +1,21 @@
+uuid: 64202fbd-4e31-41fb-bf60-1ce002db3bbc
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_phone
+    - node.type.contacts
+  module:
+    - telephone
+id: node.contacts.field_phone
+field_name: field_phone
+entity_type: node
+bundle: contacts
+label: Phone
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: telephone

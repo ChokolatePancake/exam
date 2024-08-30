@@ -1,0 +1,25 @@
+uuid: 2e06e0ff-7c64-4e81-98bf-cff717f7fc1c
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:6ebe4331-f2d4-4fd9-81e4-db977e5a15e8'
+  module:
+    - block_content
+  theme:
+    - exam
+id: exam_logo_2
+theme: exam
+region: footer
+weight: 0
+provider: null
+plugin: 'block_content:6ebe4331-f2d4-4fd9-81e4-db977e5a15e8'
+settings:
+  id: 'block_content:6ebe4331-f2d4-4fd9-81e4-db977e5a15e8'
+  label: Logo
+  label_display: '0'
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

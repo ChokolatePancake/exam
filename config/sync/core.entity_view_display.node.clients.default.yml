@@ -1,0 +1,138 @@
+uuid: 9e11e0ed-732a-421d-8885-d5551ae562a6
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.clients.field_clients_image
+    - field.field.node.clients.field_clients_site
+    - field.field.node.clients.field_weight
+    - node.type.clients
+  module:
+    - layout_builder
+    - layout_discovery
+    - media
+    - user
+third_party_settings:
+  layout_builder:
+    enabled: true
+    allow_custom: false
+    sections:
+      -
+        layout_id: layout_onecol
+        layout_settings:
+          label: ''
+        components:
+          a54fc208-e8c8-4a0d-9c83-83e26796b33f:
+            uuid: a54fc208-e8c8-4a0d-9c83-83e26796b33f
+            region: content
+            configuration:
+              id: 'field_block:node:clients:field_clients_image'
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              formatter:
+                type: media_thumbnail
+                label: hidden
+                settings:
+                  image_link: ''
+                  image_style: ''
+                  image_loading:
+                    attribute: lazy
+                third_party_settings: {  }
+            weight: 1
+            additional: {  }
+          37b15775-d9bc-4999-952a-165c96bd55fb:
+            uuid: 37b15775-d9bc-4999-952a-165c96bd55fb
+            region: content
+            configuration:
+              id: 'field_block:node:clients:title'
+              label: Title
+              label_display: '0'
+              provider: layout_builder
+              context_mapping:
+                entity: layout_builder.entity
+                view_mode: view_mode
+              formatter:
+                type: string
+                label: hidden
+                settings:
+                  link_to_entity: false
+                third_party_settings: {  }
+            weight: 0
+            additional: {  }
+          f32429f9-a399-4c46-8501-df090a88def6:
+            uuid: f32429f9-a399-4c46-8501-df090a88def6
+            region: content
+            configuration:
+              id: 'field_block:node:clients:field_clients_site'
+              label: Site
+              label_display: '0'
+              provider: layout_builder
+              context_mapping:
+                entity: layout_builder.entity
+                view_mode: view_mode
+              formatter:
+                type: link
+                label: hidden
+                settings:
+                  trim_length: 80
+                  url_only: false
+                  url_plain: false
+                  rel: '0'
+                  target: _blank
+                third_party_settings: {  }
+            weight: 2
+            additional: {  }
+          0cfb3835-8683-45ff-bad4-8ce2837b3da2:
+            uuid: 0cfb3835-8683-45ff-bad4-8ce2837b3da2
+            region: content
+            configuration:
+              id: 'field_block:node:clients:type'
+              label: 'Content type'
+              label_display: '0'
+              provider: layout_builder
+              context_mapping:
+                entity: layout_builder.entity
+                view_mode: view_mode
+              formatter:
+                type: entity_class_formatter
+                label: hidden
+                settings:
+                  prefix: node-type-
+                  suffix: ''
+                  attr: ''
+                  field: ''
+                third_party_settings: {  }
+            weight: 3
+            additional: {  }
+        third_party_settings: {  }
+id: node.clients.default
+targetEntityType: node
+bundle: clients
+mode: default
+content:
+  field_clients_image:
+    type: media_thumbnail
+    label: hidden
+    settings:
+      image_link: ''
+      image_style: ''
+      image_loading:
+        attribute: lazy
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  field_weight:
+    type: number_integer
+    label: above
+    settings:
+      thousand_separator: ''
+      prefix_suffix: true
+    third_party_settings: {  }
+    weight: 106
+    region: content
+hidden:
+  field_clients_site: true
+  likes: true
+  links: true
+  search_api_excerpt: true

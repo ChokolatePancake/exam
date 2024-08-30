@@ -1,0 +1,18 @@
+uuid: 536600a9-00e0-467d-8fa5-00d8f6396143
+langcode: en
+status: true
+dependencies:
+  config:
+    - contact.form.feedback
+id: contact_message.feedback.default
+targetEntityType: contact_message
+bundle: feedback
+mode: default
+content: {  }
+hidden:
+  copy: true
+  mail: true
+  message: true
+  name: true
+  preview: true
+  subject: true

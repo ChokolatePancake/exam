@@ -1,0 +1,142 @@
+uuid: 9dfc596a-4826-4c44-baf6-56be94f33e10
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.services.body
+    - field.field.node.services.field_image
+    - field.field.node.services.field_link
+    - field.field.node.services.field_paragraphs
+    - field.field.node.services.field_weight
+    - node.type.services
+  module:
+    - entity_reference_revisions
+    - layout_builder
+    - layout_discovery
+    - media
+    - text
+    - user
+third_party_settings:
+  layout_builder:
+    enabled: true
+    allow_custom: false
+    sections:
+      -
+        layout_id: layout_onecol
+        layout_settings:
+          label: ''
+        components:
+          c836d40b-e550-4b45-a3f5-a7a558b14ba0:
+            uuid: c836d40b-e550-4b45-a3f5-a7a558b14ba0
+            region: content
+            configuration:
+              id: 'field_block:node:services:field_image'
+              label: Image
+              label_display: '0'
+              provider: layout_builder
+              context_mapping:
+                entity: layout_builder.entity
+                view_mode: view_mode
+              formatter:
+                type: media_thumbnail
+                label: hidden
+                settings:
+                  image_link: ''
+                  image_style: 480x480
+                  image_loading:
+                    attribute: lazy
+                third_party_settings: {  }
+            weight: 1
+            additional: {  }
+          4cbb8cc0-ef67-4bf8-bdd8-466f1ac483a2:
+            uuid: 4cbb8cc0-ef67-4bf8-bdd8-466f1ac483a2
+            region: content
+            configuration:
+              id: 'field_block:node:services:body'
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              formatter:
+                type: text_default
+                label: hidden
+                settings: {  }
+                third_party_settings: {  }
+            weight: 2
+            additional: {  }
+          2c28e60f-c077-4ddc-8461-47b64f86edcc:
+            uuid: 2c28e60f-c077-4ddc-8461-47b64f86edcc
+            region: content
+            configuration:
+              id: 'field_block:node:services:title'
+              label: Title
+              label_display: '0'
+              provider: layout_builder
+              context_mapping:
+                entity: layout_builder.entity
+                view_mode: view_mode
+              formatter:
+                type: string
+                label: hidden
+                settings:
+                  link_to_entity: false
+                third_party_settings: {  }
+            weight: 0
+            additional: {  }
+          c8a84347-4664-4fc3-8a3f-811dabb3eaa7:
+            uuid: c8a84347-4664-4fc3-8a3f-811dabb3eaa7
+            region: content
+            configuration:
+              id: 'field_block:node:services:field_paragraphs'
+              label: Paragraphs
+              label_display: '0'
+              provider: layout_builder
+              context_mapping:
+                entity: layout_builder.entity
+                view_mode: view_mode
+              formatter:
+                type: entity_reference_revisions_entity_view
+                label: hidden
+                settings:
+                  view_mode: default
+                third_party_settings: {  }
+            weight: 3
+            additional: {  }
+        third_party_settings: {  }
+id: node.services.default
+targetEntityType: node
+bundle: services
+mode: default
+content:
+  body:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  field_image:
+    type: media_thumbnail
+    label: hidden
+    settings:
+      image_link: ''
+      image_style: ''
+      image_loading:
+        attribute: lazy
+    third_party_settings: {  }
+    weight: 0
+    region: content
+  field_paragraphs:
+    type: entity_reference_revisions_entity_view
+    label: hidden
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    weight: 2
+    region: content
+hidden:
+  field_link: true
+  field_weight: true
+  likes: true
+  links: true
+  search_api_excerpt: true

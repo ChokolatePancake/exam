@@ -1,0 +1,79 @@
+uuid: 03e6b313-0320-43f2-bb62-63a920c0cd33
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.contact_us
+    - field.field.block_content.contact_us.body
+    - field.field.block_content.contact_us.field_contact_email
+    - views.view.contact_us
+  module:
+    - layout_builder
+    - layout_discovery
+    - text
+    - views
+    - views_contact_form
+third_party_settings:
+  layout_builder:
+    enabled: true
+    allow_custom: false
+    sections:
+      -
+        layout_id: layout_onecol
+        layout_settings:
+          label: ''
+        components:
+          18898b52-3bfd-4cf4-a068-b563dafc977d:
+            uuid: 18898b52-3bfd-4cf4-a068-b563dafc977d
+            region: content
+            configuration:
+              id: 'field_block:block_content:contact_us:field_contact_email'
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              formatter:
+                type: views_contact_form_email_formatter
+                label: hidden
+                settings:
+                  contact_type: contact_us
+                  contact_recipients_include: '1'
+                third_party_settings: {  }
+            weight: 0
+            additional: {  }
+          4809752b-1df6-4f18-87cd-93bcae41c838:
+            uuid: 4809752b-1df6-4f18-87cd-93bcae41c838
+            region: content
+            configuration:
+              id: 'views_block:contact_us-block_1'
+              label: ''
+              label_display: '0'
+              provider: views
+              context_mapping: {  }
+              views_label: ''
+              items_per_page: none
+            weight: 1
+            additional: {  }
+        third_party_settings: {  }
+id: block_content.contact_us.default
+targetEntityType: block_content
+bundle: contact_us
+mode: default
+content:
+  body:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  field_contact_email:
+    type: views_contact_form_email_formatter
+    label: hidden
+    settings:
+      contact_type: contact_us
+      contact_recipients_include: '1'
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden:
+  search_api_excerpt: true

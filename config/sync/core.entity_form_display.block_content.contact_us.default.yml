@@ -1,0 +1,42 @@
+uuid: 60bc1358-71fa-418a-a602-a2d1bfcab9bb
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.contact_us
+    - field.field.block_content.contact_us.body
+    - field.field.block_content.contact_us.field_contact_email
+  module:
+    - text
+id: block_content.contact_us.default
+targetEntityType: block_content
+bundle: contact_us
+mode: default
+content:
+  body:
+    type: text_textarea_with_summary
+    weight: 26
+    region: content
+    settings:
+      rows: 9
+      summary_rows: 3
+      placeholder: ''
+      show_summary: false
+    third_party_settings: {  }
+  field_contact_email:
+    type: email_default
+    weight: 27
+    region: content
+    settings:
+      placeholder: ''
+      size: 60
+    third_party_settings: {  }
+  info:
+    type: string_textfield
+    weight: -5
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+hidden: {  }

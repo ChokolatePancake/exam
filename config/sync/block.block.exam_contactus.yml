@@ -1,0 +1,30 @@
+uuid: 6e42d43f-0aec-47d9-9682-e7bba1bb671a
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:contact_us:615b37d2-ee0c-4192-b927-9d548c627b20'
+  module:
+    - block_content
+    - system
+  theme:
+    - exam
+id: exam_contactus
+theme: exam
+region: content
+weight: 0
+provider: null
+plugin: 'block_content:615b37d2-ee0c-4192-b927-9d548c627b20'
+settings:
+  id: 'block_content:615b37d2-ee0c-4192-b927-9d548c627b20'
+  label: 'Contact Us'
+  label_display: visible
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: /contact

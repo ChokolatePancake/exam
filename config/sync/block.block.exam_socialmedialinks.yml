@@ -1,0 +1,165 @@
+uuid: ed3bd5d1-1f51-420d-8f14-87197a853b0b
+langcode: en
+status: true
+dependencies:
+  module:
+    - social_media_links
+  theme:
+    - exam
+id: exam_socialmedialinks
+theme: exam
+region: footer
+weight: 0
+provider: null
+plugin: social_media_links_block
+settings:
+  id: social_media_links_block
+  label: 'Social Media Links'
+  label_display: '0'
+  provider: social_media_links
+  platforms:
+    facebook:
+      value: oxitschool
+      description: ''
+      weight: '-43'
+    twitter:
+      value: oxitofficial
+      description: ''
+      weight: '-42'
+    linkedin:
+      value: company/oxit
+      description: ''
+      weight: '-41'
+    mastodon:
+      value: ''
+      description: ''
+      weight: '-40'
+    whatsapp:
+      value: ''
+      description: ''
+      weight: '-39'
+    meetup:
+      value: ''
+      description: ''
+      weight: '-38'
+    flickr:
+      value: ''
+      description: ''
+      weight: '-37'
+    contact:
+      value: ''
+      description: ''
+      weight: '-36'
+    email:
+      value: ''
+      description: ''
+      weight: '-35'
+    googleplay:
+      value: ''
+      description: ''
+      weight: '-34'
+    patreon:
+      value: ''
+      description: ''
+      weight: '-33'
+    pinterest:
+      value: ''
+      description: ''
+      weight: '-32'
+    vimeo:
+      value: ''
+      description: ''
+      weight: '-31'
+    tiktok:
+      value: ''
+      description: ''
+      weight: '-30'
+    slideshare:
+      value: ''
+      description: ''
+      weight: '-29'
+    gitlab:
+      value: ''
+      description: ''
+      weight: '-28'
+    googleplus:
+      value: ''
+      description: ''
+      weight: '-27'
+    amazon:
+      value: ''
+      description: ''
+      weight: '-26'
+    bitbucket:
+      value: ''
+      description: ''
+      weight: '-25'
+    rss:
+      value: ''
+      description: ''
+      weight: '-24'
+    vkontakte:
+      value: ''
+      description: ''
+      weight: '-23'
+    glassdoor:
+      value: ''
+      description: ''
+      weight: '-22'
+    github:
+      value: ''
+      description: ''
+      weight: '-21'
+    instagram:
+      value: ''
+      description: ''
+      weight: '-20'
+    telegram:
+      value: ''
+      description: ''
+      weight: '-19'
+    youtube:
+      value: ''
+      description: ''
+      weight: '-18'
+    goodreads:
+      value: ''
+      description: ''
+      weight: '-17'
+    behance:
+      value: ''
+      description: ''
+      weight: '-16'
+    youtube_channel:
+      value: ''
+      description: ''
+      weight: '-15'
+    xing:
+      value: ''
+      description: ''
+      weight: '-14'
+    tumblr:
+      value: ''
+      description: ''
+      weight: '-13'
+    website:
+      value: ''
+      description: ''
+      weight: '-12'
+    drupal:
+      value: ''
+      description: ''
+      weight: '-11'
+  appearance:
+    orientation: h
+    show_name: 0
+    suggestion: ''
+  link_attributes:
+    target: '<none>'
+    rel: '<none>'
+  iconset:
+    style: 'fontawesome:2x'
+    installed_iconsets:
+      fontawesome:
+        examples: ''
+visibility: {  }

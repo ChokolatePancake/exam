@@ -1,0 +1,8 @@
+uuid: 0cb725d0-35ef-4c8b-8a48-8aed40e5d36b
+langcode: en
+status: true
+dependencies: {  }
+id: news
+label: News
+revision: false
+description: 'Block for news view'

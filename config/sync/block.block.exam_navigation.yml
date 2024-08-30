@@ -1,0 +1,25 @@
+uuid: ec2cd627-98ae-409d-81f6-cbe4f58500a5
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:navigation:c4aebf62-0baf-4217-8f1e-bcc855fa1dd7'
+  module:
+    - block_content
+  theme:
+    - exam
+id: exam_navigation
+theme: exam
+region: primary_menu
+weight: -11
+provider: null
+plugin: 'block_content:c4aebf62-0baf-4217-8f1e-bcc855fa1dd7'
+settings:
+  id: 'block_content:c4aebf62-0baf-4217-8f1e-bcc855fa1dd7'
+  label: Navigation
+  label_display: '0'
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

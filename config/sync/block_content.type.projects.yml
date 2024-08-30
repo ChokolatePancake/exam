@@ -1,0 +1,8 @@
+uuid: 7d5fa96d-1ff7-4a99-9017-5c171cf717f9
+langcode: en
+status: true
+dependencies: {  }
+id: projects
+label: Projects
+revision: false
+description: 'Block for projects view'

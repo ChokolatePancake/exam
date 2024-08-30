@@ -1,0 +1,22 @@
+uuid: 67c4f2de-5a6d-4c8e-a6cb-568e6481c22d
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.contacts
+id: node.contacts.status
+field_name: status
+entity_type: node
+bundle: contacts
+label: Published
+description: ''
+required: false
+translatable: true
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

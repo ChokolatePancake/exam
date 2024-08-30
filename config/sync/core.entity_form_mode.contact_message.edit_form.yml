@@ -1,0 +1,11 @@
+uuid: 62ef5545-781d-428d-8e87-c0a6ef61ffa9
+langcode: en
+status: true
+dependencies:
+  module:
+    - contact
+id: contact_message.edit_form
+label: 'Edit form'
+description: ''
+targetEntityType: contact_message
+cache: true
