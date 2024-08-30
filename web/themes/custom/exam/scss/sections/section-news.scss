@@ -1,7 +1,7 @@
-@import "media";
-@import "variables";
-@import "global";
-@import "blocks/news-block";
+@import "../media";
+@import "../variables";
+@import "../general/global";
+@import "../blocks/news-block";
 
 .content-section--news {
   @extend %news-block;

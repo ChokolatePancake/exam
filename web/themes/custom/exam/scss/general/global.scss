@@ -1,5 +1,5 @@
-@import "variables";
-@import "media";
+@import "../variables";
+@import "../media";
 a {
   text-decoration: none;
 }
@@ -78,19 +78,19 @@ a {
   .social-media-link-icon {
     &--facebook {
       &::before {
-        background-image: url('../images/fb.png'), url('../../images/fb.png');
+        background-image: url('../../images/fb.png'), url('../../images/fb.png');
       }
     }
 
     &--twitter {
       &::before {
-        background-image: url('../images/twit.png'), url('../../images/twit.png');
+        background-image: url('../../images/twit.png'), url('../../images/twit.png');
       }
     }
 
     &--linkedin {
       &::before {
-        background-image: url('../images/in.png'), url('../../images/in.png');
+        background-image: url('../../images/in.png'), url('../../images/in.png');
       }
     }
     /* for another social link write:

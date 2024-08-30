@@ -57,31 +57,3 @@
     }
   }
 }
-
-//.like--wrapper {
-//  span {
-//    display: none;
-//  }
-//  .fa-heart {
-//    position: relative;
-//    margin-top: 14px;
-//    &::before {
-//      content: "";
-//      display: inline-block;
-//      background: url("../images/empty like.svg") no-repeat center center;
-//      background-size: contain;
-//      width: 1em;
-//      height: 1em;
-//    }
-//
-//    &:hover::before {
-//      background-image: url("../images/like.svg");
-//      opacity: 0.5;
-//    }
-//  }
-//
-//  & input[type="checkbox"]:checked ~ .fa-heart::before {
-//    background-image: url("../images/like.svg");
-//  }
-//}
-

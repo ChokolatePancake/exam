@@ -1,6 +1,10 @@
 <?php
 
-// This code for changing text in submit button in contact form
-function exam_form_contact_message_contact_us_form_alter(&$form, \Drupal\Core\Form\FormStateInterface $form_state, $form_id) {
+use Drupal\Core\Form\FormStateInterface;
+
+/**
+ * Implements hook_form_FORM_ID_alter().
+ */
+function exam_form_contact_message_contact_us_form_alter(&$form, FormStateInterface $form_state, $form_id) {
   $form['actions']['submit']['#value'] = t('Submit form');
 }

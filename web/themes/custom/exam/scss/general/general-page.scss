@@ -1,7 +1,7 @@
 @import "../media";
 @import "../variables";
-@import "../global";
-@import "../blocks/default-block";
+@import "global";
+@import "default-block";
 
 .grid-view-4-col {
   @extend %default-block;

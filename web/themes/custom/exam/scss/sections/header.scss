@@ -1,6 +1,6 @@
-@import "variables";
-@import "global";
-@import "media";
+@import "../variables";
+@import "../general/global";
+@import "../media";
 
 .site-header {
   @extend %container;
@@ -77,7 +77,7 @@
           position: absolute;
           left: 50%;
           top: -4px;
-          content: url('../images/Homepage-menu.png');
+          content: url('../../images/Homepage-menu.png');
         }
         &::after {
           width: 30px;
@@ -135,7 +135,7 @@
              width: 30px;
              height: 30px;
              background: $white;
-             content: url("../images/search icon.png");
+             content: url("../../images/search icon.png");
              opacity: 0.3;
             z-index: 9;
            }

@@ -36,7 +36,6 @@
   ] %}
   <span{{ attributes.addClass(classes) }}>
     {%- for item in items -%}
-      {# Ensure that the formatter is used #}
       {% set formatted_time = item.content|render %}
       <time datetime="{{ item.value|date('c') }}">
         {{ formatted_time }}

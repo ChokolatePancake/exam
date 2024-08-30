@@ -1,6 +1,6 @@
 @import "variables.scss";
 @import "media.scss";
-@import "global.scss";
+@import "general/global";
 .slick--view, .slick--view--cli {
   max-width: 1236px;
   margin: 0 auto;

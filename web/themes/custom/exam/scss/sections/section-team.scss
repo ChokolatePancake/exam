@@ -1,7 +1,7 @@
-@import "media";
-@import "variables";
-@import "global";
-@import "blocks/team-block";
+@import "../media";
+@import "../variables";
+@import "../general/global";
+@import "../blocks/team-block";
 
 .content-section--team {
   h2 {

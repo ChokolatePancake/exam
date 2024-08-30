@@ -1,5 +1,5 @@
 // This class created for comfortable changing/adding css to projects depending on their service type
-@import "variables";
+@import "../variables";
 .view-content .views-row, .region-content {
   .service-type {
     /* For new add(for single node page dont forget to add ".field--name-field-service-type a{"

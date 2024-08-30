@@ -1,6 +1,6 @@
-@import "variables";
-@import "global";
-@import "media";
+@import "../variables";
+@import "../general/global";
+@import "../media";
 
 #block-exam-views-block-about-us-block-1 {
   @extend %container;

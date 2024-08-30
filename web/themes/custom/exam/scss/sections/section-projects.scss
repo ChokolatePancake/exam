@@ -1,7 +1,7 @@
-@import "media";
-@import "variables";
-@import "global";
-@import "blocks/projects-block";
+@import "../media";
+@import "../variables";
+@import "../general/global";
+@import "../blocks/projects-block";
 
 .content-section--projects {
   h2 {

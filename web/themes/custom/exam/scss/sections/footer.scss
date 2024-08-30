@@ -1,6 +1,6 @@
-@import "variables";
-@import "global";
-@import "media";
+@import "../variables";
+@import "../general/global";
+@import "../media";
 .site-footer {
   background: $dark-blue;
   height: 194px;
