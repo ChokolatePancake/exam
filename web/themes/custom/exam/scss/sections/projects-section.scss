@@ -1,0 +1,87 @@
+.content-section--projects {
+  h2 {
+    margin-bottom: 17px;
+    margin-top: 161px;
+    font-weight: 300;
+  }
+  .view-content-wrapper {
+    padding-top: 68px;
+    padding-bottom: 110px;
+    @extend %black-white-background;
+  }
+
+  @extend %projects-block;
+
+  .view-content {
+    text-align: center;
+  }
+
+  @include breakpoint(desktop) {
+    .view-content-wrapper {
+      padding-bottom: 47px;
+    }
+    .view-content .views-row {
+      .block-layout-builder:nth-child(2) {
+        margin-top: 10px;
+      }
+    }
+  }
+  @include breakpoint(largeTablet) {
+    h2 {
+      margin-top: 83px;
+    }
+    .view-content .views-row {
+      max-width: 160px;
+
+      .field--name-field-image {
+        img {
+          max-width: 160px;
+        }
+      }
+      .field--name-title a {
+        font-size: 18px;
+      }
+      .field--name-body {
+        font-size: 12px;
+      }
+    }
+  }
+
+  @include breakpoint(tablet) {
+    h2 {
+      margin-top: 54px;
+    }
+    .view-content .views-row {
+      margin-bottom: 50px;
+      max-width: 140px;
+      .field--name-title a {
+        font-size: 18px;
+      }
+      .field--name-field-image {
+        img {
+          max-width: 140px;
+        }
+      }
+      .field--name-title a {
+        font-size: 16px;
+      }
+      .field--name-field-service-type {
+        font-size: 14px;
+      }
+    }
+  }
+  @include breakpoint(phablet) {
+    .view-content {
+      justify-content: space-evenly;
+      .views-row {
+        margin-bottom: 80px;
+        max-width: 200px;
+        .field--name-field-image {
+          img {
+            max-width: 200px;
+          }
+        }
+      }
+    }
+  }
+}

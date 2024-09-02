@@ -1,0 +1,14 @@
+.content-section--news {
+  @extend %news-block;
+  h2 {
+    margin-top: 262px;
+    margin-bottom: 21px;
+  }
+  .view-content-wrapper, .view-filters {
+    @extend %black-white-background;
+  }
+  .view-content-wrapper {
+    padding-top: 11px;
+    padding-bottom: 74px;
+  }
+}

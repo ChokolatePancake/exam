@@ -1,0 +1,11 @@
+.content-section--clients {
+  margin-bottom: 141px;
+  h2 {
+    margin-top: 24px;
+    margin-bottom: 45px;
+  }
+
+  @include breakpoint(largePhone) {
+    margin-bottom: 20px;
+  }
+}

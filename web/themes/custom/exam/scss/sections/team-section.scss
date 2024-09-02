@@ -1,0 +1,63 @@
+.content-section--team {
+  h2 {
+    margin-bottom: 27px;
+    margin-top: 92px;
+  }
+
+  @extend %team-block;
+
+  @include breakpoint(desktop) {
+    .field--name-title {
+      margin-top: 15px;
+    }
+  }
+
+  @include breakpoint(laptop) {
+    .field--name-title a {
+      font-size: 24px;
+    }
+  }
+
+  @include breakpoint(largeTablet) {
+    .view-content .views-row {
+      max-width: 160px;
+
+      .field--name-field-image {
+        img {
+          max-width: 160px;
+        }
+      }
+      .field--name-title a {
+        font-size: 18px;
+      }
+      .field--name-body {
+        font-size: 12px;
+      }
+    }
+    .layout--onecol {
+      &:last-child {
+        .layout__region {
+          width: 160px;
+        }
+      }
+    }
+  }
+
+  @include breakpoint(tablet) {
+    .view-content {
+      justify-content: space-evenly;
+      .field--name-title a {
+        font-size: 20px;
+      }
+      .views-row {
+        margin-bottom: 120px;
+        max-width: 200px;
+        .field--name-field-image {
+          img {
+            max-width: 200px;
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,120 @@
+.content-section {
+  @extend %default-block;
+  h2 {
+    @extend %container;
+    margin-top: 94px;
+    margin-bottom: 89px;
+    @extend %titles;
+  }
+  .view-content {
+    display: flex;
+    flex-wrap: wrap;
+    @extend %container;
+    text-transform: uppercase;
+    justify-content: space-between;
+  }
+}
+
+.content-section-4 {
+  .view-content {
+    .views-row {
+      text-align: center;
+      max-width: 290px;
+      .block-field-blocknodeservicestitle {
+        margin-top: 33px;
+      }
+      .field--name-title {
+        a {
+          color: $black;
+          font-size: 24px;
+        }
+      }
+      .field--name-body {
+        font-size: 14px;
+        margin-top: 10px;
+        color: $grey;
+      }
+    }
+  }
+
+  @include breakpoint(desktop) {
+    .view-content .views-row {
+
+      .field--name-field-image {
+        img {
+          max-width: 230px;
+          height: auto;
+        }
+      }
+    }
+  }
+
+  @include breakpoint(laptop) {
+    .view-content .views-row {
+      max-width: 200px;
+
+      .field--name-field-image {
+        img {
+          max-width: 200px;
+        }
+      }
+      .field--name-title a {
+        font-size: 22px;
+      }
+    }
+  }
+
+  @include breakpoint(largeTablet) {
+    .view-content .views-row {
+      max-width: 160px;
+
+      .field--name-field-image {
+        img {
+          max-width: 160px;
+        }
+      }
+      .field--name-title a {
+        font-size: 18px;
+      }
+      .field--name-body {
+        font-size: 12px;
+      }
+    }
+  }
+
+  @include breakpoint(tablet) {
+    .view-content .views-row {
+      max-width: 140px;
+
+      .field--name-field-image {
+        img {
+          max-width: 140px;
+        }
+      }
+      .field--name-title a {
+        font-size: 16px;
+      }
+    }
+  }
+
+  @include breakpoint(phablet) {
+    .view-content {
+      flex-wrap: wrap;
+      .views-row {
+        margin-bottom: 120px;
+        width: 200px;
+        max-width: 100%;
+        .field--name-field-image {
+          img {
+            max-width: 200px;
+          }
+        }
+      }
+    }
+  }
+  @include breakpoint(largePhone) {
+    .view-content {
+      justify-content: center;
+    }
+  }
+}

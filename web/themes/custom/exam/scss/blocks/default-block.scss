@@ -1,0 +1,32 @@
+%default-block {
+  .contextual-region {
+    position: static;
+  }
+
+  // Links mostly grey, color will be overridden for services block
+  .field--name-field-link {
+    margin: 10px;
+    a {
+      color: $white;
+      background: $darker-grey;
+      padding: 1px 10px;
+    }
+  }
+
+  .view-content .views-row {
+    position: relative;
+    text-transform: uppercase;
+
+    .field--name-title {
+      a {
+        color: $black;
+        font-size: 26px;
+        font-weight: 300;
+        transition: color 0.5s ease;
+        &:hover {
+          color: $blue;
+        }
+      }
+    }
+  }
+}

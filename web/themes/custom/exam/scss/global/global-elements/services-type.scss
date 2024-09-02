@@ -1,0 +1,35 @@
+// This class created for comfortable changing/adding css to projects depending on their service type
+.view-content .views-row, .region-content {
+  .service-type {
+    /* For new add(for single node page dont forget to add ".field--name-field-service-type a{"
+    &-${name of taxonomy term with lowercase and "-" instead of space} {
+      .field--name-field-service-type {
+        color: ${your-color};
+      }
+    }
+    */
+    &-web-development {
+       .field--name-field-service-type, .field--name-field-service-type a{
+        color: $light-green;
+      }
+    }
+
+    &-php-development {
+      .field--name-field-service-type, .field--name-field-service-type a{
+        color: $purple;
+      }
+    }
+
+    &-app-development {
+      .field--name-field-service-type, .field--name-field-service-type a{
+        color: $red;
+      }
+    }
+
+    &-drupal-project {
+      .field--name-field-service-type, .field--name-field-service-type a{
+        color: $normal-blue;
+      }
+    }
+  }
+}
