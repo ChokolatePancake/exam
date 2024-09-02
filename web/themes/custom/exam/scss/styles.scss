@@ -1,0 +1,39 @@
+@import 'global/variables';
+@import 'global/media';
+@import 'global/global';
+@import 'sections/global-sections/header';
+@import 'sections/global-sections/footer';
+@import 'sections/static-sections/hero-section';
+@import 'sections/static-sections/about-section';
+@import 'sections/global-sections/general-sections';
+@import 'sections/services-section';
+@import 'sections/projects-section';
+@import 'sections/team-section';
+@import 'sections/news-section';
+@import 'sections/clients-section';
+@import 'global/global-elements/services-type';
+@import 'global/global-elements/pager';
+@import 'global/global-elements/like';
+@import 'global/global-elements/slider';
+
+@import 'blocks/default-block';
+@import 'blocks/services-block';
+@import 'blocks/projects-block';
+@import 'blocks/team-block';
+@import 'blocks/news-block';
+
+@import 'views-page/general-views-styles/general-page';
+@import 'views-page/general-views-styles/page-pager';
+@import 'node-page/single-node-page/contact';
+@import 'node-page/single-node-page/about-page';
+@import 'views-page/services-page';
+@import 'views-page/projects-page';
+@import 'views-page/team-page';
+@import 'views-page/news-page';
+@import 'views-page/clients-page';
+@import 'node-page/single-node-page/thank-you';
+
+@import 'node-page/default-node';
+@import 'node-page/client';
+@import 'node-page/news';
+@import 'node-page/team';

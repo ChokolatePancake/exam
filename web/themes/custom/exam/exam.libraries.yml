@@ -3,57 +3,58 @@ global:
     theme:
       "https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&family=Roboto:wght@400;500;700&display=swap": { external: true }
       "https://fonts.googleapis.com/css2?family=Mukta:wght@200;300;400;500;600;700;800&family=Roboto+Slab:wght@100..900&family=Roboto:wght@400;500;700&display=swap": { external: true }
-      css/elements.css: {}
-    component:
-      css/variables.css: {}
-      css/media.css: {}
-      css/header.css: {}
-      css/footer.css: {}
-      css/node.css: {}
-      css/global.css: {}
-#      This style is for banner
-      css/hero.css: {}
-#
-      css/about.css: {}
-      css/general-sections.css: {}
-      css/section-services.css: {}
-      css/section-projects.css: {}
-      css/section-team.css: {}
-      css/section-news.css: {}
-      css/section-clients.css: {}
-#      This style for changing project's blocks depending on their service type
-      css/services-type.css: {}
-#
-      css/pager.css: {}
-      css/like.css: {}
-      css/slider.css: {}
-#      There are blocks for views(teasers)
-      css/blocks/default-block.css: {}
-      css/blocks/services-block.css: {}
-      css/blocks/projects-block.css: {}
-      css/blocks/team-block.css: {}
-      css/blocks/news-block.css: {}
-#
-#      There are pages of views
-      css/pages/general-page.css: {}
-      css/pages/page-pager.css: {}
-      css/pages/contact.css: {}
-      css/pages/about-page.css: {}
-      css/pages/services-page.css: {}
-      css/pages/projects-page.css: {}
-      css/pages/team-page.css: {}
-      css/pages/news-page.css: {}
-      css/pages/clients-page.css: {}
-      css/pages/taxonomy-term.css: {}
-      css/pages/thank-you.css: {}
-#
-#      There are pages of content
-      css/content-pages/default-node.css: {}
-      css/content-pages/client.css: {}
-      css/content-pages/news.css: {}
-      css/content-pages/service.css: {}
-      css/content-pages/project.css: {}
-      css/content-pages/team.css: {}
+#      css/elements.css: {}
+      css/styles.css: {}
+#    component:
+#      css/variables.css: {}
+#      css/media.css: {}
+#      css/header.css: {}
+#      css/footer.css: {}
+#      css/node.css: {}
+#      css/global.css: {}
+##      This style is for banner
+#      css/hero.css: {}
+##
+#      css/about.css: {}
+#      css/general-sections.css: {}
+#      css/section-services.css: {}
+#      css/section-projects.css: {}
+#      css/section-team.css: {}
+#      css/section-news.css: {}
+#      css/section-clients.css: {}
+##      This style for changing project's blocks depending on their service type
+#      css/services-type.css: {}
+##
+#      css/pager.css: {}
+#      css/like.css: {}
+#      css/slider.css: {}
+##      There are blocks for views(teasers)
+#      css/blocks/default-block.css: {}
+#      css/blocks/services-block.css: {}
+#      css/blocks/projects-block.css: {}
+#      css/blocks/team-block.css: {}
+#      css/blocks/news-block.css: {}
+##
+##      There are pages of views
+#      css/pages/general-page.css: {}
+#      css/pages/page-pager.css: {}
+#      css/pages/contact.css: {}
+#      css/pages/about-page.css: {}
+#      css/pages/services-page.css: {}
+#      css/pages/projects-page.css: {}
+#      css/pages/team-page.css: {}
+#      css/pages/news-page.css: {}
+#      css/pages/clients-page.css: {}
+#      css/pages/taxonomy-term.css: {}
+#      css/pages/thank-you.css: {}
+##
+##      There are pages of content
+#      css/content-pages/default-node.css: {}
+#      css/content-pages/client.css: {}
+#      css/content-pages/news.css: {}
+#      css/content-pages/service.css: {}
+#      css/content-pages/project.css: {}
+#      css/content-pages/team.css: {}
 
   js:
     js/burger.js: {}
